@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh">
     <head hexo-theme='https://github.com/volantis-x/hexo-theme-volantis/#6.0.0-alpha.1'>
   <meta name="generator" content="Hexo 7.3.0">
   <meta name="Volantis" content="6.0.0-alpha.1">
@@ -27,6 +27,7 @@
   <!-- Custom Files headBegin begin-->
   
   <!-- Custom Files headBegin end-->
+    <link rel="shortcut icon" type='image/x-icon' href="/static/pic/favicon.ico">
   <link rel="preload" href="/css/style.css" as="style">
   <link rel="preload" href="https://unpkg.com/volantis-static@0.0.1660614606622/media/fonts/VarelaRound/VarelaRound-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="https://unpkg.com/volantis-static@0.0.1660614606622/media/fonts/UbuntuMono/UbuntuMono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
@@ -42,10 +43,10 @@
 <meta property="og:url" content="http://example.com/2025/07/06/CC%E9%93%BE1-TransformedMap/index.html">
 <meta property="og:site_name" content="n1utra&#39;s blog">
 <meta property="og:description" content="CC链1-TransformedMapCC链1存在两条链，这里先说TransformedMap这一条 执行点：InvokerTransformer在InvokerTransformer这个类中，存在一个transform方法，接收一个类文件，然后进行反射调用 1234567891011121314151617public Object transform(Object input) &#123;">
-<meta property="og:locale" content="zh_CN">
+<meta property="og:locale">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2025-07-06T15:26:15.000Z">
-<meta property="article:modified_time" content="2025-07-08T13:47:21.320Z">
+<meta property="article:modified_time" content="2025-07-08T14:50:52.498Z">
 <meta property="article:author" content="n1utra">
 <meta property="article:tag" content="JAVA安全">
 <meta property="article:tag" content="CC链">
@@ -1700,9 +1701,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 		'}'+
 	'</style>'+
     '<div class="kill-ie">'+
-        `<span class="kill-t"><b>抱歉，您的浏览器无法访问本站</b></span><br/>`+
-        `<span class="kill-c">微软已经于2016年终止了对 Internet Explorer (IE) 10 及更早版本的支持，<br/>继续使用存在极大的安全隐患，请使用当代主流的浏览器进行访问。</span><br/>`+
-        `<a target="_blank" rel="noopener" href="https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/"><strong>了解详情 ></strong></a>`+
+        `<span class="kill-t"><b>Sorry, your browser cannot access this site</b></span><br/>`+
+        `<span class="kill-c">Microsoft has terminated support for Internet Explorer (IE) 10 and earlier versions in 2016. <br/>There are great security risks to continue using it. Please use contemporary mainstream browsers to access.</span><br/>`+
+        `<a target="_blank" rel="noopener" href="https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/"><strong>Learn more ></strong></a>`+
     '</div>');
 </script>
 
@@ -1730,9 +1731,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 		}
 	</style>
     <div class="kill-noscript">
-        <span class="kill-t"><b>抱歉，您的浏览器无法访问本站</b></span><br/>
-        <span class="kill-c">本页面需要浏览器支持（启用）JavaScript</span><br/>
-        <a target="_blank" rel="noopener" href="https://www.baidu.com/s?wd=启用JavaScript"><strong>了解详情 ></strong></a>
+        <span class="kill-t"><b>Sorry, your browser cannot access this site</b></span><br/>
+        <span class="kill-c">This page requires browser support (enable) JavaScript</span><br/>
+        <a target="_blank" rel="noopener" href="https://www.baidu.com/s?wd=启用JavaScript"><strong>Learn more ></strong></a>
     </div>
 </noscript>
 
@@ -2114,7 +2115,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1751982628467),
+    lastupdate: new Date(1751996517866),
     cdn: {
       izitoast_css: 'https://unpkg.com/izitoast@1.4.0/dist/css/iziToast.min.css',
       izitoast_js: 'https://unpkg.com/izitoast@1.4.0/dist/js/iziToast.min.js',
@@ -2152,8 +2153,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     languages: {
       
         search: {
-          hits_empty: "找不到您查询的内容：${query}",
-          hits_stats: "找到 ${hits} 条结果，用时 ${time} 毫秒",
+          hits_empty: "We didn't find any results for the search: ${query}.",
+          hits_stats: "${hits} results found in ${time} ms",
         }
       
     }
@@ -2567,7 +2568,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2025-07-06T23:26:15+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：2025年7月6日</p>
+    <p>发布于：Jul 6, 2025</p>
   </a>
 </div>
 
@@ -2593,7 +2594,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p>也就是说这个反射代码的所有参数都可以进行控制，只要能传入指定参数就能够实现任意代码执行。构造如下代码，运行成功弹出计算器</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">CC1TransformedMap</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">InvokerTransformer</span> <span class="variable">invokerTransformer</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">InvokerTransformer</span>(<span class="string">&quot;exec&quot;</span>, <span class="keyword">new</span> <span class="title class_">Class</span>[]&#123;String.class&#125;, <span class="keyword">new</span> <span class="title class_">Object</span>[]&#123;<span class="string">&quot;calc&quot;</span>&#125;);</span><br><span class="line">        invokerTransformer.transform(Runtime.getRuntime());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h2 id="调用点1：TransformedMap"><a href="#调用点1：TransformedMap" class="headerlink" title="调用点1：TransformedMap"></a>调用点1：TransformedMap</h2><p>查找关于<code>transform</code>方法的调用，在<code>TransformedMap</code>这个类中找到一处可利用的调用点</p>
+<h2 id="调用点1：TransformedMap"><a href="#调用点1：TransformedMap" class="headerlink" title="调用点1：TransformedMap"></a>调用点1：TransformedMap</h2><p>查找关于<code>transform</code>方法的调用，在<code>TransformedMap</code>这个类中找到一处可利用的调用点<code>checkSetValue</code>方法</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">protected</span> Object <span class="title function_">checkSetValue</span><span class="params">(Object value)</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> valueTransformer.transform(value);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>如果能够将<code>valueTransformer</code>设置为<code>InvokerTransformer</code>，参数传递为<code>Runtime.getRuntime</code>,那么就能够执行到我们的代码。</p>
@@ -2696,10 +2697,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2025-07-08T21:47:21+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2025-07-08T22:50:52+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2025年7月8日</p>
+    <p>更新于：Jul 8, 2025</p>
   </a>
 </div>
 
@@ -2715,6 +2716,16 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
   
 
+  
+    <div class="prev-next">
+      
+        <a class='prev' href='/2025/07/08/CC%E9%93%BE1-LazyMap/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>CC链1-LazyMap</p>
+          <p class='content'>CC链1-LazyMap这里来说说CC链1的另外一条链：LazyMap。它和TransformedMap链的执行点一样，都是InvokerTransformer，不同的是中间的调用点不同，调用时...</p>
+        </a>
+      
+      
+    </div>
   
   <!-- 文章推荐 -->
   
@@ -3168,7 +3179,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"https://schema.org.cn","@type":"Organization","name":"n1utra's blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"https://schema.org.cn","@type":"Person","name":"n1utra","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"网络安全"},{"@context":"https://schema.org.cn","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"n1utra's blog"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/JAVA安全/","name":"JAVA安全"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2025/07/06/CC链1-TransformedMap/","name":"CC链1-TransformedMap"}}]},{"@context":"https://schema.org.cn","@type":"WebSite","name":"n1utra's blog","url":"http://example.com/","keywords":null,"description":"网络安全","author":{"@type":"Person","name":"n1utra","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"网络安全"},"publisher":{"@type":"Organization","name":"n1utra's blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"https://schema.org.cn","@type":"BlogPosting","headline":"CC链1-TransformedMap","description":"网络安全","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2025/07/06/CC%E9%93%BE1-TransformedMap/"},"author":{"@type":"Person","name":"n1utra","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"n1utra's blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2025/07/06/CC%E9%93%BE1-TransformedMap/","wordCount":0,"datePublished":"2025-07-06T15:26:15.000Z","dateModified":"2025-07-08T13:47:21.320Z","articleSection":"JAVA安全","keywords":"JAVA安全,CC链","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"https://schema.org.cn","@type":"Organization","name":"n1utra's blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"https://schema.org.cn","@type":"Person","name":"n1utra","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"网络安全"},{"@context":"https://schema.org.cn","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"n1utra's blog"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/JAVA安全/","name":"JAVA安全"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2025/07/06/CC链1-TransformedMap/","name":"CC链1-TransformedMap"}}]},{"@context":"https://schema.org.cn","@type":"WebSite","name":"n1utra's blog","url":"http://example.com/","keywords":null,"description":"网络安全","author":{"@type":"Person","name":"n1utra","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"网络安全"},"publisher":{"@type":"Organization","name":"n1utra's blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"https://schema.org.cn","@type":"BlogPosting","headline":"CC链1-TransformedMap","description":"网络安全","inLanguage":"zh","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2025/07/06/CC%E9%93%BE1-TransformedMap/"},"author":{"@type":"Person","name":"n1utra","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"n1utra's blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2025/07/06/CC%E9%93%BE1-TransformedMap/","wordCount":0,"datePublished":"2025-07-06T15:26:15.000Z","dateModified":"2025-07-08T14:50:52.498Z","articleSection":"JAVA安全","keywords":"JAVA安全,CC链","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
