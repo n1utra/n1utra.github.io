@@ -2111,7 +2111,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1751996517866),
+    lastupdate: new Date(1752399057732),
     cdn: {
       izitoast_css: 'https://unpkg.com/izitoast@1.4.0/dist/css/iziToast.min.css',
       izitoast_js: 'https://unpkg.com/izitoast@1.4.0/dist/js/iziToast.min.js',
@@ -2521,9 +2521,75 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
         
+          
+        
       
     
     
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
+  <link itemprop="mainEntityOfPage" href="http://example.com/2025/07/12/CC链6/">
+  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
+    <meta itemprop="name" content="n1utra's blog">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
+    <meta itemprop="name" content="n1utra's blog">
+    <meta itemprop="description" content="网络安全">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2025/07/12/CC%E9%93%BE6/"  itemprop="url">
+        浅述CC链(3)：CC链6
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        CC链6CC链6是CC链1-LazyMap+URLDNS链的结合：
+URLDNS链中是通过hashMap#readObject方法中，对key进行哈希计算调用了hashCode，当key被赋值为URL类时，调用URL类的hashcode方法会调用到java.net.URLStreamHandler#hashCode，在这个方法里面对传入的域名进行解析，解析时DNSLog就能够获取到对应的数据...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2025-07-12T15:43:39+08:00">2025-07-12</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/JAVA%E5%AE%89%E5%85%A8/">JAVA安全</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
+              <a href="/categories/JAVA%E5%AE%89%E5%85%A8/" itemprop="url"><span itemprop="name">JAVA安全</span></a>
+            </span>
+          
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2025/07/12/CC%E9%93%BE6/' itemprop="url">
+            Read More
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
       
         
           <div class='post-wrapper'>
@@ -2547,7 +2613,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     <h2 class="article-title"  itemprop="name headline">
       <a href="/2025/07/08/CC%E9%93%BE1-LazyMap/"  itemprop="url">
-        CC链1-LazyMap
+        浅述CC链(2)：CC链1-LazyMap
       </a>
     </h2>
   
@@ -2555,8 +2621,12 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
       
         CC链1-LazyMap这里来说说CC链1的另外一条链：LazyMap。它和TransformedMap链的执行点一样，都是InvokerTransformer，不同的是中间的调用点不同，调用时涉及到动态代理相关知识，需要提前学习了解这块的内容。
-执行点：InvokerTransformer这里的执行点和TransformedMap链相同，不再过多赘述
-1234567891011121314...
+搭建环境
+
+jdk8u65
+Commons-Collections 3.2.1
+
+执行点：InvokerTransformer这里的执行点和Tra...
       
     
   </div>
@@ -2612,16 +2682,22 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     <h2 class="article-title"  itemprop="name headline">
       <a href="/2025/07/06/CC%E9%93%BE1-TransformedMap/"  itemprop="url">
-        CC链1-TransformedMap
+        浅述CC链(1)：CC链1-TransformedMap
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
     
       
-        CC链1-TransformedMapCC链1存在两条链，这里先说TransformedMap这一条
-执行点：InvokerTransformer在InvokerTransformer这个类中，存在一个transform方法，接收一个类文件，然后进行反射调用
-1234567891011121314151617public Object transform(Object input) &#12...
+        CC链1-TransformedMap反序列化利用链的大概流程如下图所示，其实就是找到一个可利用点，不停寻找调用点，一直到起点调用，中间的调用点可以不存在，也可以很多
+
+这里先来说说CC链1，CC链1存在两条链，先说TransformedMap这一条
+搭建环境
+
+jdk8u65
+Commons-Collections 3.2.1
+
+执行点：InvokerTransformer在Invoker...
       
     
   </div>
@@ -2731,7 +2807,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           <li><a class="flat-box"
             title="/categories/JAVA%E5%AE%89%E5%85%A8/" href="/categories/JAVA%E5%AE%89%E5%85%A8/"
             active-action="action-categoriesJAVAE5AE89E585A8"
-            ><div class='name'>JAVA安全</div><div class='badge'>(2)</div></a></li>
+            ><div class='name'>JAVA安全</div><div class='badge'>(3)</div></a></li>
         
       </ul>
     </div>
