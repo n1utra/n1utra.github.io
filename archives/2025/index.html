@@ -2111,7 +2111,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1752399057732),
+    lastupdate: new Date(1752421370712),
     cdn: {
       izitoast_css: 'https://unpkg.com/izitoast@1.4.0/dist/css/iziToast.min.css',
       izitoast_js: 'https://unpkg.com/izitoast@1.4.0/dist/js/iziToast.min.js',
@@ -2515,9 +2515,202 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
         
+          
+        
+          
+        
+          
+        
       
     
     
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
+  <link itemprop="mainEntityOfPage" href="http://example.com/2025/07/13/CC链3/">
+  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
+    <meta itemprop="name" content="n1utra's blog">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
+    <meta itemprop="name" content="n1utra's blog">
+    <meta itemprop="description" content="网络安全">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2025/07/13/CC%E9%93%BE3/"  itemprop="url">
+        浅述CC链(4)：CC链3
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        CC链3CC链3和CC链6以及CC链1不同，采用的是类动态加载的方式，CC链6和CC链1是命令执行，而CC链3则是代码执行
+简述动态加载在类的动态加载中，一般是通过ClassLoader-&gt;loadclass-&gt;findClass-&gt;defineClass这个流程进行类加载，在最后的defineClass加载java字节码，但是只加载字节码是不运行代码的，还需要找到一个初始...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2025-07-13T22:20:21+08:00">2025-07-13</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/JAVA%E5%AE%89%E5%85%A8/">JAVA安全</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
+              <a href="/categories/JAVA%E5%AE%89%E5%85%A8/" itemprop="url"><span itemprop="name">JAVA安全</span></a>
+            </span>
+          
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2025/07/13/CC%E9%93%BE3/' itemprop="url">
+            Read More
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
+  <link itemprop="mainEntityOfPage" href="http://example.com/2025/07/13/URLDNS链/">
+  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
+    <meta itemprop="name" content="n1utra's blog">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
+    <meta itemprop="name" content="n1utra's blog">
+    <meta itemprop="description" content="网络安全">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2025/07/13/URLDNS%E9%93%BE/"  itemprop="url">
+        URLDNS链
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        URLDNS链URLDNS链是最简单的链，用来了解反序列化链再合适不过，这条链常用来探测是否存在反序列化漏洞
+执行点：URL在URL#hashCode方法中，会调用handler.hashCode对当前对象进行hash计算
+1234567public synchronized int hashCode() &#123;    if (hashCode != -1)        return...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2025-07-13T20:15:01+08:00">2025-07-13</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/JAVA%E5%AE%89%E5%85%A8/">JAVA安全</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
+              <a href="/categories/JAVA%E5%AE%89%E5%85%A8/" itemprop="url"><span itemprop="name">JAVA安全</span></a>
+            </span>
+          
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2025/07/13/URLDNS%E9%93%BE/' itemprop="url">
+            Read More
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
+  <link itemprop="mainEntityOfPage" href="http://example.com/2025/07/13/CC链1是如何修复的/">
+  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
+    <meta itemprop="name" content="n1utra's blog">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
+    <meta itemprop="name" content="n1utra's blog">
+    <meta itemprop="description" content="网络安全">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2025/07/13/CC%E9%93%BE1%E6%98%AF%E5%A6%82%E4%BD%95%E4%BF%AE%E5%A4%8D%E7%9A%84/"  itemprop="url">
+        浅述CC链(补充)：CC链的其他问题
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        CC链的其他问题CC链1是如何修复的CC链1在jdk8u71版本中就被修复了，查看8u71的AnnotationInvocationHandler#readObject与8u65版本进行对比
+
+在8u65中，我们是通过memberValue.setValue触发，而memberValue来自于构造方法中memberValues遍历获得
+在8u71中，memberValue来自于streamV...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2025-07-13T17:31:57+08:00">2025-07-13</time>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2025/07/13/CC%E9%93%BE1%E6%98%AF%E5%A6%82%E4%BD%95%E4%BF%AE%E5%A4%8D%E7%9A%84/' itemprop="url">
+            Read More
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
       
         
           <div class='post-wrapper'>
@@ -2800,7 +2993,7 @@ Commons-Collections 3.2.1
           <li><a class="flat-box"
             title="/categories/JAVA%E5%AE%89%E5%85%A8/" href="/categories/JAVA%E5%AE%89%E5%85%A8/"
             active-action="action-categoriesJAVAE5AE89E585A8"
-            ><div class='name'>JAVA安全</div><div class='badge'>(3)</div></a></li>
+            ><div class='name'>JAVA安全</div><div class='badge'>(5)</div></a></li>
         
       </ul>
     </div>
@@ -2825,7 +3018,7 @@ Commons-Collections 3.2.1
 
 
     <div class='content'>
-      <a href="/tags/CC%E9%93%BE/" style="font-size: 14px; color: #999">CC链</a> <a href="/tags/JAVA%E5%AE%89%E5%85%A8/" style="font-size: 14px; color: #999">JAVA安全</a>
+      <a href="/tags/CC%E9%93%BE/" style="font-size: 14px; color: #999">CC链</a> <a href="/tags/JAVA%E5%AE%89%E5%85%A8/" style="font-size: 24px; color: #555">JAVA安全</a>
     </div>
   </section>
 
