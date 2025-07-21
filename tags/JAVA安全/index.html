@@ -34,7 +34,7 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>标签：JAVA安全 - n1utra's blog</title>
+  <title>Tag: JAVA安全 - n1utra's blog</title>
   <meta name="keywords" content="null">
   <meta desc name="description" content="网络安全 - n1utra - n1utra's blog">
   
@@ -1697,9 +1697,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 		'}'+
 	'</style>'+
     '<div class="kill-ie">'+
-        `<span class="kill-t"><b>抱歉，您的浏览器无法访问本站</b></span><br/>`+
-        `<span class="kill-c">微软已经于2016年终止了对 Internet Explorer (IE) 10 及更早版本的支持，<br/>继续使用存在极大的安全隐患，请使用当代主流的浏览器进行访问。</span><br/>`+
-        `<a target="_blank" rel="noopener" href="https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/"><strong>了解详情 ></strong></a>`+
+        `<span class="kill-t"><b>Sorry, your browser cannot access this site</b></span><br/>`+
+        `<span class="kill-c">Microsoft has terminated support for Internet Explorer (IE) 10 and earlier versions in 2016. <br/>There are great security risks to continue using it. Please use contemporary mainstream browsers to access.</span><br/>`+
+        `<a target="_blank" rel="noopener" href="https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/"><strong>Learn more ></strong></a>`+
     '</div>');
 </script>
 
@@ -1727,9 +1727,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 		}
 	</style>
     <div class="kill-noscript">
-        <span class="kill-t"><b>抱歉，您的浏览器无法访问本站</b></span><br/>
-        <span class="kill-c">本页面需要浏览器支持（启用）JavaScript</span><br/>
-        <a target="_blank" rel="noopener" href="https://www.baidu.com/s?wd=启用JavaScript"><strong>了解详情 ></strong></a>
+        <span class="kill-t"><b>Sorry, your browser cannot access this site</b></span><br/>
+        <span class="kill-c">This page requires browser support (enable) JavaScript</span><br/>
+        <a target="_blank" rel="noopener" href="https://www.baidu.com/s?wd=启用JavaScript"><strong>Learn more ></strong></a>
     </div>
 </noscript>
 
@@ -2111,7 +2111,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1752769671027),
+    lastupdate: new Date(1753111547059),
     cdn: {
       izitoast_css: 'https://unpkg.com/izitoast@1.4.0/dist/css/iziToast.min.css',
       izitoast_js: 'https://unpkg.com/izitoast@1.4.0/dist/js/iziToast.min.js',
@@ -2149,8 +2149,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     languages: {
       
         search: {
-          hits_empty: "找不到您查询的内容：${query}",
-          hits_stats: "找到 ${hits} 条结果，用时 ${time} 毫秒",
+          hits_empty: "We didn't find any results for the search: ${query}.",
+          hits_stats: "${hits} results found in ${time} ms",
         }
       
     }
@@ -2523,9 +2523,200 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
         
+          
+        
+          
+        
+          
+        
       
     
     
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
+  <link itemprop="mainEntityOfPage" href="http://example.com/2025/07/20/CC链7/">
+  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
+    <meta itemprop="name" content="n1utra's blog">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
+    <meta itemprop="name" content="n1utra's blog">
+    <meta itemprop="description" content="网络安全">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2025/07/20/CC%E9%93%BE7/"  itemprop="url">
+        浅述CC链(8)：CC链7
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        CC链7CC链7同样是在LazyMap#get的基础上进行了修改，这里找到的调用点找到了AbstractMap#equals这里，然后会被AbstractMapDecorator#equals调用，AbstractMapDecorator#equals又被Hashtable#reconstitutionPut调用。这里涉及到装饰器的设计模式，中间的调用不是之前那种直接查找用法。
+简单来说：
+...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2025-07-20T19:37:04+08:00">2025-07-20</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/JAVA%E5%AE%89%E5%85%A8/">JAVA安全</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
+              <a href="/categories/JAVA%E5%AE%89%E5%85%A8/" itemprop="url"><span itemprop="name">JAVA安全</span></a>
+            </span>
+          
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2025/07/20/CC%E9%93%BE7/' itemprop="url">
+            Read More
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
+  <link itemprop="mainEntityOfPage" href="http://example.com/2025/07/20/CC链5/">
+  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
+    <meta itemprop="name" content="n1utra's blog">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
+    <meta itemprop="name" content="n1utra's blog">
+    <meta itemprop="description" content="网络安全">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2025/07/20/CC%E9%93%BE5/"  itemprop="url">
+        浅述CC链(7)：CC链5
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        CC链5CC链5就是在CC链1-LazyMap的基础上进行修改。CC链1-LazyMap中LazyMap#get利用的调用点是AnnotationInvocationHandler#invoke。在CC链5中则是换成了TiedMapEntry#toString。也就是说CC链5还是基于commons-collections:3.2.1版本
+所以执行点还是采用CC链1-LazyMap，把后面的...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2025-07-20T16:04:03+08:00">2025-07-20</time>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2025/07/20/CC%E9%93%BE5/' itemprop="url">
+            Read More
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
+  <link itemprop="mainEntityOfPage" href="http://example.com/2025/07/20/CC链2/">
+  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
+    <meta itemprop="name" content="n1utra's blog">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
+    <meta itemprop="name" content="n1utra's blog">
+    <meta itemprop="description" content="网络安全">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2025/07/20/CC%E9%93%BE2/"  itemprop="url">
+        浅述CC链(6)：CC链2
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        CC链2CC链2只是在CC链4的基础上进行了简单的修改。YSO中CC链4是继续查找TemplatesImpl类的调用，也就是CC链3中的执行点TrAXFilter（虽然我没有这么写）。CC链2就是通过invoke直接去反射创建TemplatesImpl，中间的调用点还是基于优先队列
+所以这里直接把CC链4的的执行点改造一下即可，需要注意的是，改造之后在序列化时也会执行命令，所以这里需要先在代...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2025-07-20T15:21:11+08:00">2025-07-20</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/JAVA%E5%AE%89%E5%85%A8/">JAVA安全</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
+              <a href="/categories/JAVA%E5%AE%89%E5%85%A8/" itemprop="url"><span itemprop="name">JAVA安全</span></a>
+            </span>
+          
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2025/07/20/CC%E9%93%BE2/' itemprop="url">
+            Read More
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
       
         
           <div class='post-wrapper'>
@@ -2581,7 +2772,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <div>
           <a class='readmore' href='/2025/07/17/CC%E9%93%BE4/' itemprop="url">
-            阅读全文
+            Read More
           </a>
         </div>
       
@@ -2647,7 +2838,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <div>
           <a class='readmore' href='/2025/07/13/CC%E9%93%BE3/' itemprop="url">
-            阅读全文
+            Read More
           </a>
         </div>
       
@@ -2712,7 +2903,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <div>
           <a class='readmore' href='/2025/07/13/URLDNS%E9%93%BE/' itemprop="url">
-            阅读全文
+            Read More
           </a>
         </div>
       
@@ -2776,7 +2967,7 @@ URLDNS链中是通过hashMap#readObject方法中，对key进行哈希计算调�
       
         <div>
           <a class='readmore' href='/2025/07/12/CC%E9%93%BE6/' itemprop="url">
-            阅读全文
+            Read More
           </a>
         </div>
       
@@ -2845,7 +3036,7 @@ Commons-Collections 3.2.1
       
         <div>
           <a class='readmore' href='/2025/07/08/CC%E9%93%BE1-LazyMap/' itemprop="url">
-            阅读全文
+            Read More
           </a>
         </div>
       
@@ -2916,7 +3107,7 @@ Commons-Collections 3.2.1
       
         <div>
           <a class='readmore' href='/2025/07/06/CC%E9%93%BE1-TransformedMap/' itemprop="url">
-            阅读全文
+            Read More
           </a>
         </div>
       
@@ -3006,7 +3197,7 @@ Commons-Collections 3.2.1
           <li><a class="flat-box"
             title="/categories/JAVA%E5%AE%89%E5%85%A8/" href="/categories/JAVA%E5%AE%89%E5%85%A8/"
             active-action="action-categoriesJAVAE5AE89E585A8"
-            ><div class='name'>JAVA安全</div><div class='badge'>(6)</div></a></li>
+            ><div class='name'>JAVA安全</div><div class='badge'>(8)</div></a></li>
         
       </ul>
     </div>
