@@ -2111,7 +2111,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1754239641705),
+    lastupdate: new Date(1754413261209),
     cdn: {
       izitoast_css: 'https://unpkg.com/izitoast@1.4.0/dist/css/iziToast.min.css',
       izitoast_js: 'https://unpkg.com/izitoast@1.4.0/dist/js/iziToast.min.js',
@@ -2539,9 +2539,70 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
         
+          
+        
       
     
     
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
+  <link itemprop="mainEntityOfPage" href="http://example.com/2025/08/04/FastJson-1-2-47及之前利用/">
+  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
+    <meta itemprop="name" content="n1utra's blog">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
+    <meta itemprop="name" content="n1utra's blog">
+    <meta itemprop="description" content="网络安全">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2025/08/04/FastJson-1-2-47%E5%8F%8A%E4%B9%8B%E5%89%8D%E5%88%A9%E7%94%A8/"  itemprop="url">
+        浅述Fastjson(2)：FastJson 1.2.47及之前利用
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        Fastjson1.2.24利用点分析在前篇中讲述了fastjson的反序列化流程，能看出来与java原生反序列化的不同点
+
+fastjson反序列化的类不需要实现序列化接口
+原生反序列化时属性不能被transient修饰，fastjson没有这个要求。但是必须有对应的set或者public或者满足条件的get
+原生反序列化入口是readObject，fastjson是通过反射调用sette...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2025-08-04T23:25:56+08:00">2025-08-04</time>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2025/08/04/FastJson-1-2-47%E5%8F%8A%E4%B9%8B%E5%89%8D%E5%88%A9%E7%94%A8/' itemprop="url">
+            Read More
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
       
         
           <div class='post-wrapper'>
@@ -3099,75 +3160,6 @@ URLDNS链中是通过hashMap#readObject方法中，对key进行哈希计算调�
       
         <div>
           <a class='readmore' href='/2025/07/12/CC%E9%93%BE6/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2025/07/08/CC链1-LazyMap/">
-  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
-    <meta itemprop="name" content="n1utra's blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
-    <meta itemprop="name" content="n1utra's blog">
-    <meta itemprop="description" content="网络安全">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2025/07/08/CC%E9%93%BE1-LazyMap/"  itemprop="url">
-        浅述CC链(2)：CC链1-LazyMap
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        CC链1-LazyMap这里来说说CC链1的另外一条链：LazyMap。它和TransformedMap链的执行点一样，都是InvokerTransformer，不同的是中间的调用点不同，调用时涉及到动态代理相关知识，需要提前学习了解这块的内容。
-搭建环境
-
-jdk8u65
-Commons-Collections 3.2.1
-
-执行点：InvokerTransformer这里的执行点和Tra...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2025-07-08T22:36:56+08:00">2025-07-08</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/JAVA%E5%AE%89%E5%85%A8/">JAVA安全</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/JAVA%E5%AE%89%E5%85%A8/" itemprop="url"><span itemprop="name">JAVA安全</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2025/07/08/CC%E9%93%BE1-LazyMap/' itemprop="url">
             Read More
           </a>
         </div>
