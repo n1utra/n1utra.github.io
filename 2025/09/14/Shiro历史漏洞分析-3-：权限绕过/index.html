@@ -46,7 +46,7 @@
 <meta property="og:locale">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2025-09-14T13:57:10.000Z">
-<meta property="article:modified_time" content="2025-10-16T13:15:39.599Z">
+<meta property="article:modified_time" content="2025-10-16T15:33:21.947Z">
 <meta property="article:author" content="n1utra">
 <meta property="article:tag" content="JAVA安全">
 <meta property="article:tag" content="Shiro">
@@ -2115,7 +2115,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1760620562628),
+    lastupdate: new Date(1760628853154),
     cdn: {
       izitoast_css: 'https://unpkg.com/izitoast@1.4.0/dist/css/iziToast.min.css',
       izitoast_js: 'https://unpkg.com/izitoast@1.4.0/dist/js/iziToast.min.js',
@@ -2672,7 +2672,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p>获取到<code>Servlet</code>路径之后，返回到<code>getPathWithinServletMapping</code>方法中，可以看到后面还进行了多个<code>if</code>判断，但是这里都不满足，就直接返回了获取到的<code>servletPath</code>，就相当于直接返回了<code>/admin/1</code>这个路由。</p>
 <p><img src="/static/pic/image-20250918005134437.png" class="lazyload" data-srcset="/static/pic/image-20250918005134437.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250918005134437"></p>
 <h1 id="CVE-2020-11989"><a href="#CVE-2020-11989" class="headerlink" title="CVE-2020-11989"></a>CVE-2020-11989</h1><h2 id="漏洞信息-3"><a href="#漏洞信息-3" class="headerlink" title="漏洞信息"></a>漏洞信息</h2><p><strong>影响版本：</strong><code>Shiro &lt; 1.5.3</code> </p>
-<p><strong>漏洞环境：</strong></p>
+<p><strong>漏洞环境：</strong><a target="_blank" rel="noopener" href="https://github.com/n1utra/ShiroVuln/tree/main/CVE-2020-11989">ShiroVuln&#x2F;CVE-2020-11989 at main · n1utra&#x2F;ShiroVuln</a></p>
 <p><strong>漏洞描述：</strong>在 Apache Shiro 1.5.3 之前的版本，将 Apache Shiro 与 Spring 动态控制器一起使用时，特制请求可能会导致身份验证绕过。</p>
 <h2 id="漏洞复现-3"><a href="#漏洞复现-3" class="headerlink" title="漏洞复现"></a>漏洞复现</h2><p>这个漏洞存在两种绕过，直接访问是302</p>
 <p><img src="/static/pic/image-20250920183104536.png" class="lazyload" data-srcset="/static/pic/image-20250920183104536.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250920183104536"></p>
@@ -2717,7 +2717,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p>进入<code>decodeAndCleanUriString</code>这个方法，这里对<code>URI</code>处理如下：去除分号后面的内容、<code>URL</code>转码、清除多余<code>/</code>。可以看到这里和<code>Shiro</code>的处理顺序是不同的 ，这里是先去除分号再进行<code>URL</code>转码。所以出现了问题，<code>Payload</code>经过了<code>URL</code>编码，在去除的时候无法识别，然后再经过<code>URL</code>转码回来就被当作了<code>URI</code>的一部分。造成了问题。</p>
 <p><img src="/static/pic/image-20250920234532484.png" class="lazyload" data-srcset="/static/pic/image-20250920234532484.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250920234532484"></p>
 <h1 id="CVE-2020-17510"><a href="#CVE-2020-17510" class="headerlink" title="CVE-2020-17510"></a>CVE-2020-17510</h1><h2 id="漏洞信息-5"><a href="#漏洞信息-5" class="headerlink" title="漏洞信息"></a>漏洞信息</h2><p><strong>影响版本：</strong><code>Shiro &lt; 1.7.0</code></p>
-<p><strong>漏洞环境：</strong></p>
+<p><strong>漏洞环境：</strong><a target="_blank" rel="noopener" href="https://github.com/n1utra/ShiroVuln/tree/main/CVE-2020-17510">ShiroVuln&#x2F;CVE-2020-17510 at main · n1utra&#x2F;ShiroVuln</a></p>
 <p><strong>漏洞描述：</strong>这个漏洞本质还是对于<code>ant</code>匹配的绕过，之前利用过了<code>;</code>的<code>URL</code>编码，现在则是利用<code>.</code>的<code>URL</code>编码。同样也是一种<code>bypass</code>，但是更鸡肋。</p>
 <h2 id="漏洞复现-5"><a href="#漏洞复现-5" class="headerlink" title="漏洞复现"></a>漏洞复现</h2><p>直接访问是302跳转</p>
 <p><img src="/static/pic/image-20250921203252636.png" class="lazyload" data-srcset="/static/pic/image-20250921203252636.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250921203252636"></p>
@@ -2730,12 +2730,12 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p>接下来还是看看<code>Spring</code>的处理，可以在看到，<code>Spring</code>最终拿到的<code>uri</code>还是<code>/admin/.</code></p>
 <p><img src="/static/pic/image-20250921212908178.png" class="lazyload" data-srcset="/static/pic/image-20250921212908178.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250921212908178"></p>
 <h1 id="CVE-2020-17523"><a href="#CVE-2020-17523" class="headerlink" title="CVE-2020-17523"></a>CVE-2020-17523</h1><h2 id="漏洞信息-6"><a href="#漏洞信息-6" class="headerlink" title="漏洞信息"></a>漏洞信息</h2><p><strong>影响版本：</strong><code>Shiro &lt; 1.7.1</code></p>
-<p><strong>漏洞环境：</strong></p>
+<p><strong>漏洞环境：</strong><a target="_blank" rel="noopener" href="https://github.com/n1utra/ShiroVuln/tree/main/CVE-2020-17523">ShiroVuln&#x2F;CVE-2020-17523 at main · n1utra&#x2F;ShiroVuln</a></p>
 <p><strong>漏洞描述：</strong>是<code>CVE-2020-17510</code>修复之后的bypass，使用空格<code>%20</code>绕过。</p>
 <h2 id="漏洞复现-6"><a href="#漏洞复现-6" class="headerlink" title="漏洞复现"></a>漏洞复现</h2><p><img src="/static/pic/image-20250921214047177.png" class="lazyload" data-srcset="/static/pic/image-20250921214047177.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250921214047177"></p>
 <h2 id="漏洞描述"><a href="#漏洞描述" class="headerlink" title="漏洞描述"></a>漏洞描述</h2><p>原理和上面一样，这就不再多说了</p>
 <h1 id="CVE-2021-41303"><a href="#CVE-2021-41303" class="headerlink" title="CVE-2021-41303"></a>CVE-2021-41303</h1><h2 id="漏洞信息-7"><a href="#漏洞信息-7" class="headerlink" title="漏洞信息"></a>漏洞信息</h2><p><strong>影响版本：</strong><code>Shiro = 1.7.1</code></p>
-<p><strong>漏洞环境：</strong></p>
+<p><strong>漏洞环境：</strong><a target="_blank" rel="noopener" href="https://github.com/n1utra/ShiroVuln/tree/main/CVE-2021-41303">ShiroVuln&#x2F;CVE-2021-41303 at main · n1utra&#x2F;ShiroVuln</a></p>
 <p><strong>参考链接：</strong>[从源码diff分析Apache-Shiro 1.7.1版本的auth bypass（CVE-2021-41303）） | 大彩笔threedr3am](<a target="_blank" rel="noopener" href="https://threedr3am.github.io/2021/09/22/%E4%BB%8E%E6%BA%90%E7%A0%81diff%E5%88%86%E6%9E%90Apache-Shiro">https://threedr3am.github.io/2021/09/22/从源码diff分析Apache-Shiro</a> 1.7.1版本的auth bypass（CVE-2021-41303）&#x2F;)</p>
 <p><strong>漏洞描述：</strong>这个需要一定的条件，利用起来比较困难，需要<code>ShiroConfig</code>的配置按照以下顺序</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">map.put(<span class="string">&quot;/admin/*/index&quot;</span>, <span class="string">&quot;authc&quot;</span>);</span><br><span class="line">map.put(<span class="string">&quot;/admin/demo/index&quot;</span>, <span class="string">&quot;anon&quot;</span>);</span><br></pre></td></tr></table></figure>
@@ -2781,7 +2781,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p>然后通过<code>getMatchingPatterns</code>方法进行了匹配，而这个方法通过<code>pattern.matches</code>去匹配遍历出来的已注册的路径。这里面又涉及到多种模式匹配，不再过多描述。</p>
 <p><img src="/static/pic/image-20250923002821557.png" class="lazyload" data-srcset="/static/pic/image-20250923002821557.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250923002821557"></p>
 <h1 id="CVE-2022-40664"><a href="#CVE-2022-40664" class="headerlink" title="CVE-2022-40664"></a>CVE-2022-40664</h1><h2 id="漏洞信息-9"><a href="#漏洞信息-9" class="headerlink" title="漏洞信息"></a>漏洞信息</h2><p><strong>影响版本：</strong><code>Shiro &lt; 1.10.0</code></p>
-<p><strong>漏洞环境：</strong></p>
+<p><strong>漏洞环境：</strong><a target="_blank" rel="noopener" href="https://github.com/n1utra/ShiroVuln/tree/main/CVE-2022-40664">ShiroVuln&#x2F;CVE-2022-40664 at main · n1utra&#x2F;ShiroVuln</a></p>
 <p><strong>漏洞描述：</strong>当应用通过 RequestDispatcher 做 forward&#x2F;include 时，Shiro 的 RegexRequestMatcher 不会重新执行完整的鉴权检查，导致攻击者只需发送一个构造的合法 HTTP 请求即可越过过滤器链，直接访问受保护资源。其实也挺鸡肋的，需要代码本身存在一个接口，访问的时候会跳转到受保护的资源。</p>
 <h2 id="漏洞复现-9"><a href="#漏洞复现-9" class="headerlink" title="漏洞复现"></a>漏洞复现</h2><p>直接访问<code>/admin</code>会跳转到<code>/login</code></p>
 <p><img src="/static/pic/image-20251010002629093.png" class="lazyload" data-srcset="/static/pic/image-20251010002629093.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20251010002629093"></p>
@@ -2794,7 +2794,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p>然后通过<code>doFilterInternal</code>放行进行<code>forward:/admin</code>转发，此时会再一次进入到<code>doFilter</code>方法中，此时就会进入<code>if</code>分支，从而直接放行绕过鉴权。</p>
 <p>这里是看的网络上的分析文章，我搭建的代码环境折腾了很久都没有复现出这个步骤，只能暂且搁置。</p>
 <h1 id="CVE-2023-22602"><a href="#CVE-2023-22602" class="headerlink" title="CVE-2023-22602"></a>CVE-2023-22602</h1><h2 id="漏洞信息-10"><a href="#漏洞信息-10" class="headerlink" title="漏洞信息"></a>漏洞信息</h2><p><strong>影响版本：</strong><code>Shiro &lt;=1.11.0</code>与<code>SpringBoot&gt; 2.6</code></p>
-<p><strong>漏洞环境：</strong></p>
+<p><strong>漏洞环境：</strong><a target="_blank" rel="noopener" href="https://github.com/n1utra/ShiroVuln/tree/main/CVE-2023-22602">ShiroVuln&#x2F;CVE-2023-22602 at main · n1utra&#x2F;ShiroVuln</a></p>
 <p><strong>漏洞描述：</strong>Shiro在1.11.0版本之前只兼容Spring的<code>ant-style</code>路径匹配模式，但是2.6版本后的<code>SpringBoot</code>的路径匹配模式从<code>AntPathMatcher</code>更改为了<code>PathPatternParser</code>，当<code>Shiro 1.11.0</code>及之前的版本与<code>Spring 2.6</code>及之后的版本使用不同的路径匹配模式时，可以绕过<code>Shiro</code>的身份认证。</p>
 <h2 id="漏洞复现-10"><a href="#漏洞复现-10" class="headerlink" title="漏洞复现"></a>漏洞复现</h2><p>直接访问接口会进行302跳转</p>
 <p><img src="/static/pic/image-20251015221415935.png" class="lazyload" data-srcset="/static/pic/image-20251015221415935.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20251015221415935"></p>
@@ -2831,7 +2831,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2025-10-16T21:15:39+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2025-10-16T23:33:21+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
     <p>更新于：Oct 16, 2025</p>
@@ -3314,7 +3314,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"https://schema.org.cn","@type":"Organization","name":"n1utra's blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"https://schema.org.cn","@type":"Person","name":"n1utra","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"网络安全"},{"@context":"https://schema.org.cn","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"n1utra's blog"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2025/09/14/Shiro历史漏洞分析-3-：权限绕过/","name":"Shiro历史漏洞分析(3)：权限绕过"}}]},{"@context":"https://schema.org.cn","@type":"WebSite","name":"n1utra's blog","url":"http://example.com/","keywords":null,"description":"网络安全","author":{"@type":"Person","name":"n1utra","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"网络安全"},"publisher":{"@type":"Organization","name":"n1utra's blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"https://schema.org.cn","@type":"BlogPosting","headline":"Shiro历史漏洞分析(3)：权限绕过","description":"网络安全","inLanguage":"zh","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2025/09/14/Shiro%E5%8E%86%E5%8F%B2%E6%BC%8F%E6%B4%9E%E5%88%86%E6%9E%90-3-%EF%BC%9A%E6%9D%83%E9%99%90%E7%BB%95%E8%BF%87/"},"author":{"@type":"Person","name":"n1utra","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"n1utra's blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2025/09/14/Shiro%E5%8E%86%E5%8F%B2%E6%BC%8F%E6%B4%9E%E5%88%86%E6%9E%90-3-%EF%BC%9A%E6%9D%83%E9%99%90%E7%BB%95%E8%BF%87/","wordCount":0,"datePublished":"2025-09-14T13:57:10.000Z","dateModified":"2025-10-16T13:15:39.599Z","keywords":"JAVA安全,Shiro","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"https://schema.org.cn","@type":"Organization","name":"n1utra's blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"https://schema.org.cn","@type":"Person","name":"n1utra","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"网络安全"},{"@context":"https://schema.org.cn","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"n1utra's blog"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2025/09/14/Shiro历史漏洞分析-3-：权限绕过/","name":"Shiro历史漏洞分析(3)：权限绕过"}}]},{"@context":"https://schema.org.cn","@type":"WebSite","name":"n1utra's blog","url":"http://example.com/","keywords":null,"description":"网络安全","author":{"@type":"Person","name":"n1utra","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"网络安全"},"publisher":{"@type":"Organization","name":"n1utra's blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"https://schema.org.cn","@type":"BlogPosting","headline":"Shiro历史漏洞分析(3)：权限绕过","description":"网络安全","inLanguage":"zh","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2025/09/14/Shiro%E5%8E%86%E5%8F%B2%E6%BC%8F%E6%B4%9E%E5%88%86%E6%9E%90-3-%EF%BC%9A%E6%9D%83%E9%99%90%E7%BB%95%E8%BF%87/"},"author":{"@type":"Person","name":"n1utra","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"n1utra's blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2025/09/14/Shiro%E5%8E%86%E5%8F%B2%E6%BC%8F%E6%B4%9E%E5%88%86%E6%9E%90-3-%EF%BC%9A%E6%9D%83%E9%99%90%E7%BB%95%E8%BF%87/","wordCount":0,"datePublished":"2025-09-14T13:57:10.000Z","dateModified":"2025-10-16T15:33:21.947Z","keywords":"JAVA安全,Shiro","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
