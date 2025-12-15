@@ -1697,9 +1697,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 		'}'+
 	'</style>'+
     '<div class="kill-ie">'+
-        `<span class="kill-t"><b>Sorry, your browser cannot access this site</b></span><br/>`+
-        `<span class="kill-c">Microsoft has terminated support for Internet Explorer (IE) 10 and earlier versions in 2016. <br/>There are great security risks to continue using it. Please use contemporary mainstream browsers to access.</span><br/>`+
-        `<a target="_blank" rel="noopener" href="https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/"><strong>Learn more ></strong></a>`+
+        `<span class="kill-t"><b>抱歉，您的浏览器无法访问本站</b></span><br/>`+
+        `<span class="kill-c">微软已经于2016年终止了对 Internet Explorer (IE) 10 及更早版本的支持，<br/>继续使用存在极大的安全隐患，请使用当代主流的浏览器进行访问。</span><br/>`+
+        `<a target="_blank" rel="noopener" href="https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/"><strong>了解详情 ></strong></a>`+
     '</div>');
 </script>
 
@@ -1727,9 +1727,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 		}
 	</style>
     <div class="kill-noscript">
-        <span class="kill-t"><b>Sorry, your browser cannot access this site</b></span><br/>
-        <span class="kill-c">This page requires browser support (enable) JavaScript</span><br/>
-        <a target="_blank" rel="noopener" href="https://www.baidu.com/s?wd=启用JavaScript"><strong>Learn more ></strong></a>
+        <span class="kill-t"><b>抱歉，您的浏览器无法访问本站</b></span><br/>
+        <span class="kill-c">本页面需要浏览器支持（启用）JavaScript</span><br/>
+        <a target="_blank" rel="noopener" href="https://www.baidu.com/s?wd=启用JavaScript"><strong>了解详情 ></strong></a>
     </div>
 </noscript>
 
@@ -2111,7 +2111,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1760628853154),
+    lastupdate: new Date(1765818160203),
     cdn: {
       izitoast_css: 'https://unpkg.com/izitoast@1.4.0/dist/css/iziToast.min.css',
       izitoast_js: 'https://unpkg.com/izitoast@1.4.0/dist/js/iziToast.min.js',
@@ -2149,8 +2149,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     languages: {
       
         search: {
-          hits_empty: "We didn't find any results for the search: ${query}.",
-          hits_stats: "${hits} results found in ${time} ms",
+          hits_empty: "找不到您查询的内容：${query}",
+          hits_stats: "找到 ${hits} 条结果，用时 ${time} 毫秒",
         }
       
     }
@@ -2551,9 +2551,196 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
         
+          
+        
+          
+        
+          
+        
       
     
     
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
+  <link itemprop="mainEntityOfPage" href="http://example.com/2025/11/16/Strust2历史漏洞分析-2-漏洞分析-1/">
+  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
+    <meta itemprop="name" content="n1utra's blog">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
+    <meta itemprop="name" content="n1utra's blog">
+    <meta itemprop="description" content="网络安全">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2025/11/16/Strust2%E5%8E%86%E5%8F%B2%E6%BC%8F%E6%B4%9E%E5%88%86%E6%9E%90-2-%E6%BC%8F%E6%B4%9E%E5%88%86%E6%9E%90-1/"  itemprop="url">
+        Strust2历史漏洞分析(2)-漏洞分析(1)
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        S2-001漏洞信息漏洞版本：WebWork 2.1 (with altSyntax enabled), WebWork 2.2.0 - WebWork 2.2.5, Struts 2.0.0 - Struts 2.0.8
+漏洞环境：
+漏洞描述：此漏洞源于 Struts 2 框架中的一个标签处理功能：altSyntax。在开启时，支持对标签中的 OGNL 表达式进行解析并执行[struts2...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2025-11-16T22:22:12+08:00">2025-11-16</time>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2025/11/16/Strust2%E5%8E%86%E5%8F%B2%E6%BC%8F%E6%B4%9E%E5%88%86%E6%9E%90-2-%E6%BC%8F%E6%B4%9E%E5%88%86%E6%9E%90-1/' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
+  <link itemprop="mainEntityOfPage" href="http://example.com/2025/11/02/Struts2历史漏洞分析-1-环境搭建/">
+  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
+    <meta itemprop="name" content="n1utra's blog">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
+    <meta itemprop="name" content="n1utra's blog">
+    <meta itemprop="description" content="网络安全">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2025/11/02/Struts2%E5%8E%86%E5%8F%B2%E6%BC%8F%E6%B4%9E%E5%88%86%E6%9E%90-1-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"  itemprop="url">
+        Struts2历史漏洞分析(1)-环境搭建
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        环境搭建参考：
+Java Struts2 学习与环境搭建 | Drunkbaby’s Blog
+JavaSec&#x2F;7.Struts2专区&#x2F;环境搭建&#x2F;环境搭建.md at main · Y4tacker&#x2F;JavaSec
+S2-001 - 桃木剑的博客 | Taomujian Blog
+这里以S2-001环境为例：
+新建项目，选择MAVEN的生成器
+
+在po...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2025-11-02T23:05:59+08:00">2025-11-02</time>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2025/11/02/Struts2%E5%8E%86%E5%8F%B2%E6%BC%8F%E6%B4%9E%E5%88%86%E6%9E%90-1-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
+  <link itemprop="mainEntityOfPage" href="http://example.com/2025/10/20/Log4J历史漏洞分析/">
+  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
+    <meta itemprop="name" content="n1utra's blog">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
+    <meta itemprop="name" content="n1utra's blog">
+    <meta itemprop="description" content="网络安全">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2025/10/20/Log4J%E5%8E%86%E5%8F%B2%E6%BC%8F%E6%B4%9E%E5%88%86%E6%9E%90/"  itemprop="url">
+        Log4J历史漏洞分析
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        CVE-2021-44228漏洞信息漏洞版本：Log4j &lt;= 2.15.0
+漏洞环境：
+漏洞描述：攻击者可以通过构造恶意的日志信息，利用 Log4j 2 的 JNDI（Java Naming and Directory Interface）功能来执行任意代码。
+漏洞复现我们这里构建的代码是获取用户的UA头进行log输出，那么payload就要放在UA头这里
+
+发送DNSLog
+
+获取...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2025-10-20T22:45:47+08:00">2025-10-20</time>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2025/10/20/Log4J%E5%8E%86%E5%8F%B2%E6%BC%8F%E6%B4%9E%E5%88%86%E6%9E%90/' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
       
         
           <div class='post-wrapper'>
@@ -2600,7 +2787,7 @@ Shiro的本质是一个Filter，通过Servlet Filter获取请求。当配置好S
       
         <div>
           <a class='readmore' href='/2025/09/14/Shiro%E5%8E%86%E5%8F%B2%E6%BC%8F%E6%B4%9E%E5%88%86%E6%9E%90-3-%EF%BC%9A%E6%9D%83%E9%99%90%E7%BB%95%E8%BF%87/' itemprop="url">
-            Read More
+            阅读全文
           </a>
         </div>
       
@@ -2658,7 +2845,7 @@ Shiro的本质是一个Filter，通过Servlet Filter获取请求。当配置好S
       
         <div>
           <a class='readmore' href='/2025/08/10/Shiro%E5%8E%86%E5%8F%B2%E6%BC%8F%E6%B4%9E%E5%88%86%E6%9E%90-2-%EF%BC%9A%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E6%BC%8F%E6%B4%9E/' itemprop="url">
-            Read More
+            阅读全文
           </a>
         </div>
       
@@ -2717,7 +2904,7 @@ Shiro的本质是一个Filter，通过Servlet Filter获取请求。当配置好S
       
         <div>
           <a class='readmore' href='/2025/08/10/Shiro%E5%8E%86%E5%8F%B2%E6%BC%8F%E6%B4%9E%E5%88%86%E6%9E%90-1-%EF%BC%9A%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E4%B8%8EShiro%E4%B8%8A%E6%89%8B/' itemprop="url">
-            Read More
+            阅读全文
           </a>
         </div>
       
@@ -2776,7 +2963,7 @@ Shiro的本质是一个Filter，通过Servlet Filter获取请求。当配置好S
       
         <div>
           <a class='readmore' href='/2025/08/10/FastJson-1-2-80%E5%88%A9%E7%94%A8/' itemprop="url">
-            Read More
+            阅读全文
           </a>
         </div>
       
@@ -2838,7 +3025,7 @@ TypeUtils修复1.2.47的无参&#x2F;单参loadCla...
       
         <div>
           <a class='readmore' href='/2025/08/07/FastJson-1-2-68%E5%8F%8A%E4%B9%8B%E5%89%8D%E5%88%A9%E7%94%A8/' itemprop="url">
-            Read More
+            阅读全文
           </a>
         </div>
       
@@ -2897,7 +3084,7 @@ fastjson反序列化的类不需要实现序列化接口
       
         <div>
           <a class='readmore' href='/2025/08/04/FastJson-1-2-47%E5%8F%8A%E4%B9%8B%E5%89%8D%E5%88%A9%E7%94%A8/' itemprop="url">
-            Read More
+            阅读全文
           </a>
         </div>
       
@@ -2953,194 +3140,7 @@ fastjson反序列化的类不需要实现序列化接口
       
         <div>
           <a class='readmore' href='/2025/08/03/FastJson%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E6%B5%81%E7%A8%8B%E5%88%86%E6%9E%90/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2025/07/21/CC链总结/">
-  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
-    <meta itemprop="name" content="n1utra's blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
-    <meta itemprop="name" content="n1utra's blog">
-    <meta itemprop="description" content="网络安全">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2025/07/21/CC%E9%93%BE%E6%80%BB%E7%BB%93/"  itemprop="url">
-        CC链总结
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        CC链1-7利用链概述由于我自己写的部分CC链中进行了一定修改，所以这里采用yso中的链
-
-这张图大概描述了CC链1-7的调用过程仔细观察能够发现，都是反序列化入口-&gt;调用点-&gt;执行点这种规律，部分链甚至是基于其他链进行拆分组合
-CC链的其他问题CC链1是如何修复的CC链1-TransformedMap在jdk8u71版本中就被修复了，查看8u71的AnnotationInvoc...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2025-07-21T23:31:18+08:00">2025-07-21</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/JAVA%E5%AE%89%E5%85%A8/">JAVA安全</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/JAVA%E5%AE%89%E5%85%A8/" itemprop="url"><span itemprop="name">JAVA安全</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2025/07/21/CC%E9%93%BE%E6%80%BB%E7%BB%93/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2025/07/20/CC链7/">
-  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
-    <meta itemprop="name" content="n1utra's blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
-    <meta itemprop="name" content="n1utra's blog">
-    <meta itemprop="description" content="网络安全">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2025/07/20/CC%E9%93%BE7/"  itemprop="url">
-        浅述CC链(8)：CC链7
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        CC链7CC链7同样是在LazyMap#get的基础上进行了修改，这里找到的调用点找到了AbstractMap#equals这里，然后会被AbstractMapDecorator#equals调用，AbstractMapDecorator#equals又被Hashtable#reconstitutionPut调用。这里涉及到装饰器的设计模式，中间的调用不是之前那种直接查找用法。
-简单来说：
-...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2025-07-20T19:37:04+08:00">2025-07-20</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/JAVA%E5%AE%89%E5%85%A8/">JAVA安全</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/JAVA%E5%AE%89%E5%85%A8/" itemprop="url"><span itemprop="name">JAVA安全</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2025/07/20/CC%E9%93%BE7/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2025/07/20/CC链5/">
-  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
-    <meta itemprop="name" content="n1utra's blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
-    <meta itemprop="name" content="n1utra's blog">
-    <meta itemprop="description" content="网络安全">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2025/07/20/CC%E9%93%BE5/"  itemprop="url">
-        浅述CC链(7)：CC链5
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        CC链5CC链5就是在CC链1-LazyMap的基础上进行修改。CC链1-LazyMap中LazyMap#get利用的调用点是AnnotationInvocationHandler#invoke。在CC链5中则是换成了TiedMapEntry#toString。也就是说CC链5还是基于commons-collections:3.2.1版本
-所以执行点还是采用CC链1-LazyMap，把后面的...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2025-07-20T16:04:03+08:00">2025-07-20</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2025/07/20/CC%E9%93%BE5/' itemprop="url">
-            Read More
+            阅读全文
           </a>
         </div>
       
@@ -3165,7 +3165,7 @@ CC链的其他问题CC链1是如何修复的CC链1-TransformedMap在jdk8u71版�
         
           <a class="next" rel="next" href="/page/2/">
             <section class="post next white-box shadow floatable blur">
-              &nbsp;Next&nbsp;<i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+              &nbsp;下一页&nbsp;<i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
             </section>
           </a>
         
@@ -3268,7 +3268,7 @@ CC链的其他问题CC链1是如何修复的CC链1-TransformedMap在jdk8u71版�
 
 
     <div class='content'>
-      <a href="/tags/CC%E9%93%BE/" style="font-size: 20.67px; color: #6c6c6c">CC链</a> <a href="/tags/FastJson%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96/" style="font-size: 17.33px; color: #828282">FastJson反序列化</a> <a href="/tags/JAVA%E5%AE%89%E5%85%A8/" style="font-size: 24px; color: #555">JAVA安全</a> <a href="/tags/Shiro/" style="font-size: 14px; color: #999">Shiro</a>
+      <a href="/tags/CC%E9%93%BE/" style="font-size: 22px; color: #636363">CC链</a> <a href="/tags/FastJson%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96/" style="font-size: 20px; color: #707070">FastJson反序列化</a> <a href="/tags/JAVA%E5%AE%89%E5%85%A8/" style="font-size: 24px; color: #555">JAVA安全</a> <a href="/tags/Log4J/" style="font-size: 14px; color: #999">Log4J</a> <a href="/tags/Shiro/" style="font-size: 18px; color: #7e7e7e">Shiro</a> <a href="/tags/Strust2/" style="font-size: 16px; color: #8b8b8b">Strust2</a>
     </div>
   </section>
 
