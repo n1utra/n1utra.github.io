@@ -46,7 +46,7 @@
 <meta property="og:locale">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2025-09-14T13:57:10.000Z">
-<meta property="article:modified_time" content="2025-10-16T15:33:21.947Z">
+<meta property="article:modified_time" content="2026-04-23T15:53:24.968Z">
 <meta property="article:author" content="n1utra">
 <meta property="article:tag" content="JAVA安全">
 <meta property="article:tag" content="Shiro">
@@ -1701,9 +1701,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 		'}'+
 	'</style>'+
     '<div class="kill-ie">'+
-        `<span class="kill-t"><b>抱歉，您的浏览器无法访问本站</b></span><br/>`+
-        `<span class="kill-c">微软已经于2016年终止了对 Internet Explorer (IE) 10 及更早版本的支持，<br/>继续使用存在极大的安全隐患，请使用当代主流的浏览器进行访问。</span><br/>`+
-        `<a target="_blank" rel="noopener" href="https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/"><strong>了解详情 ></strong></a>`+
+        `<span class="kill-t"><b>Sorry, your browser cannot access this site</b></span><br/>`+
+        `<span class="kill-c">Microsoft has terminated support for Internet Explorer (IE) 10 and earlier versions in 2016. <br/>There are great security risks to continue using it. Please use contemporary mainstream browsers to access.</span><br/>`+
+        `<a target="_blank" rel="noopener" href="https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/"><strong>Learn more ></strong></a>`+
     '</div>');
 </script>
 
@@ -1731,9 +1731,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 		}
 	</style>
     <div class="kill-noscript">
-        <span class="kill-t"><b>抱歉，您的浏览器无法访问本站</b></span><br/>
-        <span class="kill-c">本页面需要浏览器支持（启用）JavaScript</span><br/>
-        <a target="_blank" rel="noopener" href="https://www.baidu.com/s?wd=启用JavaScript"><strong>了解详情 ></strong></a>
+        <span class="kill-t"><b>Sorry, your browser cannot access this site</b></span><br/>
+        <span class="kill-c">This page requires browser support (enable) JavaScript</span><br/>
+        <a target="_blank" rel="noopener" href="https://www.baidu.com/s?wd=启用JavaScript"><strong>Learn more ></strong></a>
     </div>
 </noscript>
 
@@ -2115,7 +2115,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1765818160203),
+    lastupdate: new Date(1776961364761),
     cdn: {
       izitoast_css: 'https://unpkg.com/izitoast@1.4.0/dist/css/iziToast.min.css',
       izitoast_js: 'https://unpkg.com/izitoast@1.4.0/dist/js/iziToast.min.js',
@@ -2153,8 +2153,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     languages: {
       
         search: {
-          hits_empty: "找不到您查询的内容：${query}",
-          hits_stats: "找到 ${hits} 条结果，用时 ${time} 毫秒",
+          hits_empty: "We didn't find any results for the search: ${query}.",
+          hits_stats: "${hits} results found in ${time} ms",
         }
       
     }
@@ -2573,13 +2573,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <h1 id="Shiro的路径匹配"><a href="#Shiro的路径匹配" class="headerlink" title="Shiro的路径匹配"></a>Shiro的路径匹配</h1><p>在前面的代码中，实现了一个简单的<code>shiro</code>的拦截。这里来说一下<code>shiro</code>的路径匹配。</p>
 <p><code>shiro</code>与<code>fastjson</code>不同，<code>fastjson</code>是通过方法去主动调用，而<code>shiro</code>更像是一个被动的过程，配置好之后接收请求即可。</p>
 <p><code>Shiro</code>的本质是一个<code>Filter</code>，通过<code>Servlet Filter</code>获取请求。当配置好<code>ShiroFilterFactoryBean</code>之后，最终会生成一个<code>AbstractShiroFilter</code>，这个类继承自<code>OncePerRequestFilter</code>，而后者实现了<code>Filter</code></p>
-<p><img src="/static/pic/image-20250828011320504.png" class="lazyload" data-srcset="/static/pic/image-20250828011320504.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250828011320504"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/22/K1dh/20260423001005768.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/22/K1dh/20260423001005768.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250828011320504"></p>
 <p>当用户发送请求之后，<code>tomcat</code>接收到请求，根据配置查找匹配的<code>Filter</code>和<code>servlet</code>。然后会通过一个代理<code>Filter</code>：<code>DelegatingFilterProxy</code>将<code>Servlet</code>容器中的<code>Filter</code>生命周期委托给<code>Spring</code>管理的<code>bean</code>，这里就是<code>Shiro</code>中<code>ShiroFilterFactoryBean</code>创建的<code>Filter</code>。</p>
 <p>在<code>DelegatingFilterProxy</code>会调用到<code>delegate.doFilter()</code>，这里的<code>delegate</code>就是<code>ShiroFilterFactoryBean</code>创建的<code>filter</code>，这个<code>filter</code>真实类型为：<code>AbstractShiroFilter</code>。</p>
 <p>当<code>AbstractShiroFilter#doFilterInternal</code>获取到请求之后，会获得原始的请求、响应、以及<code>shiro</code>的过滤链</p>
-<p><img src="/static/pic/image-20250828012725150.png" class="lazyload" data-srcset="/static/pic/image-20250828012725150.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250828012725150"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/22/mW8f/20260423001013156.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/22/mW8f/20260423001013156.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250828012725150"></p>
 <p>然后会执行<code>executeChain</code>方法，<code>executeChain</code>会执行到<code>getExecutionChain</code>方法，这个方法执行到<code>resolver.getChain(request, response, origChain);</code>，进入这个方法，这是一个接口，找到这个方法的实现，在这个实现中对请求的路径与<code>shiro</code>配置中的路径进行了匹配</p>
-<p><img src="/static/pic/image-20250828013429195.png" class="lazyload" data-srcset="/static/pic/image-20250828013429195.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250828013429195"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/22/8Oad/20260423001023548.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/22/8Oad/20260423001023548.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250828013429195"></p>
 <p>匹配结束后会根据设置将请求交给中间件处理，<code>shiro</code>不会对<code>URI</code>进行处理，本质上还是中间件在对路径进行处理然后转发等操作。</p>
 <p><code>shiro</code>的权限绕过简单来说是通过改变<code>URI</code>达到能够匹配到<code>/**</code>的权限配置，这种一般不进行鉴权，从而绕过鉴权</p>
 <h1 id="CVE-2010-3863"><a href="#CVE-2010-3863" class="headerlink" title="CVE-2010-3863"></a>CVE-2010-3863</h1><h2 id="漏洞信息"><a href="#漏洞信息" class="headerlink" title="漏洞信息"></a>漏洞信息</h2><p><strong>漏洞版本：</strong><code>shiro &lt; 1.1.0</code> 和<code>JSecurity 0.9.x</code></p>
@@ -2587,21 +2587,21 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p><strong>漏洞描述：</strong>这里是<code>shiro</code>在路径匹配时没有对请求的<code>uri</code>进行标准化导致绕过。</p>
 <h2 id="漏洞复现"><a href="#漏洞复现" class="headerlink" title="漏洞复现"></a>漏洞复现</h2><p>在IDEA中直接运行，访问8088端口即可访问到页面</p>
 <p>直接访问管理员页面会返回重定向</p>
-<p><img src="/static/pic/image-20250914222820857.png" class="lazyload" data-srcset="/static/pic/image-20250914222820857.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250914222820857"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/22/u9fX/20260423001040280.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/22/u9fX/20260423001040280.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250914222820857"></p>
 <p>通过<code>/./</code>进行绕过</p>
-<p><img src="/static/pic/image-20250914222842358.png" class="lazyload" data-srcset="/static/pic/image-20250914222842358.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250914222842358"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/22/jiB9/20260423001047837.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/22/jiB9/20260423001047837.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250914222842358"></p>
 <h2 id="代码分析"><a href="#代码分析" class="headerlink" title="代码分析"></a>代码分析</h2><p>先看看<code>ShiroConfig.java</code>中对权限的分配，可以看到，这里除了<code>admin.html</code>和<code>user.html</code>需要鉴权，其他的都不需要鉴权。</p>
-<p><img src="/static/pic/image-20250914225423208.png" class="lazyload" data-srcset="/static/pic/image-20250914225423208.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250914225423208"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/22/3esB/20260423001056923.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/22/3esB/20260423001056923.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250914225423208"></p>
 <p>那么现在来分析下漏洞是如何产生的</p>
 <p>在前面提到的<code>getChain</code>打上断点，这里是进行路径匹配的地方</p>
-<p><img src="/static/pic/image-20250914225240230.png" class="lazyload" data-srcset="/static/pic/image-20250914225240230.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250914225240230"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/22/c9Jm/20260423001103049.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/22/c9Jm/20260423001103049.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250914225240230"></p>
 <p>这里通过<code>getPathWithinApplication</code>获取到请求的<code>URI</code>，即<code>/./admin.html</code>，深入查看下这个方法是如何获取的</p>
 <p><code>getPathWithinApplication</code>其实是调用了<code>WebUtils.getPathWithinApplication</code>方法，在这个方法中对请求进行处理，然后获取到<code>URI</code>。</p>
 <p>在方法中首先获取当前Web应用的上下文路径，然后获取到请求的<code>URI</code>，然后判断是否是以上下文路径开头，如果是就截取后续路径，否则直接返回原始<code>URI</code>。这里就是在获取真实路径，比如一个系统每个接口都是<code>/app</code>开头，那么这里的<code>/app</code>就是上下文路径，<code>/app</code>后面的才是真实路径。</p>
-<p><img src="/static/pic/image-20250914225648125.png" class="lazyload" data-srcset="/static/pic/image-20250914225648125.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250914225648125"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/22/Skh8/20260423001110281.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/22/Skh8/20260423001110281.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250914225648125"></p>
 <p>可以看到这里直接获取到请求路径，并没有进行过滤等处理。</p>
 <p>返回<code>getChain</code>方法中，在<code>for</code>循环中，会遍历<code>ShiroConfig.java</code>中定义的路径，当前路径为<code>/./admin.html</code>，是不能匹配到<code>/admin.html</code>和<code>/user.html</code>的，所以就不会进入对应的权限校验，最后就进入了<code>/**</code>的逻辑，这里就是匹配所有，并且配置中设置为匿名访问，即不需要鉴权，所以后续就直接进行了放行处理。而<code>/./admin.html</code>和<code>/amdin.html</code>其实是同一个文件，所以能够执行到这个文件。</p>
-<p><img src="/static/pic/image-20250914231327609.png" class="lazyload" data-srcset="/static/pic/image-20250914231327609.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250914231327609"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/22/mfA9/20260423001119280.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/22/mfA9/20260423001119280.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250914231327609"></p>
 <h1 id="CVE-2014-0074"><a href="#CVE-2014-0074" class="headerlink" title="CVE-2014-0074"></a>CVE-2014-0074</h1><p><strong>漏洞版本：</strong><code>Shiro &lt; 1.2.3</code></p>
 <p>这个环境搭建有点麻烦，建议直接看su18师傅的复现文章<a target="_blank" rel="noopener" href="https://su18.org/post/shiro-1/#%E6%BC%8F%E6%B4%9E%E4%BF%A1%E6%81%AF-2">从 CVE 学 Shiro 安全-1 | 素十八</a></p>
 <p>这里其实是<code>shiro</code>和<code>ldap</code>的配置冲突问题造成的，在<code>LDAP</code>服务器允许匿名绑定的情况下提交空账户或空密码就能够绕过身份验证</p>
@@ -2610,18 +2610,18 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p><strong>漏洞简述：</strong>本漏洞类似 CVE-2010-3863，依旧是路径标准化导致的问题，不过之前是在 Request URI 上，本漏洞是在 Context Path 上。</p>
 <p>其实就是构造一个虚拟路径结合路径穿越，绕过<code>shiro</code>匹配时对于路径上下文的处理，然后就绕过了<code>shiro</code>的配置。</p>
 <h2 id="漏洞复现-1"><a href="#漏洞复现-1" class="headerlink" title="漏洞复现"></a>漏洞复现</h2><p>直接访问路径是302</p>
-<p><img src="/static/pic/image-20250915222941878.png" class="lazyload" data-srcset="/static/pic/image-20250915222941878.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250915222941878"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/23/2aSm/20260423234252205.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/23/2aSm/20260423234252205.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250915222941878"></p>
 <p>使用<code>payload</code>访问则能成功访问</p>
-<p><img src="/static/pic/image-20250915223016740.png" class="lazyload" data-srcset="/static/pic/image-20250915223016740.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250915223016740"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/23/Oxh8/20260423234310643.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/23/Oxh8/20260423234310643.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250915223016740"></p>
 <h2 id="代码分析-1"><a href="#代码分析-1" class="headerlink" title="代码分析"></a>代码分析</h2><p>这里要求系统必须存在一个上下文路径，我这里设置的是<code>/app</code></p>
 <p>在前面我们知道，在<code>PathMatchingFilterChainResolver#getChain</code>方法中，通过<code>getPathWithinApplication(request)</code>方法获取到请求的<code>URI</code>，这里又会先获得上下文路径然后去除这个路径，从而获取获得真实的路径。问题就出在这里的上下文，<code>payload</code>中的路径通过<code>getContextPath</code>返回的是<code>/test/../app</code>，这就导致在去除上下文路径是无法满足<code>if</code>为<code>true</code>即<code>StringUtils.startsWithIgnoreCase</code>，那么就会直接返回<code>requestUri</code></p>
-<p><img src="/static/pic/image-20250915224624233.png" class="lazyload" data-srcset="/static/pic/image-20250915224624233.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250915224624233"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/23/4uVl/20260423234441361.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/23/4uVl/20260423234441361.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250915224624233"></p>
 <p>而这里的<code>requestUri</code>为什么又没有<code>/test/..</code>这个路径了呢？看看<code>getRequestUri</code>的代码部分，这个方法最终会调用一个<code>normalize</code>方法，在这个方法中，通过处理路径中的<code>//</code>、<code>/./</code>、<code>/../</code>来实现目录回退，最终获得请求的<code>URI</code></p>
-<p><img src="/static/pic/image-20250915225202027.png" class="lazyload" data-srcset="/static/pic/image-20250915225202027.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250915225202027"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/23/bgI0/20260423234444726.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/23/bgI0/20260423234444726.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250915225202027"></p>
 <p>此时<code>contextPath</code>与<code>requestUri</code>无法匹配，则直接返回<code>URI</code>，然后就进入了<code>shiro</code>的路径循环中，但是<code>shiro.ini</code>中配置的路径是真实路径，即<code>/admin/*</code>，而当前的请求路径是<code>/app/admin/profile</code>，自然无法满足判断，所以继续循环，直到匹配到<code>/**</code>满足判断，然后返回相应的内容，完成权限绕过</p>
-<p><img src="/static/pic/image-20250915225559799.png" class="lazyload" data-srcset="/static/pic/image-20250915225559799.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250915225559799"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/23/9rpC/20260423234446608.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/23/9rpC/20260423234446608.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250915225559799"></p>
 <p>这里本质上是在绕过<code>shiro</code>对于请求路径的上下文处理，从而使<code>URI</code>能够绕过需要鉴权的部分，匹配到<code>/**</code>，也就是说不局限于<code>payload</code>中的绕过，还可以使用<code>/./app/admin/profle</code>、<code>/;/app/admin/profile</code>，需要注意的是<code>/;/</code>的原理与<code>/./</code>不同，<code>/;/</code>这里是在<code>getRequestUri</code>方法中调用了<code>decodeAndCleanUriString</code>方法，在这个方法中对<code>URI</code>进行了处理，获取<code>;</code>前面的路径</p>
-<p><img src="/static/pic/image-20250915234913957.png" class="lazyload" data-srcset="/static/pic/image-20250915234913957.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250915234913957"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/23/mS5f/20260423234448307.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/23/mS5f/20260423234448307.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250915234913957"></p>
 <p><strong>补充：为什么getContextPath获取到的是&#x2F;test&#x2F;..&#x2F;app</strong></p>
 <p>参考：<a target="_blank" rel="noopener" href="https://www.javasec.org/java-vuls/shiro/Shiro-2.html#contextpath">https://www.javasec.org/java-vuls/shiro/Shiro-2.html#contextpath</a></p>
 <h1 id="CVE-2020-1957"><a href="#CVE-2020-1957" class="headerlink" title="CVE-2020-1957"></a>CVE-2020-1957</h1><h2 id="漏洞信息-2"><a href="#漏洞信息-2" class="headerlink" title="漏洞信息"></a>漏洞信息</h2><p><strong>影响版本：</strong>shiro &lt; 1.5.2</p>
@@ -2629,39 +2629,39 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p><strong>漏洞描述：</strong>利用 Shiro 和 SpringBoot 对 URL 的处理的差异化，可以绕过 Shiro 对 SpringBoot 中的 Servlet 的权限控制，越权并实现未授权访问。</p>
 <h2 id="漏洞复现-2"><a href="#漏洞复现-2" class="headerlink" title="漏洞复现"></a>漏洞复现</h2><p>该漏洞存在多个<code>payload</code></p>
 <p>直接访问时会返回重定向</p>
-<p><img src="/static/pic/image-20250916234613926.png" class="lazyload" data-srcset="/static/pic/image-20250916234613926.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250916234613926"><strong>payload：1</strong></p>
+<p><img src="https://files.seeusercontent.com/2026/04/23/1fdN/20260423234458254.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/23/1fdN/20260423234458254.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250916234613926"><strong>payload：1</strong></p>
 <p>在路径后面添加<code>/</code>进行绕过</p>
-<p><img src="/static/pic/image-20250916234952169.png" class="lazyload" data-srcset="/static/pic/image-20250916234952169.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250916234952169"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/23/E9jw/20260423234723074.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/23/E9jw/20260423234723074.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250916234952169"></p>
 <p><strong>payload：2</strong></p>
 <p>在前面添加<code>/xx/..;</code>绕过</p>
-<p><img src="/static/pic/image-20250916235047145.png" class="lazyload" data-srcset="/static/pic/image-20250916235047145.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250916235047145"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/23/vVa4/20260423234723075.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/23/vVa4/20260423234723075.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250916235047145"></p>
 <p><strong>payload：3</strong></p>
 <p>在前面添加<code>/;/</code>进行绕过</p>
-<p><img src="/static/pic/image-20250916235124963.png" class="lazyload" data-srcset="/static/pic/image-20250916235124963.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250916235124963"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/23/fZ0c/20260423234723076.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/23/fZ0c/20260423234723076.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250916235124963"></p>
 <p>除此之外还存在其他的各种变种<code>payload</code>，这里不做过多说明</p>
 <h2 id="代码分析-2"><a href="#代码分析-2" class="headerlink" title="代码分析"></a>代码分析</h2><p>先来说说<code>payload:1</code></p>
 <h3 id="绕过"><a href="#绕过" class="headerlink" title="/绕过"></a><code>/</code>绕过</h3><p>这里是因为<code>Shiro</code>和<code>SpringBoot</code>对于路径处理的差异导致的，<code>Shiro</code>中<code>/admin/1/</code>和<code>/admin/1</code>是不同的。而在<code>Spring</code>中二者都会被处理为<code>/admin/1</code></p>
 <p>如果<code>shiro</code>中对于<code>/admin</code>下面的接口配置的规则为<code>/admin/*</code>，表示只会匹配<code>/admin</code>后面一级的路径。此时我们访问<code>/admin/1/</code>，在匹配时，是不会匹配到鉴权的，那么就会继续循环，最后默认放行。</p>
-<p><img src="/static/pic/image-20250918000321302.png" class="lazyload" data-srcset="/static/pic/image-20250918000321302.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250918000321302"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/23/2kaV/20260423234723077.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/23/2kaV/20260423234723077.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250918000321302"></p>
 <p>放行之后进入到<code>Spring</code>进行处理，而<code>Spring</code>对路径进行了规范化处理</p>
 <p>在<code>Spring</code>中具体是在<code>PatternsRequestCondition#getMatchingPattern</code>中进行匹配，这里存在4个<code>if</code>，代表着4中匹配模式，首先是完全匹配，请求路径和模式也就是路由完全相等。第二个是后缀名匹配，会尝试匹配带有文件扩展名的模式。第三种是使用<code>AntPathMatcher</code>进行匹配。第四种则是在模式后面添加<code>/</code>再与请求<code>URI</code>进行<code>AntPathMatcher</code>匹配，就是在这里进行了处理</p>
-<p><img src="/static/pic/image-20250918002224587.png" class="lazyload" data-srcset="/static/pic/image-20250918002224587.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250918002224587"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/23/rD8w/20260423234723078.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/23/rD8w/20260423234723078.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250918002224587"></p>
 <p>最后通过第四种方式完成了匹配，进而返回<code>pattern</code>，然后一直向后运行返回数据</p>
-<p><img src="/static/pic/image-20250918002929508.png" class="lazyload" data-srcset="/static/pic/image-20250918002929508.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250918002929508"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/23/3tnN/20260423234723079.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/23/3tnN/20260423234723079.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250918002929508"></p>
 <h3 id="xx-和-绕过"><a href="#xx-和-绕过" class="headerlink" title="/xx/..;和/;/绕过"></a><code>/xx/..;</code>和<code>/;/</code>绕过</h3><p>这两种绕过本质上都是一种，是<code>Shiro</code>自身处理时只获取了<code>;</code>之前的路径，然后绕过了<code>Shiro</code>的验证，再与<code>Spring</code>对路径的处理机制结合造成了绕过。</p>
 <p>还是在<code>getRequestUri</code>方法获取请求<code>URI</code>时，调用了<code>decodeAndCleanUriString</code>方法进行处理</p>
-<p><img src="/static/pic/image-20250918003317267.png" class="lazyload" data-srcset="/static/pic/image-20250918003317267.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250918003317267"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/23/1Zyr/20260423234723080.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/23/1Zyr/20260423234723080.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250918003317267"></p>
 <p>后续匹配时就无法与权限校验设置的路径进行匹配</p>
-<p><img src="/static/pic/image-20250918003444208.png" class="lazyload" data-srcset="/static/pic/image-20250918003444208.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250918003444208"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/23/Ax6f/20260423234723081.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/23/Ax6f/20260423234723081.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250918003444208"></p>
 <p>但是这里放行的是<code>/xx/..;/admin/1</code>，<code>Spring</code>是如何处理的呢？</p>
 <p>在<code>Spring</code>执行过程中会运行到<code>UrlPathHelper#getPathWithinServletMapping</code>这个方法，根据方法名就能知道这里是获取<code>Servlet</code>的路径，其中的参数是传入的请求</p>
-<p><img src="/static/pic/image-20250918004117907.png" class="lazyload" data-srcset="/static/pic/image-20250918004117907.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250918004117907"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/23/qZ5v/20260423234723082.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/23/qZ5v/20260423234723082.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250918004117907"></p>
 <p>这里方法<code>getPathWithinApplication(request);</code>方法获取请求路径时时除了路径中的<code>;</code></p>
-<p><img src="/static/pic/image-20250918010206847.png" class="lazyload" data-srcset="/static/pic/image-20250918010206847.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250918010206847"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/23/mzI0/20260423234723083.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/23/mzI0/20260423234723083.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250918010206847"></p>
 <p>这里面调用了<code>getRequestUri-&gt;decodeAndCleanUriString-&gt;removeSemicolonContent-&gt;removeSemicolonContentInternal</code>，并且在这个过程中还进行了URL解码以及清除路径中连续的<code>/</code></p>
-<p><img src="/static/pic/image-20250918010503039.png" class="lazyload" data-srcset="/static/pic/image-20250918010503039.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250918010503039"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/23/jSt8/20260423234723084.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/23/jSt8/20260423234723084.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250918010503039"></p>
 <p>获取请求中的<code>URI</code>路径之后，回到<code>getPathWithinServletMapping</code>方法，然后根据请求从<code>Servlet</code>中获取路由，来看看这里是如何根据请求获取路由的，在<code>getServletPath</code>方法中又是通过<code>request.getServletPath</code>获取，继续跟进</p>
-<p><img src="/static/pic/image-20250918004734054.png" class="lazyload" data-srcset="/static/pic/image-20250918004734054.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250918004734054"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/23/wZr5/20260423234723085.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/23/wZr5/20260423234723085.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250918004734054"></p>
 <p>后面就涉及到<code>servlet</code>容器对请求路径的解析和Spring框架的路径处理机制。<code>/xx/..;/admin/1</code>会被分为应用上下文路径：<code>/xx/..;</code>、<code>Servlet</code>路径：<code>/admin/1</code>和<code>PathInfo</code>：可能为空或者其他值。</p>
 <p>当Servlet容器处理这个URL时：</p>
 <ol>
@@ -2670,69 +2670,69 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <li>最终路径：剩余的有效路径 &#x2F;admin&#x2F;1 被识别为Servlet路径</li>
 </ol>
 <p>获取到<code>Servlet</code>路径之后，返回到<code>getPathWithinServletMapping</code>方法中，可以看到后面还进行了多个<code>if</code>判断，但是这里都不满足，就直接返回了获取到的<code>servletPath</code>，就相当于直接返回了<code>/admin/1</code>这个路由。</p>
-<p><img src="/static/pic/image-20250918005134437.png" class="lazyload" data-srcset="/static/pic/image-20250918005134437.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250918005134437"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/23/aaE8/20260423234723086.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/23/aaE8/20260423234723086.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250918005134437"></p>
 <h1 id="CVE-2020-11989"><a href="#CVE-2020-11989" class="headerlink" title="CVE-2020-11989"></a>CVE-2020-11989</h1><h2 id="漏洞信息-3"><a href="#漏洞信息-3" class="headerlink" title="漏洞信息"></a>漏洞信息</h2><p><strong>影响版本：</strong><code>Shiro &lt; 1.5.3</code> </p>
 <p><strong>漏洞环境：</strong><a target="_blank" rel="noopener" href="https://github.com/n1utra/ShiroVuln/tree/main/CVE-2020-11989">ShiroVuln&#x2F;CVE-2020-11989 at main · n1utra&#x2F;ShiroVuln</a></p>
 <p><strong>漏洞描述：</strong>在 Apache Shiro 1.5.3 之前的版本，将 Apache Shiro 与 Spring 动态控制器一起使用时，特制请求可能会导致身份验证绕过。</p>
 <h2 id="漏洞复现-3"><a href="#漏洞复现-3" class="headerlink" title="漏洞复现"></a>漏洞复现</h2><p>这个漏洞存在两种绕过，直接访问是302</p>
-<p><img src="/static/pic/image-20250920183104536.png" class="lazyload" data-srcset="/static/pic/image-20250920183104536.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250920183104536"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/23/rw2M/20260423234723087.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/23/rw2M/20260423234723087.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250920183104536"></p>
 <p><strong>&#x2F;；&#x2F;绕过</strong></p>
 <p>这个需要存在上下文路径</p>
-<p><img src="/static/pic/image-20250920183117202.png" class="lazyload" data-srcset="/static/pic/image-20250920183117202.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250920183117202"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/23/Si0m/20260423234723088.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/23/Si0m/20260423234723088.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250920183117202"></p>
 <p><strong>二次编码绕过</strong></p>
 <p>这个其实有点鸡肋，感觉没什么可利用点。需要<code>shiro</code>使用的<code>ant</code>风格是<code>*</code>而不是<code>**</code>，或者<code>?</code>也可以。</p>
-<p><img src="/static/pic/image-20250920183144028.png" class="lazyload" data-srcset="/static/pic/image-20250920183144028.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250920183144028"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/23/lr4S/20260423234723089.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/23/lr4S/20260423234723089.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250920183144028"></p>
 <h2 id="代码分析-3"><a href="#代码分析-3" class="headerlink" title="代码分析"></a>代码分析</h2><p><code>/;/</code>绕过前面已经说过，这里就不在赘述。说一下二次编码绕过</p>
 <p>先来看看<code>payload</code>是什么，<code>/app/admin/a%25%32%66a</code>经过解码是<code>/app/admin/a%2fa</code>，再解码一次就是<code>/app/admin/a/a</code></p>
 <p>那么现在看看再<code>Shiro</code>中获取到的<code>URI</code>是什么样子。</p>
 <p>还是在<code>PathMatchingFilterChainResolver#getChain</code>方法打上断点，这里可以看到通过<code>getPathWithinApplication</code>方法获取到的<code>URI</code>就是经过二次编码后的<code>/app/admin/a/a</code></p>
-<p><img src="/static/pic/image-20250920190045719.png" class="lazyload" data-srcset="/static/pic/image-20250920190045719.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250920190045719"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/23/R2pk/20260423234723090.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/23/R2pk/20260423234723090.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250920190045719"></p>
 <p>在<code>getPathWithinApplication</code>方法中调用了<code>getRequestUri</code>方法，这个方法中通过<code>getContextPath</code>获得上下文路径，然后在<code>getServletPath</code>方法中经过了一次<code>URL</code>解码，最后又在<code>decodeAndCleanUriString</code>中进行了一次解码</p>
-<p><img src="/static/pic/image-20250920190402702.png" class="lazyload" data-srcset="/static/pic/image-20250920190402702.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250920190402702"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/23/Ugi3/20260423234723091.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/23/Ugi3/20260423234723091.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250920190402702"></p>
 <p>最后再去除上下文，那么在<code>Shiro</code>中进行匹配的路径就是<code>/admin/a/a</code>，由于这里<code>ant</code>仅仅设置了<code>/admin/*</code>，仅匹配后续一级路径，无法匹配到这里<code>/a/a</code>这个两级路径，所以就会放行。</p>
-<p><img src="/static/pic/image-20250920190633251.png" class="lazyload" data-srcset="/static/pic/image-20250920190633251.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250920190633251"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/23/x1Ly/20260423234723092.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/23/x1Ly/20260423234723092.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250920190633251"></p>
 <p>那么<code>Shiro</code>放行的原因看完了，接下来看看<code>SpringBoot</code>是如何执行的。</p>
 <p>在<code>UrlPathHelper#getPathWithinServletMapping</code>方法打上断点，这里首先是通过<code>getPathWithinApplication</code>去掉上下文路径获取真实路径，然后通过<code>getServletPath</code>获取对应的路由，然后通过<code>getSanitizedPath</code>方法进行规范。然后判断路由路径是否包含规范后的请求路径，如果匹配就返回<code>getRemainingPath</code>处理后的<code>path</code></p>
-<p><img src="/static/pic/image-20250920195137444.png" class="lazyload" data-srcset="/static/pic/image-20250920195137444.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250920195137444"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/23/Mxa1/20260423234723093.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/23/Mxa1/20260423234723093.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250920195137444"></p>
 <p>在<code>getPathWithinApplication</code>方法中可以看到<code>Spring</code>中还是通过<code>getRequestUri</code>方法来获取请求中的<code>URI</code>，没有进行过多的处理</p>
-<p><img src="/static/pic/image-20250920224648907.png" class="lazyload" data-srcset="/static/pic/image-20250920224648907.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250920224648907"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/23/f5yT/20260423234723094.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/23/f5yT/20260423234723094.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250920224648907"></p>
 <p>那么这里返回的就是<code>/admin/a%2fa</code>，可以看到这里后面就变成了字符串，满足了<code>/admin/&#123;name&#125;</code>也就是在路由中的配置。从而绕过了<code>Shiro</code>的鉴权。</p>
 <h1 id="CVE-2020-13933"><a href="#CVE-2020-13933" class="headerlink" title="CVE-2020-13933"></a>CVE-2020-13933</h1><h2 id="漏洞信息-4"><a href="#漏洞信息-4" class="headerlink" title="漏洞信息"></a>漏洞信息</h2><p><strong>影响版本：</strong><code>Shiro &lt; 1.6.0</code></p>
 <p><strong>漏洞环境：</strong></p>
 <p><strong>漏洞描述：</strong>这其实是<code>CVE-2020-11989</code>的一种<code>bypass</code>，利用也很鸡肋。这里是因为<code>Shiro</code>和<code>Spring</code>对于路径的处理顺序不同</p>
 <h2 id="漏洞复现-4"><a href="#漏洞复现-4" class="headerlink" title="漏洞复现"></a>漏洞复现</h2><p>直接访问提示302</p>
-<p><img src="/static/pic/image-20250920214354641.png" class="lazyload" data-srcset="/static/pic/image-20250920214354641.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250920214354641"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/23/Zfw7/20260423234723095.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/23/Zfw7/20260423234723095.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250920214354641"></p>
 <p>通过<code>%3b</code>进行绕过</p>
-<p><img src="/static/pic/image-20250920215004489.png" class="lazyload" data-srcset="/static/pic/image-20250920215004489.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250920215004489"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/23/plP3/20260423234723096.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/23/plP3/20260423234723096.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250920215004489"></p>
 <h2 id="代码分析-4"><a href="#代码分析-4" class="headerlink" title="代码分析"></a>代码分析</h2><p>还是先来看看<code>Shiro</code>是怎么处理这个路径的，还是看<code>getPathWithinApplication</code>这个方法，可以看到<code>Shiro</code>在在1.5.3版本中，是通过<code>getServletPath</code>和<code>getPathInfo</code>拼接来获取的，获取值的时候就已经进行了<code>URL</code>解码。然后对拼接的结果通过<code>removeSemicolon</code>方法进行了处理。</p>
-<p><img src="/static/pic/image-20250920232500607.png" class="lazyload" data-srcset="/static/pic/image-20250920232500607.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250920232500607"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/23/Heb8/20260423234723097.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/23/Heb8/20260423234723097.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250920232500607"></p>
 <p>那么<code>removeSemicolon</code>进行了什么操作呢？其实就是去除了<code>;</code>后面的路径，只保留前面的路径</p>
-<p><img src="/static/pic/image-20250920232613200.png" class="lazyload" data-srcset="/static/pic/image-20250920232613200.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250920232613200"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/23/4nLu/20260423234723098.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/23/4nLu/20260423234723098.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250920232613200"></p>
 <p>所以<code>Shiro</code>这里只获取到了<code>/admin/</code>这个路径，但是这里是无法与<code>/admin/*</code>进行匹配的，所以<code>Shiro</code>这里是直接放行了</p>
 <p>接下来还是看看<code>Spring</code>的操作</p>
 <p>在<code>Spring</code>的<code>getPathWithinServletMapping</code>中调用的<code>getPathWithinApplication</code>来处理<code>URI</code>，主要是<code>getRequestUri</code>这里在进行处理</p>
-<p><img src="/static/pic/image-20250920233806772.png" class="lazyload" data-srcset="/static/pic/image-20250920233806772.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250920233806772"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/23/bHt1/20260423234723099.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/23/bHt1/20260423234723099.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250920233806772"></p>
 <p>进入<code>getRequestUri</code>方法可以看到在获取到<code>URI</code>之后，最后是通过<code>decodeAndCleanUriString</code>这个方法进行处理。</p>
-<p><img src="/static/pic/image-20250920233830783.png" class="lazyload" data-srcset="/static/pic/image-20250920233830783.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250920233830783"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/23/qPm6/20260423234723100.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/23/qPm6/20260423234723100.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250920233830783"></p>
 <p>进入<code>decodeAndCleanUriString</code>这个方法，这里对<code>URI</code>处理如下：去除分号后面的内容、<code>URL</code>转码、清除多余<code>/</code>。可以看到这里和<code>Shiro</code>的处理顺序是不同的 ，这里是先去除分号再进行<code>URL</code>转码。所以出现了问题，<code>Payload</code>经过了<code>URL</code>编码，在去除的时候无法识别，然后再经过<code>URL</code>转码回来就被当作了<code>URI</code>的一部分。造成了问题。</p>
-<p><img src="/static/pic/image-20250920234532484.png" class="lazyload" data-srcset="/static/pic/image-20250920234532484.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250920234532484"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/23/9bAj/20260423234723101.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/23/9bAj/20260423234723101.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250920234532484"></p>
 <h1 id="CVE-2020-17510"><a href="#CVE-2020-17510" class="headerlink" title="CVE-2020-17510"></a>CVE-2020-17510</h1><h2 id="漏洞信息-5"><a href="#漏洞信息-5" class="headerlink" title="漏洞信息"></a>漏洞信息</h2><p><strong>影响版本：</strong><code>Shiro &lt; 1.7.0</code></p>
 <p><strong>漏洞环境：</strong><a target="_blank" rel="noopener" href="https://github.com/n1utra/ShiroVuln/tree/main/CVE-2020-17510">ShiroVuln&#x2F;CVE-2020-17510 at main · n1utra&#x2F;ShiroVuln</a></p>
 <p><strong>漏洞描述：</strong>这个漏洞本质还是对于<code>ant</code>匹配的绕过，之前利用过了<code>;</code>的<code>URL</code>编码，现在则是利用<code>.</code>的<code>URL</code>编码。同样也是一种<code>bypass</code>，但是更鸡肋。</p>
 <h2 id="漏洞复现-5"><a href="#漏洞复现-5" class="headerlink" title="漏洞复现"></a>漏洞复现</h2><p>直接访问是302跳转</p>
-<p><img src="/static/pic/image-20250921203252636.png" class="lazyload" data-srcset="/static/pic/image-20250921203252636.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250921203252636"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/23/2tnL/20260423234723102.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/23/2tnL/20260423234723102.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250921203252636"></p>
 <p>通过<code>/%2e</code>进行则能绕过</p>
-<p><img src="/static/pic/image-20250921204408672.png" class="lazyload" data-srcset="/static/pic/image-20250921204408672.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250921204408672"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/23/Eki4/20260423234723103.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/23/Eki4/20260423234723103.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250921204408672"></p>
 <h2 id="代码分析-5"><a href="#代码分析-5" class="headerlink" title="代码分析"></a>代码分析</h2><p>这里需要<code>SpringBoot</code>大于<code>2.3.0</code>才能复现</p>
 <p>还是先看<code>Shiro</code>对路径的处理</p>
 <p>这里<code>Shiro</code>的处理和前面一样，最终是通过<code>getServletPath(request) + getPathInfo(request)</code>获取到<code>URI</code>，这里获取到的<code>URI</code>就是经过处理之后的<code>/admin/</code>，并且无法匹配到<code>/admin/*</code>，那么就会进行放行。</p>
-<p><img src="/static/pic/image-20250921205612211.png" class="lazyload" data-srcset="/static/pic/image-20250921205612211.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250921205612211"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/23/1qdN/20260423234723104.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/23/1qdN/20260423234723104.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250921205612211"></p>
 <p>接下来还是看看<code>Spring</code>的处理，可以在看到，<code>Spring</code>最终拿到的<code>uri</code>还是<code>/admin/.</code></p>
-<p><img src="/static/pic/image-20250921212908178.png" class="lazyload" data-srcset="/static/pic/image-20250921212908178.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250921212908178"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/23/Xdc2/20260423234723105.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/23/Xdc2/20260423234723105.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250921212908178"></p>
 <h1 id="CVE-2020-17523"><a href="#CVE-2020-17523" class="headerlink" title="CVE-2020-17523"></a>CVE-2020-17523</h1><h2 id="漏洞信息-6"><a href="#漏洞信息-6" class="headerlink" title="漏洞信息"></a>漏洞信息</h2><p><strong>影响版本：</strong><code>Shiro &lt; 1.7.1</code></p>
 <p><strong>漏洞环境：</strong><a target="_blank" rel="noopener" href="https://github.com/n1utra/ShiroVuln/tree/main/CVE-2020-17523">ShiroVuln&#x2F;CVE-2020-17523 at main · n1utra&#x2F;ShiroVuln</a></p>
 <p><strong>漏洞描述：</strong>是<code>CVE-2020-17510</code>修复之后的bypass，使用空格<code>%20</code>绕过。</p>
-<h2 id="漏洞复现-6"><a href="#漏洞复现-6" class="headerlink" title="漏洞复现"></a>漏洞复现</h2><p><img src="/static/pic/image-20250921214047177.png" class="lazyload" data-srcset="/static/pic/image-20250921214047177.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250921214047177"></p>
+<h2 id="漏洞复现-6"><a href="#漏洞复现-6" class="headerlink" title="漏洞复现"></a>漏洞复现</h2><p><img src="https://files.seeusercontent.com/2026/04/23/Btu1/20260423234723106.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/23/Btu1/20260423234723106.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250921214047177"></p>
 <h2 id="漏洞描述"><a href="#漏洞描述" class="headerlink" title="漏洞描述"></a>漏洞描述</h2><p>原理和上面一样，这就不再多说了</p>
 <h1 id="CVE-2021-41303"><a href="#CVE-2021-41303" class="headerlink" title="CVE-2021-41303"></a>CVE-2021-41303</h1><h2 id="漏洞信息-7"><a href="#漏洞信息-7" class="headerlink" title="漏洞信息"></a>漏洞信息</h2><p><strong>影响版本：</strong><code>Shiro = 1.7.1</code></p>
 <p><strong>漏洞环境：</strong><a target="_blank" rel="noopener" href="https://github.com/n1utra/ShiroVuln/tree/main/CVE-2021-41303">ShiroVuln&#x2F;CVE-2021-41303 at main · n1utra&#x2F;ShiroVuln</a></p>
@@ -2741,11 +2741,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">map.put(<span class="string">&quot;/admin/*/index&quot;</span>, <span class="string">&quot;authc&quot;</span>);</span><br><span class="line">map.put(<span class="string">&quot;/admin/demo/index&quot;</span>, <span class="string">&quot;anon&quot;</span>);</span><br></pre></td></tr></table></figure>
 
 <h2 id="漏洞复现-7"><a href="#漏洞复现-7" class="headerlink" title="漏洞复现"></a>漏洞复现</h2><p>直接访问路径返回302</p>
-<p><img src="/static/pic/image-20250921232816023.png" class="lazyload" data-srcset="/static/pic/image-20250921232816023.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250921232816023"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/23/rsN0/20260423234723107.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/23/rsN0/20260423234723107.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250921232816023"></p>
 <p>添加<code>/</code>进行绕过</p>
-<p><img src="/static/pic/image-20250921232841160.png" class="lazyload" data-srcset="/static/pic/image-20250921232841160.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250921232841160"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/23/lj1N/20260423234723108.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/23/lj1N/20260423234723108.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250921232841160"></p>
 <h2 id="代码分析-6"><a href="#代码分析-6" class="headerlink" title="代码分析"></a>代码分析</h2><p><code>Shiro</code>在1.7.1版本中，<code>getChain</code>方法中增加了一个判断，在对<code>URI</code>与鉴权配置的路径匹配之后，如果匹配不上就会对两者最后面的<code>/</code>去掉(如果有的话)然后再进行匹配。</p>
-<p><img src="/static/pic/image-20250921233113630.png" class="lazyload" data-srcset="/static/pic/image-20250921233113630.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250921233113630"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/23/5nmC/20260423234723109.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/23/5nmC/20260423234723109.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250921233113630"></p>
 <p>问题就出在第二个判断中，当满足第二个判断之后，<code>return</code>中返回的是用户传入的<code>URI</code>,而并非<code>Shiro</code>中遍历出来的值。就是这里造成了问题。</p>
 <p>现在通过断点调试来理解这句话。</p>
 <p>先注意下我们的<code>ShiroConfig</code>中的配置，这里说一下，<code>Shiro</code>鉴权配置可以理解为从上到下依次匹配</p>
@@ -2753,59 +2753,59 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <p>当我们使用<code>/admin/demo/index</code>发起请求之后，在<code>getChain</code>中先和<code>/admin/*/index</code>进行匹配，这里满足了代码中的第一个<code>if</code>，这里就会进入鉴权的逻辑。</p>
 <p>但是使用<code>/admin/demo/index/</code>发起请求之后，同样是先匹配到<code>/admin/*/index</code>，但是不满足第一个<code>if</code>，就会进入第二个<code>if</code>，通过对路径去掉<code>/</code>再进行匹配，这里也能匹配到，但是返回的是<code>requestURINoTrailingSlash</code>而不是<code>Shiro</code>中当前循环的<code>pathPattern</code>，那么就会进入当前<code>requestURINoTrailingSlash</code>即<code>/admin/demo/index</code>所代表的逻辑，也就是不需要鉴权的逻辑。</p>
-<p><img src="/static/pic/image-20250922000006500.png" class="lazyload" data-srcset="/static/pic/image-20250922000006500.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250922000006500"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/23/R5vb/20260423234723110.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/23/R5vb/20260423234723110.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250922000006500"></p>
 <h1 id="CVE-2022-32532"><a href="#CVE-2022-32532" class="headerlink" title="CVE-2022-32532"></a>CVE-2022-32532</h1><h2 id="漏洞信息-8"><a href="#漏洞信息-8" class="headerlink" title="漏洞信息"></a>漏洞信息</h2><p><strong>影响版本：</strong><code>Shiro &lt; 1.9.1</code></p>
 <p><strong>漏洞环境：</strong></p>
 <p><strong>漏洞描述：</strong>在<code>1.9.1</code>之前的<code>Apache Shiro</code>中，<code>RegexRequestMatcher</code>可能会被错误配置，从而在某些<code>servlet</code>容器上被绕过。应用程序使用<code>RegExPatternMatcher</code>与<code>.</code>的正则表达式可能容易被授权绕过。其实就是如果系统通过自定义的正则去匹配路径时，会因为<code>java</code>的正则默认情况下<code>.</code>不能匹配到<code>\r</code>和<code>\n</code>造成的。</p>
 <h2 id="漏洞复现-8"><a href="#漏洞复现-8" class="headerlink" title="漏洞复现"></a>漏洞复现</h2><p>这里使用的是<code>4ra1n</code>师傅搭建的环境</p>
 <p>直接访问接口会提示<code>access denied</code></p>
-<p><img src="/static/pic/image-20250922230534024.png" class="lazyload" data-srcset="/static/pic/image-20250922230534024.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250922230534024"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/23/7mqK/20260423234723111.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/23/7mqK/20260423234723111.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250922230534024"></p>
 <p>结合<code>payload</code>则成功访问</p>
-<p><img src="/static/pic/image-20250922230617382.png" class="lazyload" data-srcset="/static/pic/image-20250922230617382.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250922230617382"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/23/0jFb/20260423234723112.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/23/0jFb/20260423234723112.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250922230617382"></p>
 <h2 id="代码分析-7"><a href="#代码分析-7" class="headerlink" title="代码分析"></a>代码分析</h2><p>还是在<code>getChain</code>下断点，可以看到现在<code>Shiro</code>中的<code>pathPattern</code>已经变成了之前设置好的正则</p>
-<p><img src="/static/pic/image-20250922233849225.png" class="lazyload" data-srcset="/static/pic/image-20250922233849225.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250922233849225"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/23/bRg7/20260423234723113.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/23/bRg7/20260423234723113.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250922233849225"></p>
 <p>查看下<code>pathMatches</code>方法，这里调用了<code>matches</code>方法</p>
-<p><img src="/static/pic/image-20250922233914632.png" class="lazyload" data-srcset="/static/pic/image-20250922233914632.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250922233914632"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/23/6cuK/20260423234723114.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/23/6cuK/20260423234723114.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250922233914632"></p>
 <p>跟进<code>matches</code>方法，这里其实就是在进行正则匹配，可以看到这里采用了完全匹配，但是<code>java</code>的正则中<code>.</code>默认无法匹配到<code>\r</code>和<code>\n</code>，所以这里完全匹配就失败了，一路返回<code>false</code></p>
-<p><img src="/static/pic/image-20250922234657129.png" class="lazyload" data-srcset="/static/pic/image-20250922234657129.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250922234657129"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/23/8zzN/20260423234723115.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/23/8zzN/20260423234723115.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250922234657129"></p>
 <p>回到<code>getChain</code>，这里匹配<code>/permit.*</code>就匹配不上了，所以会默认通行。</p>
 <p>那么来看看<code>Spring</code>是如何处理这个<code>URL</code>的</p>
 <p>进入<code>lookupHandlerMethod</code>方法，这里是直接匹配处理器方法的地方，也就是根据<code>URI</code>匹配<code>controller</code>的地方</p>
-<p><img src="/static/pic/image-20250923001251830.png" class="lazyload" data-srcset="/static/pic/image-20250923001251830.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250923001251830"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/23/u9yR/20260423234723116.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/23/u9yR/20260423234723116.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250923001251830"></p>
 <p>首先是<code>List&lt;T&gt; directPathMatches = this.mappingRegistry.getMappingsByDirectPath(lookupPath);</code>直接进行精确路径匹配，获得与当前路径完全一致的映射项目，这里显然是没有的，运行结果为<code>null</code></p>
 <p>那么就会进入<code>if (matches.isEmpty())</code>这个判断，执行<code>addMatchingMappings</code>方法，这里进行的是详细条件匹配，最终调用的是<code>getMatchingCondition</code>方法，通过对请求中的参数、请求头等等信息进行匹配来获得对应的执行器，当前匹配的对象是<code>/permit/&#123;value&#125;</code>，是能够满足所有的条件的，那么最后就能够走到对应的路由</p>
 <p>当然这里其实也匹配了<code>URI</code>，具体是在如下的代码处</p>
-<p><img src="/static/pic/image-20250923002622959.png" class="lazyload" data-srcset="/static/pic/image-20250923002622959.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250923002622959"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/23/Gyd3/20260423234723117.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/23/Gyd3/20260423234723117.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250923002622959"></p>
 <p>其中<code>getMatchingCondition</code>方法中先获取了请求中去除上下文之后的路径</p>
-<p><img src="/static/pic/image-20250923002704753.png" class="lazyload" data-srcset="/static/pic/image-20250923002704753.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250923002704753"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/23/7Cne/20260423234723118.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/23/7Cne/20260423234723118.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250923002704753"></p>
 <p>然后通过<code>getMatchingPatterns</code>方法进行了匹配，而这个方法通过<code>pattern.matches</code>去匹配遍历出来的已注册的路径。这里面又涉及到多种模式匹配，不再过多描述。</p>
-<p><img src="/static/pic/image-20250923002821557.png" class="lazyload" data-srcset="/static/pic/image-20250923002821557.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250923002821557"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/23/f0vV/20260423234723119.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/23/f0vV/20260423234723119.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250923002821557"></p>
 <h1 id="CVE-2022-40664"><a href="#CVE-2022-40664" class="headerlink" title="CVE-2022-40664"></a>CVE-2022-40664</h1><h2 id="漏洞信息-9"><a href="#漏洞信息-9" class="headerlink" title="漏洞信息"></a>漏洞信息</h2><p><strong>影响版本：</strong><code>Shiro &lt; 1.10.0</code></p>
 <p><strong>漏洞环境：</strong><a target="_blank" rel="noopener" href="https://github.com/n1utra/ShiroVuln/tree/main/CVE-2022-40664">ShiroVuln&#x2F;CVE-2022-40664 at main · n1utra&#x2F;ShiroVuln</a></p>
 <p><strong>漏洞描述：</strong>当应用通过 RequestDispatcher 做 forward&#x2F;include 时，Shiro 的 RegexRequestMatcher 不会重新执行完整的鉴权检查，导致攻击者只需发送一个构造的合法 HTTP 请求即可越过过滤器链，直接访问受保护资源。其实也挺鸡肋的，需要代码本身存在一个接口，访问的时候会跳转到受保护的资源。</p>
 <h2 id="漏洞复现-9"><a href="#漏洞复现-9" class="headerlink" title="漏洞复现"></a>漏洞复现</h2><p>直接访问<code>/admin</code>会跳转到<code>/login</code></p>
-<p><img src="/static/pic/image-20251010002629093.png" class="lazyload" data-srcset="/static/pic/image-20251010002629093.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20251010002629093"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/23/4Yoa/20260423234723120.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/23/4Yoa/20260423234723120.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20251010002629093"></p>
 <p>访问<code>/proxy</code>则能够获取到<code>/admin</code>的内容</p>
-<p><img src="/static/pic/image-20251010002723497.png" class="lazyload" data-srcset="/static/pic/image-20251010002723497.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20251010002723497"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/23/0Mje/20260423234723121.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/23/0Mje/20260423234723121.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20251010002723497"></p>
 <h2 id="代码分析-8"><a href="#代码分析-8" class="headerlink" title="代码分析"></a>代码分析</h2><p>漏洞的原因出现在<code>org.apache.shiro.web.servlet.OncePerRequestFilter#doFilter</code>这个方法中</p>
-<p><img src="/static/pic/image-20251011000135905.png" class="lazyload" data-srcset="/static/pic/image-20251011000135905.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20251011000135905"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/23/oA9w/20260423234723122.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/23/oA9w/20260423234723122.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20251011000135905"></p>
 <p>这里接收到请求之后，会从请求中获取<code>alreadyFilteredAttributeName</code>属性，但然后进入<code>if</code>判断，第一次请求时并不满足判断，最后走入了<code>else</code>分支，这里对这个属性设置为<code>Boolean.TRUE</code></p>
-<p><img src="/static/pic/image-20251011000309228.png" class="lazyload" data-srcset="/static/pic/image-20251011000309228.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20251011000309228"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/23/Q1oy/20260423234723123.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/23/Q1oy/20260423234723123.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20251011000309228"></p>
 <p>然后通过<code>doFilterInternal</code>放行进行<code>forward:/admin</code>转发，此时会再一次进入到<code>doFilter</code>方法中，此时就会进入<code>if</code>分支，从而直接放行绕过鉴权。</p>
 <p>这里是看的网络上的分析文章，我搭建的代码环境折腾了很久都没有复现出这个步骤，只能暂且搁置。</p>
 <h1 id="CVE-2023-22602"><a href="#CVE-2023-22602" class="headerlink" title="CVE-2023-22602"></a>CVE-2023-22602</h1><h2 id="漏洞信息-10"><a href="#漏洞信息-10" class="headerlink" title="漏洞信息"></a>漏洞信息</h2><p><strong>影响版本：</strong><code>Shiro &lt;=1.11.0</code>与<code>SpringBoot&gt; 2.6</code></p>
 <p><strong>漏洞环境：</strong><a target="_blank" rel="noopener" href="https://github.com/n1utra/ShiroVuln/tree/main/CVE-2023-22602">ShiroVuln&#x2F;CVE-2023-22602 at main · n1utra&#x2F;ShiroVuln</a></p>
 <p><strong>漏洞描述：</strong>Shiro在1.11.0版本之前只兼容Spring的<code>ant-style</code>路径匹配模式，但是2.6版本后的<code>SpringBoot</code>的路径匹配模式从<code>AntPathMatcher</code>更改为了<code>PathPatternParser</code>，当<code>Shiro 1.11.0</code>及之前的版本与<code>Spring 2.6</code>及之后的版本使用不同的路径匹配模式时，可以绕过<code>Shiro</code>的身份认证。</p>
 <h2 id="漏洞复现-10"><a href="#漏洞复现-10" class="headerlink" title="漏洞复现"></a>漏洞复现</h2><p>直接访问接口会进行302跳转</p>
-<p><img src="/static/pic/image-20251015221415935.png" class="lazyload" data-srcset="/static/pic/image-20251015221415935.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20251015221415935"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/23/3Kpo/20260423234723124.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/23/3Kpo/20260423234723124.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20251015221415935"></p>
 <p>通过<code>payload</code>绕过则能进行访问</p>
-<p><img src="/static/pic/image-20251015221431579.png" class="lazyload" data-srcset="/static/pic/image-20251015221431579.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20251015221431579"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/23/hI8y/20260423234723125.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/23/hI8y/20260423234723125.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20251015221431579"></p>
 <h2 id="代码分析-9"><a href="#代码分析-9" class="headerlink" title="代码分析"></a>代码分析</h2><p>这里漏洞产生的原因是<code>Shiro 1.10.0</code>及之前版本与<code>SpringBoot 2.6</code>之后版本对于路径匹配模式不同导致的绕过，所以这里直接查看二者路径匹配的地方。</p>
 <p>还是查看<code>Shiro</code>的<code>getChain</code>方法，可以看到方法中获取到的路径是<code>/../</code>后面的，也就是说<code>getPathWithinApplication</code>将其中的路径穿越执行之后的路径，而<code>/111</code>在<code>ShiroConfig</code>的配置是无需鉴权，所以在<code>Shiro</code>中直接放行了</p>
-<p><img src="/static/pic/image-20251015223450165.png" class="lazyload" data-srcset="/static/pic/image-20251015223450165.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20251015223450165"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/23/1sMx/20260423234723127.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/23/1sMx/20260423234723127.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20251015223450165"></p>
 <p>前面看到<code>Shiro</code>中对于<code>/admin/../111</code>这个请求中匹配的是<code>/111</code>，然后直接放行，那么接下来看看<code>SpringBoot</code>是如何处理这个路径的。</p>
 <p>还是在<code>Spring</code>的<code>lookupHandlerMethod</code>方法打断点，这里就和上面CVE-2022-32532类似，进行多种模式的匹配。</p>
-<p><img src="/static/pic/image-20251015233055413.png" class="lazyload" data-srcset="/static/pic/image-20251015233055413.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20251015233055413"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/23/onQ6/20260423234723128.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/23/onQ6/20260423234723128.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20251015233055413"></p>
 <h1 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h1><p>Shiro这部分写的很烂，写的时候感觉是为了写而写，并且其中还存在不少问题，尤其涉及到spring的部分，可能还会存在一些错误。我对于spring也不太熟悉，希望之后会有时间将这部分重构。</p>
 
   </div>
@@ -2831,10 +2831,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2025-10-16T23:33:21+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2026-04-23T23:53:24+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：Oct 16, 2025</p>
+    <p>更新于：Apr 23, 2026</p>
   </a>
 </div>
 
@@ -3321,7 +3321,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"https://schema.org.cn","@type":"Organization","name":"n1utra's blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"https://schema.org.cn","@type":"Person","name":"n1utra","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"网络安全"},{"@context":"https://schema.org.cn","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"n1utra's blog"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2025/09/14/Shiro历史漏洞分析-3-：权限绕过/","name":"Shiro历史漏洞分析(3)：权限绕过"}}]},{"@context":"https://schema.org.cn","@type":"WebSite","name":"n1utra's blog","url":"http://example.com/","keywords":null,"description":"网络安全","author":{"@type":"Person","name":"n1utra","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"网络安全"},"publisher":{"@type":"Organization","name":"n1utra's blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"https://schema.org.cn","@type":"BlogPosting","headline":"Shiro历史漏洞分析(3)：权限绕过","description":"网络安全","inLanguage":"zh","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2025/09/14/Shiro%E5%8E%86%E5%8F%B2%E6%BC%8F%E6%B4%9E%E5%88%86%E6%9E%90-3-%EF%BC%9A%E6%9D%83%E9%99%90%E7%BB%95%E8%BF%87/"},"author":{"@type":"Person","name":"n1utra","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"n1utra's blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2025/09/14/Shiro%E5%8E%86%E5%8F%B2%E6%BC%8F%E6%B4%9E%E5%88%86%E6%9E%90-3-%EF%BC%9A%E6%9D%83%E9%99%90%E7%BB%95%E8%BF%87/","wordCount":0,"datePublished":"2025-09-14T13:57:10.000Z","dateModified":"2025-10-16T15:33:21.947Z","keywords":"JAVA安全,Shiro","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"https://schema.org.cn","@type":"Organization","name":"n1utra's blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"https://schema.org.cn","@type":"Person","name":"n1utra","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"网络安全"},{"@context":"https://schema.org.cn","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"n1utra's blog"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2025/09/14/Shiro历史漏洞分析-3-：权限绕过/","name":"Shiro历史漏洞分析(3)：权限绕过"}}]},{"@context":"https://schema.org.cn","@type":"WebSite","name":"n1utra's blog","url":"http://example.com/","keywords":null,"description":"网络安全","author":{"@type":"Person","name":"n1utra","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"网络安全"},"publisher":{"@type":"Organization","name":"n1utra's blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"https://schema.org.cn","@type":"BlogPosting","headline":"Shiro历史漏洞分析(3)：权限绕过","description":"网络安全","inLanguage":"zh","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2025/09/14/Shiro%E5%8E%86%E5%8F%B2%E6%BC%8F%E6%B4%9E%E5%88%86%E6%9E%90-3-%EF%BC%9A%E6%9D%83%E9%99%90%E7%BB%95%E8%BF%87/"},"author":{"@type":"Person","name":"n1utra","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"n1utra's blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2025/09/14/Shiro%E5%8E%86%E5%8F%B2%E6%BC%8F%E6%B4%9E%E5%88%86%E6%9E%90-3-%EF%BC%9A%E6%9D%83%E9%99%90%E7%BB%95%E8%BF%87/","wordCount":0,"datePublished":"2025-09-14T13:57:10.000Z","dateModified":"2026-04-23T15:53:24.968Z","keywords":"JAVA安全,Shiro","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 

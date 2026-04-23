@@ -46,7 +46,7 @@
 <meta property="og:locale">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2025-07-13T14:20:21.000Z">
-<meta property="article:modified_time" content="2025-07-16T16:09:48.535Z">
+<meta property="article:modified_time" content="2026-04-22T14:58:06.493Z">
 <meta property="article:author" content="n1utra">
 <meta property="article:tag" content="JAVA安全">
 <meta property="article:tag" content="CC链">
@@ -1701,9 +1701,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 		'}'+
 	'</style>'+
     '<div class="kill-ie">'+
-        `<span class="kill-t"><b>抱歉，您的浏览器无法访问本站</b></span><br/>`+
-        `<span class="kill-c">微软已经于2016年终止了对 Internet Explorer (IE) 10 及更早版本的支持，<br/>继续使用存在极大的安全隐患，请使用当代主流的浏览器进行访问。</span><br/>`+
-        `<a target="_blank" rel="noopener" href="https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/"><strong>了解详情 ></strong></a>`+
+        `<span class="kill-t"><b>Sorry, your browser cannot access this site</b></span><br/>`+
+        `<span class="kill-c">Microsoft has terminated support for Internet Explorer (IE) 10 and earlier versions in 2016. <br/>There are great security risks to continue using it. Please use contemporary mainstream browsers to access.</span><br/>`+
+        `<a target="_blank" rel="noopener" href="https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/"><strong>Learn more ></strong></a>`+
     '</div>');
 </script>
 
@@ -1731,9 +1731,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 		}
 	</style>
     <div class="kill-noscript">
-        <span class="kill-t"><b>抱歉，您的浏览器无法访问本站</b></span><br/>
-        <span class="kill-c">本页面需要浏览器支持（启用）JavaScript</span><br/>
-        <a target="_blank" rel="noopener" href="https://www.baidu.com/s?wd=启用JavaScript"><strong>了解详情 ></strong></a>
+        <span class="kill-t"><b>Sorry, your browser cannot access this site</b></span><br/>
+        <span class="kill-c">This page requires browser support (enable) JavaScript</span><br/>
+        <a target="_blank" rel="noopener" href="https://www.baidu.com/s?wd=启用JavaScript"><strong>Learn more ></strong></a>
     </div>
 </noscript>
 
@@ -2115,7 +2115,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1765818160203),
+    lastupdate: new Date(1776961364761),
     cdn: {
       izitoast_css: 'https://unpkg.com/izitoast@1.4.0/dist/css/iziToast.min.css',
       izitoast_js: 'https://unpkg.com/izitoast@1.4.0/dist/js/iziToast.min.js',
@@ -2153,8 +2153,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     languages: {
       
         search: {
-          hits_empty: "找不到您查询的内容：${query}",
-          hits_stats: "找到 ${hits} 条结果，用时 ${time} 毫秒",
+          hits_empty: "We didn't find any results for the search: ${query}.",
+          hits_stats: "${hits} results found in ${time} ms",
         }
       
     }
@@ -2612,7 +2612,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> Translet <span class="title function_">getTransletInstance</span><span class="params">()</span></span><br><span class="line">    <span class="keyword">throws</span> TransformerConfigurationException &#123;</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> (_name == <span class="literal">null</span>) <span class="keyword">return</span> <span class="literal">null</span>;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (_class == <span class="literal">null</span>) defineTransletClasses();</span><br><span class="line"></span><br><span class="line">        <span class="comment">// The translet needs to keep a reference to all its auxiliary</span></span><br><span class="line">        <span class="comment">// class to prevent the GC from collecting them</span></span><br><span class="line">        <span class="type">AbstractTranslet</span> <span class="variable">translet</span> <span class="operator">=</span> (AbstractTranslet) _class[_transletIndex].newInstance();</span><br><span class="line">        translet.postInitialization();</span><br><span class="line">        translet.setTemplates(<span class="built_in">this</span>);</span><br><span class="line">        translet.setServicesMechnism(_useServicesMechanism);</span><br><span class="line">        translet.setAllowedProtocols(_accessExternalStylesheet);</span><br><span class="line">        <span class="keyword">if</span> (_auxClasses != <span class="literal">null</span>) &#123;</span><br><span class="line">            translet.setAuxiliaryClasses(_auxClasses);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> translet;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
 
 <p>这里我们需要查看<code>_class[_transletIndex]</code>是如何赋值的，这里赋值其实就是在<code>defineTransletClasses</code>方法中进行的，具体位置如下图：</p>
-<p><img src="/static/pic/image-20250713231411584.png" class="lazyload" data-srcset="/static/pic/image-20250713231411584.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250713231411584"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/22/7gtJ/20260422225552307.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/22/7gtJ/20260422225552307.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250713231411584"></p>
 <p>注意这里，遍历时调用了每一个<code>defineClass[i]</code>，这里其实就是在遍历加载类字节码数组，同时后续构造参数时还需要注意这里。</p>
 <p>那么这里<code>_class[_transletIndex]</code>就是可控的，接下来继续寻找<code>getTransletInstance</code>方法的调用</p>
 <h2 id="调用点：TemplatesImpl-newTransformer"><a href="#调用点：TemplatesImpl-newTransformer" class="headerlink" title="调用点：TemplatesImpl#newTransformer"></a>调用点：TemplatesImpl#newTransformer</h2><p><code>TemplatesImpl#getTransletInstance</code>这个方法的调用点只有一处，在当前类的<code>Transformer</code>方法中</p>
@@ -2621,17 +2621,17 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p>这里是一个<code>public</code>方法，在<code>new TransformerImpl</code>直接调用，那么可以在这里尝试构造EXP了</p>
 <h3 id="EXP初步构造"><a href="#EXP初步构造" class="headerlink" title="EXP初步构造"></a>EXP初步构造</h3><p>构造函数之前需要确定参数调用以及赋值</p>
 <p>在<code>TemplatesImpl#getTransletInstance</code>中，需要给<code>_name</code>属性赋值，但是这里不在构造方法中进行赋值，所以需要手动赋值</p>
-<p><img src="/static/pic/image-20250716230655622.png" class="lazyload" data-srcset="/static/pic/image-20250716230655622.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250716230655622"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/22/6wBg/20260422225621226.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/22/6wBg/20260422225621226.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250716230655622"></p>
 <p>在<code>TemplatesImpl#defineTransletClasses</code>中，<code>_bytecodes</code>需要赋值，<code>_tfactory</code>在过程中需要调用方法，也需要赋值</p>
-<img src="/static/pic/image-20250716230730699.png" class="lazyload" data-srcset="/static/pic/image-20250716230730699.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250716230730699" style="zoom:50%;" />
+<img src="https://files.seeusercontent.com/2026/04/22/dZ2p/20260422225625655.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/22/dZ2p/20260422225625655.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250716230730699" style="zoom:50%;" />
 
 <p>需要注意赋值的类型，<code>_name</code>仅判断是否为空，可以赋值任意字符串。<code>_bytecodes</code>是以二维数组的形式传入需要加载的类字节码数组。</p>
-<p><img src="/static/pic/image-20250716230953050.png" class="lazyload" data-srcset="/static/pic/image-20250716230953050.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250716230953050"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/22/Vg8r/20260422225632117.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/22/Vg8r/20260422225632117.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250716230953050"></p>
 <p>注意这里<code>_tfactory</code>是通过<code>transient</code>修饰，即不可序列化的变量，所以给他赋值是没有意义的，因为反序列化时是不会被传入的</p>
-<p><img src="/static/pic/image-20250716231101881.png" class="lazyload" data-srcset="/static/pic/image-20250716231101881.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250716231101881"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/22/rG4i/20260422225635160.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/22/rG4i/20260422225635160.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250716231101881"></p>
 <p>那么应该怎么处理这里？既然需要这个属性，又无法被序列化，那么可以在反序列化的地方看看是如何赋值的，即查看<code>readObject</code>方法中是如何传递的</p>
 <p>可以看到，在反序列化时这里是直接被创建的</p>
-<img src="/static/pic/image-20250716232348383.png" class="lazyload" data-srcset="/static/pic/image-20250716232348383.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250716232348383" style="zoom:50%;" />
+<img src="https://files.seeusercontent.com/2026/04/22/Hd0u/20260422225639131.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/22/Hd0u/20260422225639131.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250716232348383" style="zoom:50%;" />
 
 <p>但是我们现在需要的是正向执行看EXP的效果，所以这里还是需要暂时进行赋值，构造出代码如下：</p>
 <p>这段代码基本满足调用逻辑，并且运行时能够执行加载的类中的代码，则说明没问题</p>
@@ -2639,7 +2639,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <p>但是这里报空指针异常了，断点调试一下，发现问题出在<code>defineTransletClasses</code>方法中</p>
 <p>这里判断加载类的父类的名字是否包含这个常量，如果不是走入<code>else</code>，<code>else</code>中变量<code>_auxClasses</code>为空，所以就会报空指针异常</p>
-<p><img src="/static/pic/image-20250716233501511.png" class="lazyload" data-srcset="/static/pic/image-20250716233501511.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250716233501511"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/22/2Tdr/20260422225801678.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/22/2Tdr/20260422225801678.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250716233501511"></p>
 <p>那么问题找到了，这里存在两种方法处理：</p>
 <ol>
 <li>要加载的类字节码继承这个父类</li>
@@ -2653,7 +2653,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <p>同理，还可以结合CC链1另外一条链以及CC链6的执行点进行利用，毕竟这里只是只是执行点不同</p>
 <h2 id="与ysoserial中CC3的区别"><a href="#与ysoserial中CC3的区别" class="headerlink" title="与ysoserial中CC3的区别"></a>与ysoserial中CC3的区别</h2><p>可以看到在ysoserial中，<code>ConstantTransformer</code>传入的是<code>TrAXFilter</code>，也没有使用<code>InvokerTransformer</code>执行，而是使用<code>InstantiateTransformer</code></p>
-<p><img src="/static/pic/image-20250717000018790.png" class="lazyload" data-srcset="/static/pic/image-20250717000018790.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250717000018790"></p>
+<p><img src="https://files.seeusercontent.com/2026/04/22/4Qqr/20260422225650007.png" class="lazyload" data-srcset="https://files.seeusercontent.com/2026/04/22/4Qqr/20260422225650007.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250717000018790"></p>
 <p>这里其实是在<code>newTransformer</code>方法的基础上进一步查找利用，在<code>TrAXFilter</code>的构造方法中进行调用，但是这个<code>TrAXFilter</code>类不能进行反序列化。然后就结合了<code>InstantiateTransformer#transform</code>方法会创建对象的特性进行了利用</p>
 <h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>正如开头所说，CC链3只是利用<code>TemplatesImpl</code>存在的类加载调用，作为执行类，替换了<code>Runtime</code>类传入了CC链1、CC链6中。相对于链1和链6来说，前面的调用点都是一样的，只是后面执行类的调用比起直接传入<code>Runtime</code>类复杂了一点。</p>
 <p>其实这些反序列化链基本可以分为三部分：反序列化入口、调用点、执行点。每个部分可以根据合适的条件进行拆分组合。</p>
@@ -2681,10 +2681,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2025-07-17T00:09:48+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2026-04-22T22:58:06+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：Jul 17, 2025</p>
+    <p>更新于：Apr 22, 2026</p>
   </a>
 </div>
 
@@ -3170,7 +3170,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"https://schema.org.cn","@type":"Organization","name":"n1utra's blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"https://schema.org.cn","@type":"Person","name":"n1utra","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"网络安全"},{"@context":"https://schema.org.cn","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"n1utra's blog"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/JAVA安全/","name":"JAVA安全"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2025/07/13/CC链3/","name":"浅述CC链(4)：CC链3"}}]},{"@context":"https://schema.org.cn","@type":"WebSite","name":"n1utra's blog","url":"http://example.com/","keywords":null,"description":"网络安全","author":{"@type":"Person","name":"n1utra","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"网络安全"},"publisher":{"@type":"Organization","name":"n1utra's blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"https://schema.org.cn","@type":"BlogPosting","headline":"浅述CC链(4)：CC链3","description":"网络安全","inLanguage":"zh","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2025/07/13/CC%E9%93%BE3/"},"author":{"@type":"Person","name":"n1utra","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"n1utra's blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2025/07/13/CC%E9%93%BE3/","wordCount":0,"datePublished":"2025-07-13T14:20:21.000Z","dateModified":"2025-07-16T16:09:48.535Z","articleSection":"JAVA安全","keywords":"JAVA安全,CC链","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"https://schema.org.cn","@type":"Organization","name":"n1utra's blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"https://schema.org.cn","@type":"Person","name":"n1utra","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"网络安全"},{"@context":"https://schema.org.cn","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"n1utra's blog"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/JAVA安全/","name":"JAVA安全"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2025/07/13/CC链3/","name":"浅述CC链(4)：CC链3"}}]},{"@context":"https://schema.org.cn","@type":"WebSite","name":"n1utra's blog","url":"http://example.com/","keywords":null,"description":"网络安全","author":{"@type":"Person","name":"n1utra","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"网络安全"},"publisher":{"@type":"Organization","name":"n1utra's blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"https://schema.org.cn","@type":"BlogPosting","headline":"浅述CC链(4)：CC链3","description":"网络安全","inLanguage":"zh","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2025/07/13/CC%E9%93%BE3/"},"author":{"@type":"Person","name":"n1utra","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"n1utra's blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2025/07/13/CC%E9%93%BE3/","wordCount":0,"datePublished":"2025-07-13T14:20:21.000Z","dateModified":"2026-04-22T14:58:06.493Z","articleSection":"JAVA安全","keywords":"JAVA安全,CC链","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 

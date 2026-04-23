@@ -1697,9 +1697,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 		'}'+
 	'</style>'+
     '<div class="kill-ie">'+
-        `<span class="kill-t"><b>抱歉，您的浏览器无法访问本站</b></span><br/>`+
-        `<span class="kill-c">微软已经于2016年终止了对 Internet Explorer (IE) 10 及更早版本的支持，<br/>继续使用存在极大的安全隐患，请使用当代主流的浏览器进行访问。</span><br/>`+
-        `<a target="_blank" rel="noopener" href="https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/"><strong>了解详情 ></strong></a>`+
+        `<span class="kill-t"><b>Sorry, your browser cannot access this site</b></span><br/>`+
+        `<span class="kill-c">Microsoft has terminated support for Internet Explorer (IE) 10 and earlier versions in 2016. <br/>There are great security risks to continue using it. Please use contemporary mainstream browsers to access.</span><br/>`+
+        `<a target="_blank" rel="noopener" href="https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/"><strong>Learn more ></strong></a>`+
     '</div>');
 </script>
 
@@ -1727,9 +1727,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 		}
 	</style>
     <div class="kill-noscript">
-        <span class="kill-t"><b>抱歉，您的浏览器无法访问本站</b></span><br/>
-        <span class="kill-c">本页面需要浏览器支持（启用）JavaScript</span><br/>
-        <a target="_blank" rel="noopener" href="https://www.baidu.com/s?wd=启用JavaScript"><strong>了解详情 ></strong></a>
+        <span class="kill-t"><b>Sorry, your browser cannot access this site</b></span><br/>
+        <span class="kill-c">This page requires browser support (enable) JavaScript</span><br/>
+        <a target="_blank" rel="noopener" href="https://www.baidu.com/s?wd=启用JavaScript"><strong>Learn more ></strong></a>
     </div>
 </noscript>
 
@@ -2111,7 +2111,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1765818160203),
+    lastupdate: new Date(1776961364761),
     cdn: {
       izitoast_css: 'https://unpkg.com/izitoast@1.4.0/dist/css/iziToast.min.css',
       izitoast_js: 'https://unpkg.com/izitoast@1.4.0/dist/js/iziToast.min.js',
@@ -2149,8 +2149,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     languages: {
       
         search: {
-          hits_empty: "找不到您查询的内容：${query}",
-          hits_stats: "找到 ${hits} 条结果，用时 ${time} 毫秒",
+          hits_empty: "We didn't find any results for the search: ${query}.",
+          hits_stats: "${hits} results found in ${time} ms",
         }
       
     }
@@ -2557,9 +2557,68 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
         
+          
+        
       
     
     
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
+  <link itemprop="mainEntityOfPage" href="http://example.com/2026/01/13/Strust2历史漏洞分析-3-漏洞分析-2/">
+  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
+    <meta itemprop="name" content="n1utra's blog">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
+    <meta itemprop="name" content="n1utra's blog">
+    <meta itemprop="description" content="网络安全">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2026/01/13/Strust2%E5%8E%86%E5%8F%B2%E6%BC%8F%E6%B4%9E%E5%88%86%E6%9E%90-3-%E6%BC%8F%E6%B4%9E%E5%88%86%E6%9E%90-2/"  itemprop="url">
+        Strust2历史漏洞分析(3)-漏洞分析(2)
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        S2-012漏洞信息漏洞版本：Struts 2.0.0 - Struts 2.3.14.2
+漏洞环境：
+漏洞描述：在Struts2框架中,如果配置Action中的Result时使用了重定向类型,并且还使用${param_name}作为重定向变量,当触发redirect类型返回时,Struts2使用${param_name}获取其值,在这个过程中会对name参数的值执行OGNL表达式解析,从而...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2026-01-13T22:08:01+08:00">2026-01-13</time>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2026/01/13/Strust2%E5%8E%86%E5%8F%B2%E6%BC%8F%E6%B4%9E%E5%88%86%E6%9E%90-3-%E6%BC%8F%E6%B4%9E%E5%88%86%E6%9E%90-2/' itemprop="url">
+            Read More
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
       
         
           <div class='post-wrapper'>
@@ -2590,9 +2649,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class='md article-desc' itemprop="articleBody">
     
       
-        S2-001漏洞信息漏洞版本：WebWork 2.1 (with altSyntax enabled), WebWork 2.2.0 - WebWork 2.2.5, Struts 2.0.0 - Struts 2.0.8
+        S2-001漏洞信息漏洞版本： Struts 2.0.0 - Struts 2.0.8
 漏洞环境：
-漏洞描述：此漏洞源于 Struts 2 框架中的一个标签处理功能：altSyntax。在开启时，支持对标签中的 OGNL 表达式进行解析并执行[struts2...
+漏洞描述： 此漏洞源于 Struts 2 框架中的一个标签处理功能：altSyntax。在开启时，支持对标签中的 OGNL 表达式进行解析并执行 [struts2 标签解析主要依赖于 xwork2, 可以理解为 xwork2 的漏洞]，攻击者通过使用 %&#123;&#125; 包裹恶意表达式...
       
     
   </div>
@@ -2606,7 +2665,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <div>
           <a class='readmore' href='/2025/11/16/Strust2%E5%8E%86%E5%8F%B2%E6%BC%8F%E6%B4%9E%E5%88%86%E6%9E%90-2-%E6%BC%8F%E6%B4%9E%E5%88%86%E6%9E%90-1/' itemprop="url">
-            阅读全文
+            Read More
           </a>
         </div>
       
@@ -2668,7 +2727,7 @@ S2-001 - 桃木剑的博客 | Taomujian Blog
       
         <div>
           <a class='readmore' href='/2025/11/02/Struts2%E5%8E%86%E5%8F%B2%E6%BC%8F%E6%B4%9E%E5%88%86%E6%9E%90-1-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/' itemprop="url">
-            阅读全文
+            Read More
           </a>
         </div>
       
@@ -2730,7 +2789,7 @@ S2-001 - 桃木剑的博客 | Taomujian Blog
       
         <div>
           <a class='readmore' href='/2025/10/20/Log4J%E5%8E%86%E5%8F%B2%E6%BC%8F%E6%B4%9E%E5%88%86%E6%9E%90/' itemprop="url">
-            阅读全文
+            Read More
           </a>
         </div>
       
@@ -2787,7 +2846,7 @@ Shiro的本质是一个Filter，通过Servlet Filter获取请求。当配置好S
       
         <div>
           <a class='readmore' href='/2025/09/14/Shiro%E5%8E%86%E5%8F%B2%E6%BC%8F%E6%B4%9E%E5%88%86%E6%9E%90-3-%EF%BC%9A%E6%9D%83%E9%99%90%E7%BB%95%E8%BF%87/' itemprop="url">
-            阅读全文
+            Read More
           </a>
         </div>
       
@@ -2845,7 +2904,7 @@ Shiro的本质是一个Filter，通过Servlet Filter获取请求。当配置好S
       
         <div>
           <a class='readmore' href='/2025/08/10/Shiro%E5%8E%86%E5%8F%B2%E6%BC%8F%E6%B4%9E%E5%88%86%E6%9E%90-2-%EF%BC%9A%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E6%BC%8F%E6%B4%9E/' itemprop="url">
-            阅读全文
+            Read More
           </a>
         </div>
       
@@ -2904,7 +2963,7 @@ Shiro的本质是一个Filter，通过Servlet Filter获取请求。当配置好S
       
         <div>
           <a class='readmore' href='/2025/08/10/Shiro%E5%8E%86%E5%8F%B2%E6%BC%8F%E6%B4%9E%E5%88%86%E6%9E%90-1-%EF%BC%9A%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E4%B8%8EShiro%E4%B8%8A%E6%89%8B/' itemprop="url">
-            阅读全文
+            Read More
           </a>
         </div>
       
@@ -2963,7 +3022,7 @@ Shiro的本质是一个Filter，通过Servlet Filter获取请求。当配置好S
       
         <div>
           <a class='readmore' href='/2025/08/10/FastJson-1-2-80%E5%88%A9%E7%94%A8/' itemprop="url">
-            阅读全文
+            Read More
           </a>
         </div>
       
@@ -3025,7 +3084,7 @@ TypeUtils修复1.2.47的无参&#x2F;单参loadCla...
       
         <div>
           <a class='readmore' href='/2025/08/07/FastJson-1-2-68%E5%8F%8A%E4%B9%8B%E5%89%8D%E5%88%A9%E7%94%A8/' itemprop="url">
-            阅读全文
+            Read More
           </a>
         </div>
       
@@ -3066,11 +3125,11 @@ TypeUtils修复1.2.47的无参&#x2F;单参loadCla...
   <div class='md article-desc' itemprop="articleBody">
     
       
-        Fastjson1.2.24利用点分析在前篇中讲述了fastjson的反序列化流程，能看出来与java原生反序列化的不同点
+        FastJson-1-2-47及之前利用在前篇中讲述了fastjson的反序列化流程，能看出来与java原生反序列化的不同点
 
 fastjson反序列化的类不需要实现序列化接口
 原生反序列化时属性不能被transient修饰，fastjson没有这个要求。但是必须有对应的set或者public或者满足条件的get
-原生反序列化入口是readObject，fastjson是通过反射调用sette...
+原生反序列化入口是readObject，fastjson是通过反射调用sett...
       
     
   </div>
@@ -3084,63 +3143,7 @@ fastjson反序列化的类不需要实现序列化接口
       
         <div>
           <a class='readmore' href='/2025/08/04/FastJson-1-2-47%E5%8F%8A%E4%B9%8B%E5%89%8D%E5%88%A9%E7%94%A8/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2025/08/03/FastJson反序列化流程分析/">
-  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
-    <meta itemprop="name" content="n1utra's blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
-    <meta itemprop="name" content="n1utra's blog">
-    <meta itemprop="description" content="网络安全">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2025/08/03/FastJson%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E6%B5%81%E7%A8%8B%E5%88%86%E6%9E%90/"  itemprop="url">
-        浅述Fastjson(1)：FastJson反序列化流程分析
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        环境准备直接在pom.xml文件中添加fastjson的maven坐标
-12345&lt;dependency&gt;    &lt;groupId&gt;com.alibaba&lt;/groupId&gt;    &lt;artifactId&gt;fastjson&lt;/artifactId&gt;    &lt;version&gt;1.2.24&lt;/version&gt;&l...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2025-08-03T19:39:42+08:00">2025-08-03</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2025/08/03/FastJson%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E6%B5%81%E7%A8%8B%E5%88%86%E6%9E%90/' itemprop="url">
-            阅读全文
+            Read More
           </a>
         </div>
       
@@ -3160,12 +3163,12 @@ fastjson反序列化的类不需要实现序列化接口
       <div class="prev-next">
         
         <p class="current">
-          1 / 2
+          1 / 3
         </p>
         
           <a class="next" rel="next" href="/page/2/">
             <section class="post next white-box shadow floatable blur">
-              &nbsp;下一页&nbsp;<i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+              &nbsp;Next&nbsp;<i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
             </section>
           </a>
         
@@ -3268,7 +3271,7 @@ fastjson反序列化的类不需要实现序列化接口
 
 
     <div class='content'>
-      <a href="/tags/CC%E9%93%BE/" style="font-size: 22px; color: #636363">CC链</a> <a href="/tags/FastJson%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96/" style="font-size: 20px; color: #707070">FastJson反序列化</a> <a href="/tags/JAVA%E5%AE%89%E5%85%A8/" style="font-size: 24px; color: #555">JAVA安全</a> <a href="/tags/Log4J/" style="font-size: 14px; color: #999">Log4J</a> <a href="/tags/Shiro/" style="font-size: 18px; color: #7e7e7e">Shiro</a> <a href="/tags/Strust2/" style="font-size: 16px; color: #8b8b8b">Strust2</a>
+      <a href="/tags/CC%E9%93%BE/" style="font-size: 21.5px; color: #666">CC链</a> <a href="/tags/FastJson%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96/" style="font-size: 19px; color: #777">FastJson反序列化</a> <a href="/tags/JAVA%E5%AE%89%E5%85%A8/" style="font-size: 24px; color: #555">JAVA安全</a> <a href="/tags/Log4J/" style="font-size: 14px; color: #999">Log4J</a> <a href="/tags/Shiro/" style="font-size: 16.5px; color: #888">Shiro</a> <a href="/tags/Strust2/" style="font-size: 16.5px; color: #888">Strust2</a>
     </div>
   </section>
 
